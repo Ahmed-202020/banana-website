@@ -1,0 +1,97 @@
+//Colors
+$min-color : #ff3003 ;
+$button-bg-products: #f9c810 ; 
+$subcategories-slider: #b4c9d8 ; 
+$black-color: #2a2a2a ; 
+$lighter-links: #43c57a ; 
+$lighter-button: #e9ffe1 ; 
+$color-button: #00963f ; 
+$light-line:#f2eacb ; 
+$text-field-bg: #fffcee ;
+$white: #f7fffa ;  
+$border : $text-field-bg ;
+
+// fonts
+
+$min-font : "Almarai" ; 
+$min-size-font : "20pt" ; 
+
+//classes
+.active{
+    .nav-link{
+        color: $button-bg-products !important;
+    }
+}
+.icons{
+    .heart.active{
+        img{
+            content: url(../icons/Heart-selected.svg) !important;
+        }
+    }
+}
+.icons{
+    .cart.active{
+        img{
+            content: url(../icons/cart-selected.svg) !important;
+        }
+    }
+}
+.icons{
+    .profile.active{
+        img{
+            content: url(../icons/Profile-selected.svg) !important;
+        }
+    }
+}
+
+// buttons
+%btn{
+    background-color: $lighter-links;
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    color: $white;
+    width: 250px;
+    height: 50px;
+    font-size: 17pt;
+    border-radius: 25px ;
+    -webkit-border-radius: 25px ;
+    -moz-border-radius: 25px ;
+    -ms-border-radius: 25px ;
+    -o-border-radius: 25px ;
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+
+
+// alert
+.swal2-popup{
+    background-color: $color-button !important;
+    width: 27rem !important;
+}
+
+.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{
+    background-color: $white;
+}
+.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{
+    background-color: $white;
+}
+.swal2-icon.swal2-success .swal2-success-ring{
+    border: 4px solid $white !important;
+}
+.swal2-title{
+    color: $white !important;
+    padding-top: 0.3rem !important;
+}
+.swal2-html-container{
+    color: $white !important;
+    font-weight: bold !important;
+}
+.swal2-styled.swal2-confirm{
+    background-color: $white !important;
+    color: $lighter-links !important;
+    box-shadow: none !important;
+}

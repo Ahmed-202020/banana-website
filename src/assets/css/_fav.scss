@@ -1,0 +1,120 @@
+.favorites{
+    padding-block-end: 170px !important;
+    .show-case{
+        .title{
+            &::after{
+                width: 60px;
+                top: 40px;
+                left: 32px;
+            }
+        }
+    }
+    .products{
+        grid-template : repeat(5 , 1fr) / repeat(4 , 1fr) !important; 
+        gap: 15pt !important;
+    }
+}
+
+// respnsive design (fav.html)
+
+@media (min-width: 992px) and (max-width: 1025px){
+  
+}
+
+@media (max-width: 991.98px){
+    .favorites{
+        .products{
+            gap: 8pt !important;
+            .product{
+                .card{
+                    .info{
+                        top: 115px !important;
+                        left: 60px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .favorites{
+        .products{
+            grid-template : repeat(10 , 1fr) / repeat(2 , 1fr) !important; 
+            gap: 10pt !important;
+            .product{
+                .card{
+                    .info{
+                        top: 180px !important;
+                        left: 115px !important;
+                        .name-pro{
+                            font-size: 20pt !important;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: 575.98px){
+    .favorites{
+        .products{
+            .product{
+                .card{
+                    .info{
+                        top: 125px !important;
+                        left: 70px !important;
+                        .name-pro{
+                            font-size: 18pt !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 420px){
+    .favorites{
+        .show-case{
+            .title{
+                &::after{
+                    width: 50px !important;
+                    top: 35px !important;
+                    left: 18px !important;
+                }
+            }
+        }
+        .products{
+            .product{
+                .card{
+                    .info{
+                        top: 95px !important;
+                        left: 35px !important;
+                        .name-pro{
+                            font-size: 14pt !important;
+                        }
+                    }  
+                }     
+            }   
+        }   
+    }    
+}
+
+// respnsive design (fav.html)
+
+@media (min-width: 280px) and (max-width: 350px){
+    .favorites{
+        .products{
+            .product{
+                .card{
+                    .info{
+                        top: 170px !important;
+                        left: 95px !important;
+                    }  
+                }     
+            }   
+        }   
+    }    
+}

@@ -1,0 +1,304 @@
+//signin.html
+
+.modal{
+   display: initial !important;
+   background-color: rgba($color-button , 0.7) ;
+   .modal-dialog{
+      max-width: 730px !important;
+      margin-block: 70px;
+      .row{
+         margin-inline: -1px;
+         margin-block: -1px;
+         .col-6{
+            padding-inline: 0;
+            img{
+               width: 100% !important;
+               height: 100% !important;
+            }
+            .signin{
+               padding: 50px ;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               position: relative;
+               .out{
+                  position: absolute;
+                  top: 7px;
+                  right: 15px;
+                  a{
+                     color: $black-color;
+                     text-decoration: none;
+                     font-size: 12pt;
+                     font-weight: bold;
+                  }
+               }
+               .navbar-brand{
+                  width: 140px;
+                  height: 120px;
+                  img{
+                     width: 100%;
+                     height: 100%;
+                  }
+               }
+               .sub{
+                  font-size: 11pt;
+                  margin-right: 15px;
+                  margin-top: -26px;
+               }
+               .title{
+                  font-size: 10pt;
+                  margin-right: 15px;
+                  margin-bottom: 30px;
+               }
+               .form-group{
+                  position: relative;
+                  label{
+                     position: absolute;
+                     z-index: 10;
+                     top: 6px;
+                     right: 10px;
+                     span{
+                        position: absolute;
+                        top: 6px;
+                        right: 65px;
+                        color: $color-button;
+                        font-size: 13px;
+                     }
+                     img{
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                     }
+                  }
+                  select{
+                     padding-right: 33px;
+                     padding-left: 0;
+                     width: 90px;
+                     color: $color-button;
+                     font-weight: bold;
+                     box-shadow: none !important;
+                     border: none !important;
+                     position: absolute;
+                     right: -1px;
+                     top: 1px;;
+                  }
+                  .form-control{
+                     margin-bottom: 20px;
+                     background-color: $light-line;
+                     &::placeholder{
+                        color: darken($color: $light-line, $amount: 20%);
+                     }
+                     border-radius: 25px;
+                     -webkit-border-radius: 25px;
+                     -moz-border-radius: 25px;
+                     -ms-border-radius: 25px;
+                     -o-border-radius: 25px;
+                     &:focus{
+                        box-shadow: 0 0 2px;
+                        border: 1px solid $light-line;
+                     }
+                     &:last-of-type{
+                        margin-bottom: 10px;
+                     }
+                  }
+                  .form-control[type = "text"]{
+                     padding-right: 95px;
+                  }
+                  a{
+                     text-decoration: none ; 
+                     color: $black-color;
+                  }
+                  .forget{
+                     font-size: 10pt;
+                     margin-right: 155px;
+                     color: $button-bg-products;
+                  }
+                  .buttons{
+                     margin-top: 100px;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                     align-items: center;
+                     .sign{
+                        @extend %btn ; 
+                        height: 40px;
+                        width: 220px;
+                        line-height: 20px;
+                        margin-bottom: 5px;
+                        &:hover{
+                           background-color: $color-button ; 
+                        }
+                     }
+                     .signup{
+                        font-size: 12pt;
+                        &:focus{
+                           box-shadow: none;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+// respnsive design (signin.html)
+@media (max-width: 575.98px) {
+   .modal{
+      .modal-dialog{
+         .row{
+            .col-6{
+               .signin{
+                  padding-inline: 8px !important;
+                  .form-group{
+                     width: 235px;
+                     .sign{
+                        width: 200px !important;
+                        height: 40px !important;
+                        line-height: 25px !important;
+                        font-size: 15pt !important;
+                     }
+                     .forget{
+                        margin-right: 120px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+@media (min-width: 360px) and (max-width: 420px){
+      .modal{
+         .modal-dialog{
+            .row{
+               .col-6{
+                  .signin{
+                     padding-inline : 0;
+                     .navbar-brand{
+                        width: 90px;
+                        height: 90px;
+                     }
+                     .form-group{
+                        label{
+                           top: 2px;
+                           right: 5px;
+                           span{
+                              right: 56px;
+                           }
+                           img{
+                              width: 90% !important;
+                              height: 90% !important;
+                           }
+                        }
+                        .form-control{
+                           font-size: 8pt;
+                        }
+                        width: 160px;
+                        .forget{
+                           margin-right: 45px;
+                           font-size: 10pt;
+                        }
+                        .sign{
+                           width: 160px !important;
+                           height: 30px !important;
+                           line-height: 10px !important;
+                           font-size: 13pt !important;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+}
+@media (min-width: 279px) and (max-width: 350.98px){
+      .modal{
+         .modal-dialog{
+            .row{
+               .col-6{
+                  .signin{
+                     padding-inline : 0 !important;
+                     .navbar-brand{
+                        width: 90px;
+                        height: 90px;
+                     }
+                     .form-group{
+                        width: 145px !important;
+                        label{
+                           top: 0px;
+                           right: 5px;
+                           span{
+                              right: 56px;
+                           }
+                           img{
+                              width: 80% !important;
+                              height: 80% !important;
+                           }
+                        }
+                        .form-control{
+                           font-size: 6pt;
+                        }
+                        .forget{
+                           margin-right: 30px !important;
+                           font-size: 9pt !important;
+                        }
+                        .buttons{
+                           margin-top: 40px;
+                           .sign{
+                              width: 140px !important;
+                              height: 27px !important;
+                              line-height: 10px !important;
+                              font-size: 11pt !important;
+                           }
+                           .signup{
+                              font-size: 8pt;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+}
+@media (max-width: 280.98px){
+   .modal{
+      .modal-dialog{
+         .row{
+            .col-6{
+               .signin{
+                  .form-group{
+                     width: 126px !important;
+                     .form-control[type = "text"]{
+                        padding-right: 77px;
+                     }
+                     select{
+                        right: -2px;
+                        width: 64px;
+                     }
+                     label{
+                        span{
+                           right: 49px ;
+                        }
+                     }
+                     .forget{
+                        font-size: 8pt !important;
+                     }
+                     .buttons{
+                        .sign{
+                           width: 120px !important;
+                        }
+                    
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86.51" height="117.934" viewBox="0 0 86.51 117.934">
+  <defs>
+    <filter id="Icon_awesome-bookmark" x="0" y="0" width="86.51" height="117.934" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_awesome-bookmark)">
+    <path id="Icon_awesome-bookmark-2" data-name="Icon awesome-bookmark" d="M0,99.934V9.369C0,4.194,3.834,0,8.564,0H59.947c4.73,0,8.564,4.194,8.564,9.369V99.934L34.255,78.073Z" transform="translate(9 12)" fill="#f9c810"/>
+  </g>
+</svg>

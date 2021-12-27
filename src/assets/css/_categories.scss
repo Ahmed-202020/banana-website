@@ -1,0 +1,83 @@
+
+// categories.html
+
+.categories{
+    padding : 100px 70px 50px  !important;
+    .show-case{
+        .title::after{
+            width: 90px;
+            top: 48px;
+            left: 55px;
+        }
+        .more-sections{
+            .right , .left{
+                border: 1px solid $subcategories-slider;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                color: $subcategories-slider;
+                background-color: #d9eee1;
+                line-height: 50px ;
+                text-align: center;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                transition: all 200ms ease;
+                -webkit-transition: all 200ms ease;
+                -moz-transition: all 200ms ease;
+                -ms-transition: all 200ms ease;
+                -o-transition: all 200ms ease;
+                &:hover{
+                    background-color: $white;
+                    color: $color-button;
+                    border: 1px solid $color-button;
+                }
+            }
+            .right{
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+
+// responsive design (categories.html)
+
+@media (min-width: 411px) and (max-width: 1025px) {
+    .categories{
+        padding: 100px 20px 50px !important;
+        .show-case{
+            margin-bottom: 35px !important;
+        }
+    }
+}
+@media (min-width: 280px) and (max-width: 377px) {
+    .categories{
+        padding: 100px 15px 50px !important;
+        .show-case{
+            margin-bottom: 35px !important;
+            .title{
+                font-size: 13pt !important;
+                &::after{
+                    width: 50px !important;
+                    top: 32px !important;
+                    right: 0px !important;
+                }
+            }
+            .more-sections{
+                .right , .left{
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                }
+                .right{
+                    margin-left: 10px  !important;
+                }
+            }
+        }
+    }
+}
+
+

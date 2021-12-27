@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67">
+  <g id="right" transform="translate(-153 -1049)">
+    <g id="Ellipse_1297" data-name="Ellipse 1297" transform="translate(153 1049)" fill="#fff" stroke="#00963f" stroke-width="1" opacity="0.64">
+      <circle cx="33.5" cy="33.5" r="33.5" stroke="none"/>
+      <circle cx="33.5" cy="33.5" r="33" fill="none"/>
+    </g>
+    <g id="Group_42651" data-name="Group 42651" transform="translate(152 1050)">
+      <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M19.086,16,11.662,8.583A1.4,1.4,0,1,1,13.648,6.6l8.411,8.4a1.4,1.4,0,0,1,.041,1.933L13.654,25.4a1.4,1.4,0,0,1-1.986-1.98Z" transform="translate(18.749 17.496)" fill="#00963f"/>
+    </g>
+  </g>
+</svg>

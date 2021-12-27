@@ -1,0 +1,58 @@
+
+// about-us.html
+
+.about-us{
+    padding: 70px 70px 150px 70px;
+    .title{
+        position: relative;
+        font-size: 18pt;
+        margin-bottom: 40px;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 5px;
+            background-color: $color-button;
+            top: 43px;
+            right: 0;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+        }
+    }
+    .reading{
+        padding-inline: 135px;
+        font-size: 18pt;
+        line-height: 1.2;
+    }
+}
+
+// respnsive design (about.html)
+
+@media (max-width: 767.98px){
+    .about-us{
+        .reading{
+            padding-inline: 55px;
+        }
+    }
+}
+@media (max-width: 575.98px){
+    .about-us{
+        .reading{
+            padding-inline: 0px;
+        }
+    }
+}
+@media (min-width: 279px) and (max-width: 574px){
+    .about-us{
+        .title{
+            font-size: 15pt;
+        }
+        .reading{
+            font-size: 8pt;
+            font-weight: bold;
+        }
+    } 
+}

@@ -1,0 +1,174 @@
+
+// signup.html
+
+.modal{
+    .modal-dialog{
+        .row{
+            .col-6{
+                .signup{
+                    .form-group{
+                        input[type = "email"]{
+                            text-align: right;
+                        }
+                        .rules{
+                            margin-top: 30px;
+                            position: relative;
+                            input[type = "checkbox"]{
+                                display: none;
+                            }
+                            label{
+                                position: absolute;
+                                top : -3px ; 
+                                right: 22px;
+                                font-size: 12pt;
+                                text-decoration: underline;
+                            }
+                            input[type = "checkbox"] + label::before{
+                                position: absolute;
+                                content: "";
+                                color: $lighter-links;
+                                width: 20px;
+                                height: 20px;
+                                top: 4px;
+                                right: -27px;
+                                border: 0.5px solid $lighter-links;
+                                padding: 1px;
+                                text-align: center;
+                                border-radius: 5px;
+                                -webkit-border-radius:5px;
+                                -moz-border-radius:5px;
+                                -ms-border-radius:5px;
+                                -o-border-radius:5px;
+                            }
+                        
+                            input[type = "checkbox"]:checked + label::before{
+                                content: "\2714";
+                            }
+                        }
+                        .buttons{
+                            .sign{
+                                margin-bottom: 20px;
+                            }
+                            .custom-btn{
+                                background-color: $button-bg-products !important;
+                                &:hover{
+                                    filter: brightness(90%);
+                                    -webkit-filter: brightness(90%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive design (signup.html)
+@media (min-width: 360px) and (max-width: 420px){
+    .modal{
+        .modal-dialog{
+            .row{
+                .col-6{
+                    .signup{
+                        .form-group{
+                            .rules{
+                                label{
+                                    font-size: 9pt !important;
+                                }
+                                input[type="checkbox"] + label::before{
+                                    top: 2px;
+                                    right: -22px;
+                                    width: 17px; 
+                                    height: 17px;
+                                }
+                            }
+                            .buttons{
+                                .signup{
+                                    font-size: 10pt;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 280px) and (max-width: 350px){
+    .modal{
+        .modal-dialog{
+            .row{
+                .col-6{
+                    .signup{
+                        .form-group{
+                            .rules{
+                                label{
+                                    font-size: 7pt !important;
+                                    top: -13px;
+                                    right: 20px;
+                                }
+                                input[type = "checkbox"] + label::before{
+                                    top: 2px;
+                                    right: -18px;
+                                    width: 12px !important;
+                                    height: 12px !important;
+                                    border-radius: 0;
+                                    -webkit-border-radius: 0;
+                                    -moz-border-radius: 0;
+                                    -ms-border-radius: 0;
+                                    -o-border-radius: 0;
+                                }
+                            }
+                            .buttons{
+                                margin-top: 55px;
+                                .sign{
+                                    margin-bottom: 12px;
+                                }
+                            }
+                        }    
+                    }    
+                }    
+            }
+        }
+    }         
+}
+@media (max-width: 280.98px){
+    // .modal{
+    //     .modal-dialog{
+    //         .row{
+    //             .col-6{
+    //                 .signup{
+    //                     .form-group{
+    //                         .rules{
+    //                             label{
+    //                                 font-size: 7pt !important;
+    //                                 top: -13px;
+    //                                 right: 20px;
+    //                             }
+    //                             input[type = "checkbox"] + label::before{
+    //                                 top: 2px;
+    //                                 right: -18px;
+    //                                 width: 12px !important;
+    //                                 height: 12px !important;
+    //                                 border-radius: 0;
+    //                                 -webkit-border-radius: 0;
+    //                                 -moz-border-radius: 0;
+    //                                 -ms-border-radius: 0;
+    //                                 -o-border-radius: 0;
+    //                             }
+    //                         }
+    //                         .buttons{
+    //                             margin-top: 55px;
+    //                             .sign{
+    //                                 margin-bottom: 12px;
+    //                             }
+    //                         }
+    //                     }    
+    //                 }    
+    //             }    
+    //         }
+    //     }
+    // }            
+}

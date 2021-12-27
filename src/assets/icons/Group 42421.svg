@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.885" height="36.75" viewBox="0 0 33.885 36.75">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9c810"/>
+      <stop offset="1" stop-color="#f9c810"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_42421" data-name="Group 42421" transform="translate(0.75 0.75)">
+    <rect id="Rectangle_1408" data-name="Rectangle 1408" width="30" height="30" rx="15" transform="translate(3.136 6)" fill="url(#linear-gradient)"/>
+    <g id="Location" transform="translate(0)">
+      <path id="Path_11324" data-name="Path 11324" d="M17.766,12.339a4.128,4.128,0,1,0-4.129,4.127A4.128,4.128,0,0,0,17.766,12.339Z" transform="translate(-1.237 0.393)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+      <path id="Path_11325" data-name="Path 11325" d="M16.883,32.721C12.1,32.721,4.5,24.4,4.5,15.547a12.385,12.385,0,1,1,24.768,0C29.268,24.4,21.67,32.721,16.883,32.721Z" transform="translate(-4.5 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
