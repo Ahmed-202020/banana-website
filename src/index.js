@@ -19,7 +19,12 @@ form.addEventListener("blur" , function(){
 $(function(){
     $("#sort").on("click" , function(){
       $("#sorting").fadeToggle() ; 
+
+      $('input[type="checkbox"]').on('change', function() {
+        $('input[type="checkbox"]').not(this).prop('checked', false);
+     });
     }) ; 
+
     $(".common-products .btn").on("click" , function(){
       Swal.fire(
         "تم" , 
@@ -28,6 +33,7 @@ $(function(){
       ) ; 
     })
 })
+
 
 
 

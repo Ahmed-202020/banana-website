@@ -249,8 +249,8 @@ body{
                         -ms-border-radius: 1rem !important;
                         -o-border-radius: 1rem !important;
                         &:focus{
-                            box-shadow: 0 0 2px  2px  $color-button;
-                            border: none ;
+                            box-shadow: 0 0 2px 2px   $color-button;
+                            border: 1px solid $color-button ;
                             outline: none;
                             color: $black-color;
                         }

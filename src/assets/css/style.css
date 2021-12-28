@@ -1027,7 +1027,7 @@ body .show-case .title {
 .header .slider .carousel-item .carousel-caption .form .form-control:focus {
   -webkit-box-shadow: 0 0 2px 2px #00963f;
           box-shadow: 0 0 2px 2px #00963f;
-  border: none;
+  border: 1px solid #00963f;
   outline: none;
   color: #2a2a2a;
 }
