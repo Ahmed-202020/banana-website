@@ -1,0 +1,674 @@
+html[dir = "ltr"]{
+    .header{
+        .navbar{
+            .navbar-brand{
+                img{
+                    left: 600px;
+                }
+                &::after{
+                  left: 590px;
+                }
+            }
+            .navbar-collapse{
+                .navbar-nav{
+                    .nav-item{
+                        margin-right: 40px;
+                        margin-left: 0;
+                        .custom-dropdown-menu-lang {
+                            left: 5px;
+                            right: initial;
+                        }
+                        .custom-dropdown-menu-sort{
+                            right: initial;
+                            left: 77px;
+                        }
+                    }    
+                    .home{
+                        margin-right: 215px;
+                        margin-left: 0;
+                    }
+                    .who-are{
+                        margin-left: 80px;
+                        margin-right: 40px;
+                    }
+                    .sort-buying{
+                        margin-right: 100px;
+                        margin-left: 40px;
+                    }
+                    .icons{
+                        margin-left: 40px;
+                        margin-right: 0;
+                        .nav-item{
+                            margin-right: 20px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            } 
+        }
+        .slider{
+            .carousel-control-prev{
+                left: 4%;
+                img{
+                    transform: rotate(180deg);
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                }
+            }
+            .carousel-indicators{
+                right: initial;
+                left: 500px;
+            }
+            .carousel-caption{
+                left: 35%;
+                right: 30%;
+                .form{
+                    .sorting{
+                        right: 5px;
+                        left: initial;
+                        .sub{
+                            text-align: left;
+                            padding: 15px 0 15px 15px;
+                        }
+                        .items{
+                            .item{
+                                input[type="checkbox"] + label::before{
+                                    left: -25px;
+                                    right: initial;
+                                }
+                            }
+                        }
+                    }
+                    .search{
+                        left: 25px;
+                        right: initial;
+                    }
+                    .sort{
+                        right: 25px;
+                        left: initial;
+                    }
+                    &:after{
+                        right: 65px;
+                        left: initial;
+                    }
+                }
+            }
+        }
+    } 
+    .features{
+        .feature{
+            .icon{
+                margin-right: 10px;
+            }
+        }
+        .space::after{
+            right: -80px;
+            left: initial;
+        }
+    }
+    .sections{
+        .title{
+            &::after{
+                right: 42px;
+                left: initial;
+            }
+        }
+        .more-sections{
+            img{
+                margin-left: 5px;
+                margin-right: 0;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+            }
+        }
+    } 
+    .common-products{
+        .title::after{
+            right: 122px;
+            left: initial;
+        }
+        .products{
+            .product{
+                .card{
+                    .info{
+                        right: 130px;
+                        left: initial;
+                    }
+                }
+            }
+        }
+    } 
+    .app{
+        .col-sm-3 , .col-sm-5{
+            justify-content: flex-end;
+        }
+        .mobile{
+            .info{
+                .title{
+                    margin-right: 45px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .footer{
+        margin-top: -70px;
+        .overlay{
+            padding: 110px 70px 40px;
+            .contact{
+                .form-group{
+                    .form-control{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1399.98px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        right: initial;
+                        left: 540px;
+                    }
+                    &::after{
+                        left: 530px;
+                        right: initial;
+                    }
+                }
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            font-size: 16pt;
+                        }
+                    }
+                }
+            }
+        }
+        .common-products{
+            .products{
+                .product{
+                    .card{
+                        .info{
+                            right: 115px;
+                            top: 190px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1280.98px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                padding-inline: 20px;
+                .navbar-brand{
+                    img{
+                        left: 500px !important;
+                        right: initial !important;
+                        width: 170px;
+                        height: 170px;
+                        bottom: -105px;
+                    }
+                    &::after{
+                        left: 490px !important;
+                        right: initial !important;
+                        width: 200px;
+                        height: 80px;
+                    }
+                }
+                .navbar-collapse{
+                    .navbar-nav{
+                        .nav-item{
+                            .nav-link{
+                                font-size: 13pt !important;
+                            }
+                            // // margin-right: 20px !important;
+                            // // margin-left: 0 !important;
+                            // // .nav-link{
+                            // font-size: 12pt !important;
+                        }
+                    }
+                }    
+            }
+        }
+        .common-products{
+            .products{
+                .product{
+                    .card{
+                        .info{
+                            top: 170px ;
+                            right: 100px ;
+                            left: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199.98px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                padding-inline: 20px;
+                .navbar-brand{
+                    img{
+                        left: 420px !important;
+                        right: initial !important;
+                    }
+                    &::after{
+                       left: 410px !important;
+                       right: initial;
+                    }
+                }
+                .navbar-collapse{
+                    .navbar-nav{
+                        .sort-buying{
+                            margin-right: 40px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .header{
+            .slider{
+                .carousel-caption{
+                    left: 30%;
+                    right: 30%;
+                }
+            }
+        } 
+        .common-products{
+            .products{
+                .product{
+                    .card{
+                        .info{
+                           right: 85px;
+                           left: initial;
+                           top: 150px ; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1025px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                padding-inline: 5px;
+                .navbar-brand{
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        left: 390px !important;
+                        right: initial !important;
+                        bottom: -98px !important;
+                    }
+                    &::after{
+                        width: 170px;
+                        height: 70px;
+                        top: 50px;
+                        left: 380px !important;
+                        right: initial !important;
+                    }
+                }
+                .navbar-collapse{
+                    .navbar-nav{
+                        .nav-item{
+                            margin-left: 20px;
+                            margin-right: 0px;
+                            .nav-link{
+                                font-size: 13pt !important;
+                            }
+                        }
+                        .sort-buying{
+                            margin-left: 30 ;
+                        }
+                        .who-are{
+                            margin-left: 170px;
+                            margin-right: 0;
+                        }
+                        .icons{
+                            margin-left: 40px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            .slider{
+                .carousel-indicators{
+                    right: 340px !important;
+                }
+                .carousel-item{
+                    .carousel-caption{
+                       left: 28% !important;
+                    }
+                }
+            }
+        }  
+        .features{
+            .space::after{
+                right: -30px;
+            }
+        } 
+        .common-products{
+            .products{
+                .product{
+                    .card{
+                        .info{
+                            left: 100px;
+                            right: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991.98px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                .navbar-toggler{
+                    left: -510px;
+                }
+                .navbar-brand{
+                    img{
+                        right: 340px !important;
+                        left: initial !important;
+                        top: -10px;
+                    }
+                }
+                .navbar-collapse{
+                    margin-top: 50px;
+                    .navbar-nav{
+                        .nav-item{
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                        .who-are{
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                        .icons{
+                            margin-right: 40px;
+                            margin-left: 0;
+                        }
+                    }
+                    
+                }
+            }
+            .slider{
+                .carousel-indicators{
+                    right: 335px !important;
+                    left: initial !important;
+                }
+                .carousel-caption{
+                    left: 26%;
+                }
+            }
+        }  
+        .features{
+            .space{
+                &::after{
+                    right: -40px ;
+                    left: initial ;
+                }
+            }
+        }
+        .app{
+            .col-sm-3{
+                margin-left: 100px;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    html[dir = "ltr"]{
+        .header{
+            .slider{
+                .carousel-indicators{
+                    right: 250px !important;
+                }
+                .carousel-caption{
+                    left: 16%;
+                }
+            }
+        }
+        .common-products{
+            .products{
+                .product{
+                    .card{
+                        .info{
+                            right: 60px;
+                            top: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        right: 155px !important;
+                    }
+                }
+                .navbar-toggler{
+                    left: -360px;
+                }
+            }
+            .slider{
+                .carousel-indicators{
+                    right: 215px !important;
+                }
+                .carousel-caption{
+                    left: 6%;
+                }
+            }
+        }
+        .features{
+            .res{
+                margin-left: 18px;
+                margin-right: initial;
+            }
+        }
+        .app{
+            .col-sm-3{
+                margin-left: -250px;
+            }
+            .mobile{
+                .info{
+                    left: 175px;
+                }
+            }
+        }
+        .footer{
+            margin-top: -115px;
+            .overlay{
+                padding: 150px 70px 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 420px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                padding-inline: 5px;
+                .navbar-brand{
+                    img{
+                        left: 130px !important;
+                        right: initial;
+                    }
+                }
+                .navbar-toggler{
+                    left: -250px !important;
+                    right: initial;
+                }
+            }
+            .slider{
+                .carousel-indicators{
+                    right: 125px !important;
+                }
+                .carousel-caption{
+                   left: -5% !important;
+                }
+            }
+        }    
+        .location{
+            .navbar-nav{
+                .dropdown{
+                    .nav-link{
+                        font-size: 10pt;
+                    }
+                }
+            } 
+        }
+        .common-products{
+            .title{
+                &::after{
+                    right: 85px;
+                }
+            }
+            .products{
+                .card{
+                    .info{
+                        right: 120px !important;
+                        top: 190px !important;
+                    }    
+                }    
+            }
+        }
+        .app{
+            .col-sm-3{
+                margin-left: -85px;
+            }
+            .mobile{
+                .info{
+                    left: 45px;
+                }
+            }
+        }
+        .footer{
+            margin-top: -140px;
+            .overlay{
+                padding: 200px 70px 40px ;
+            }
+        }
+    }
+}
+
+@media (min-width: 280px) and (max-width: 350.98px){
+    html[dir = "ltr"]{
+        .header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        left: 75px !important;
+                        right: initial;
+                    }
+                }
+                .navbar-toggler{
+                    left: -200px !important;
+                    right: initial;
+                }
+            }
+            .slider{
+                .carousel-indicators{
+                    right: 90px !important;
+                }
+                .carousel-caption{
+                   left: -30% !important;
+                }
+            }
+        }    
+        .features{
+            .res{
+                margin-left: 9px;
+            }
+        }
+        .location{
+                .icon{
+                    &::before {
+                    width: 13px;
+                    height: 13px;
+                    top: 11px;
+                    left: 9px;
+                }
+            }
+            .address{
+             margin-left: 4px !important;
+            }
+            .navbar-nav{
+                .dropdown{
+                    .nav-link{
+                        font-size: 10pt;
+                    }
+                }
+            } 
+        }
+        .sections{
+            .title{
+                &::after{
+                    right: 33px;
+                }
+            }
+        }
+        .common-products{
+            .title{
+                &::after{
+                    right: 115px;
+                }
+            }
+            .products{
+                .product{
+                    .card{
+                        .info{
+                            right: 95px !important;
+                            top: 165px !important;
+                        }    
+                    }    
+                }    
+            }
+        }
+        .app{
+            .col-sm-3{
+                margin-left: -85px;
+            }
+            .mobile{
+                .info{
+                    left: 30px;
+                }
+            }
+        }
+        .footer{
+            margin-top: -170px;
+            .overlay{
+                padding: 200px 70px 40px ;
+            }
+        }
+    }
+}
