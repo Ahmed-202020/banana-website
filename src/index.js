@@ -16,6 +16,10 @@ form.addEventListener("blur" , function(){
   sort.setAttribute("src" , "./assets/icons/Icon material-sort.svg") ; 
 });
 
+
+
+
+
 $(function(){
     $("#sort").on("click" , function(){
       $("#sorting").fadeToggle() ; 
@@ -25,6 +29,22 @@ $(function(){
      });
     }) ; 
 
+    $("#signin").on("click" , function(){
+      $(".register").fadeIn(500)
+    })
+    $("#signup").on("click" , function(){
+      $(".create").fadeIn(500) ; 
+    })
+    $("#have-acount").on("click" , function(){
+      $(".create").fadeOut(500); 
+      $(".register").fadeIn(500)
+      
+    })
+    $("#havent-acount").on("click" , function(){
+      $(".register").fadeOut(500) ; 
+      $(".create").fadeIn(500) ; 
+    })
+    
     $(".common-products .btn").on("click" , function(){
       Swal.fire(
         "تم" , 
@@ -33,5 +53,7 @@ $(function(){
       ) ; 
     })
 })
+
+
 
 

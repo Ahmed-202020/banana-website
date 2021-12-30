@@ -1,7 +1,11 @@
-//signin.html
+//signin
 
 .modal{
-   display: initial !important;
+   transition: all 500ms ease;
+   -webkit-transition: all 500ms ease;
+   -moz-transition: all 500ms ease;
+   -ms-transition: all 500ms ease;
+   -o-transition: all 500ms ease;
    background-color: rgba($color-button , 0.7) ;
    .modal-dialog{
       max-width: 730px !important;
@@ -146,7 +150,7 @@
    }
 }
 
-// respnsive design (signin.html)
+// respnsive design (signin)
 @media (max-width: 575.98px) {
    .modal{
       .modal-dialog{
@@ -244,7 +248,7 @@
                            font-size: 6pt;
                         }
                         .forget{
-                           margin-right: 30px !important;
+                           margin-right: 30px ;
                            font-size: 9pt !important;
                         }
                         .buttons{

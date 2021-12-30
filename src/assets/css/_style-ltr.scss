@@ -1,4 +1,8 @@
+// index.html ltr
 html[dir = "ltr"]{
+    body{
+        overflow-x: hidden;
+    }
     .header{
         .navbar{
             .navbar-brand{
@@ -11,17 +15,20 @@ html[dir = "ltr"]{
             }
             .navbar-collapse{
                 .navbar-nav{
+                    .custom-dropdown-menu-lang {
+                        left: 5px;
+                        right: initial;
+                        .dropdown-menu{
+                            right: -75px ;
+                        }
+                    }
+                    .custom-dropdown-menu-sort{
+                        right: initial;
+                        left: 77px;
+                    }
                     .nav-item{
                         margin-right: 40px;
                         margin-left: 0;
-                        .custom-dropdown-menu-lang {
-                            left: 5px;
-                            right: initial;
-                        }
-                        .custom-dropdown-menu-sort{
-                            right: initial;
-                            left: 77px;
-                        }
                     }    
                     .home{
                         margin-right: 215px;
@@ -41,6 +48,12 @@ html[dir = "ltr"]{
                         .nav-item{
                             margin-right: 20px;
                             margin-left: 0;
+                        }
+                        .profile{
+                            .dropdown-menu{
+                                left: -125px;
+                                right: initial;
+                            }
                         }
                     }
                 }
@@ -186,9 +199,12 @@ html[dir = "ltr"]{
                     }
                 }
                 .navbar-nav{
+                    .dropdown-menu{
+                        left: -20px;
+                    }
                     .nav-item{
                         .nav-link{
-                            font-size: 16pt;
+                            font-size: 15pt;
                         }
                     }
                 }
@@ -215,29 +231,34 @@ html[dir = "ltr"]{
                 padding-inline: 20px;
                 .navbar-brand{
                     img{
-                        left: 500px !important;
+                        left: 475px !important;
                         right: initial !important;
                         width: 170px;
                         height: 170px;
-                        bottom: -105px;
+                        bottom: -110px;
                     }
                     &::after{
-                        left: 490px !important;
+                        left: 445px !important;
                         right: initial !important;
-                        width: 200px;
-                        height: 80px;
                     }
                 }
                 .navbar-collapse{
                     .navbar-nav{
                         .nav-item{
+                            margin-right: 15px;
                             .nav-link{
-                                font-size: 13pt !important;
+                                font-size: 15pt !important;
                             }
-                            // // margin-right: 20px !important;
-                            // // margin-left: 0 !important;
-                            // // .nav-link{
-                            // font-size: 12pt !important;
+                        }
+                        .sort-buying{
+                            margin-left: 0;
+                            margin-right: 55px;
+                        }
+                        .home{
+                            margin-right: 170px;
+                        }
+                        .icons{
+                            margin-left: 5px;
                         }
                     }
                 }    
@@ -266,11 +287,11 @@ html[dir = "ltr"]{
                 padding-inline: 20px;
                 .navbar-brand{
                     img{
-                        left: 420px !important;
+                        left: 435px !important;
                         right: initial !important;
                     }
                     &::after{
-                       left: 410px !important;
+                       left: 425px !important;
                        right: initial;
                     }
                 }
@@ -419,6 +440,7 @@ html[dir = "ltr"]{
                     right: 335px !important;
                     left: initial !important;
                 }
+              
                 .carousel-caption{
                     left: 26%;
                 }
@@ -460,6 +482,14 @@ html[dir = "ltr"]{
                             top: 120px;
                         }
                     }
+                }
+            }
+        }
+        .app{
+            .mobile{
+                .info{
+                    position: relative;
+                    right: 20px;
                 }
             }
         }
@@ -520,7 +550,7 @@ html[dir = "ltr"]{
                 padding-inline: 5px;
                 .navbar-brand{
                     img{
-                        left: 130px !important;
+                        left: 150px !important;
                         right: initial;
                     }
                 }
@@ -585,9 +615,10 @@ html[dir = "ltr"]{
     html[dir = "ltr"]{
         .header{
             .navbar{
+                padding-inline: 0;
                 .navbar-brand{
                     img{
-                        left: 75px !important;
+                        left: 100px !important;
                         right: initial;
                     }
                 }
@@ -611,6 +642,7 @@ html[dir = "ltr"]{
             }
         }
         .location{
+            padding-inline: 2px;
                 .icon{
                     &::before {
                     width: 13px;
@@ -656,19 +688,256 @@ html[dir = "ltr"]{
         }
         .app{
             .col-sm-3{
-                margin-left: -85px;
+                margin-left: -25px;
             }
             .mobile{
                 .info{
-                    left: 30px;
+                    left: -2px;
+                    top: -180px !important;
                 }
             }
         }
         .footer{
-            margin-top: -170px;
+            margin-top: -225px;
             .overlay{
                 padding: 200px 70px 40px ;
             }
         }
     }
 }
+
+// signin (ltr)
+
+html[dir = "ltr"]{
+    .modal{
+        .modal-dialog{
+            .row{
+                .col-6{
+                    .image{
+                        transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                        -moz-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+}
+                }
+            }
+            .signin{
+                .out{
+                    left: 15px;
+                    right: initial;
+                }    
+                .sub{
+                    margin-right: 0;
+                    margin-left: 15px;
+                }
+                .title{
+                margin-left: 15px;
+                margin-right: 0;
+                }
+                .form-group{
+                    label{
+                        right: initial !important;
+                        left: 10px;
+                        span{
+                          right: initial !important;
+                          left: 65px;
+                        }
+                    }
+                    select{
+                        left: -1px;
+                        right: initial !important;
+                        padding-left: 33px !important;
+                        padding-right: 0 !important;
+                    }
+                    .form-control[type = "text"]{
+                        padding-left: 95px;
+                        padding-right: initial !important;
+                     }
+                    .forget{
+                        margin-left: 155px;
+                        margin-right: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// respnsive design (signin)(lrt)
+@media (max-width: 575.98px) {
+    html[dir =  "ltr"]{
+        .modal{
+            .modal-dialog{
+                .signin{
+                    .forget{
+                        margin-left: 115px !important;
+                        margin-right: 0 !important;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (min-width: 360px) and (max-width: 420px){
+    html[dir = "ltr"]{
+        .modal{
+            .modal-dialog{
+                .signin{
+                    .form-group{
+                        label{
+                            right: initial !important;
+                            left: 5px !important;
+                            span{
+                                left: 56px !important;
+                                right: initial !important;
+                            }
+                        }
+                        .forget{
+                            margin-left: 45px !important;
+                            margin-right: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media (min-width: 279px) and (max-width: 350.98px){
+  html[dir = "ltr"]{
+        .modal{
+            .modal-dialog{
+                .signin{
+                    .form-group{
+                        label{
+                            left: 5px !important;
+                            right: initial !important;
+                        }
+                        .forget{
+                            margin-left: 30px !important;
+                            margin-right: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media (max-width: 280.98px){
+    html[dir = "ltr"]{
+        .modal{
+            .modal-dialog{
+                .signin{
+                    .form-group{
+                        select{
+                            left: -2px !important;
+                            right: initial !important;
+                        }
+                        label{
+                            span{
+                                top: 4px !important;
+                                left: 50px !important;
+                                right: initial !important;
+                            }
+                        }
+                        .form-control[type="text"]{
+                            padding-left: 77px !important;
+                            padding-right: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// signin (ltr)
+
+html[dir ="ltr"]{
+    .modal{
+        .modal-dialog{
+            .row{
+                .col-6{
+                    .signup{
+                        .form-group{
+                            input[type = "email"]{
+                                text-align: left !important;
+                            }
+                            .rules{
+                                label{
+                                    left: 80px ;
+                                }
+                                input[type = "checkbox"] + label::before{
+                                    left: -27px !important;
+                                    right: 0 !important;
+                                }
+                            }
+                        }    
+                    }
+                }    
+            }    
+        }
+    }
+}    
+
+// responsive design signup (ltr) 
+
+@media (min-width: 360px) and (max-width: 420px){
+    html[dir = "ltr"]{
+        .modal{
+            .modal-dialog{
+                .row{
+                    .col-6{
+                        .signup{
+                            .form-group{
+                                label{
+                                    span{
+                                        left: 55px !important;
+                                    }
+                                }
+                                .rules{
+                                    input[type="checkbox"] + label::before{
+                                        left: -22px !important;
+                                        right: initial !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 280px) and (max-width: 350px){
+    html[dir = "ltr"]{
+        .modal{
+            .modal-dialog{
+                .row{
+                    .col-6{
+                        .signup{
+                            .form-group{
+                                .rules{
+                                    label{
+                                        left: 20px !important;
+                                        right: initial !important;
+                                    }
+                                    input[type = "checkbox"] + label::before{
+                                        left: -18px !important;
+                                        right:  initial !important;
+                                    }
+                                }
+                            }    
+                        }    
+                    }    
+                }
+            }
+        }
+    }             
+}
+

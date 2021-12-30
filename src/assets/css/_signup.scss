@@ -1,6 +1,5 @@
 
-// signup.html
-
+// signup
 .modal{
     .modal-dialog{
         .row{
@@ -64,7 +63,7 @@
     }
 }
 
-// responsive design (signup.html)
+// responsive design (signup)
 @media (min-width: 360px) and (max-width: 420px){
     .modal{
         .modal-dialog{
@@ -133,42 +132,4 @@
             }
         }
     }         
-}
-@media (max-width: 280.98px){
-    // .modal{
-    //     .modal-dialog{
-    //         .row{
-    //             .col-6{
-    //                 .signup{
-    //                     .form-group{
-    //                         .rules{
-    //                             label{
-    //                                 font-size: 7pt !important;
-    //                                 top: -13px;
-    //                                 right: 20px;
-    //                             }
-    //                             input[type = "checkbox"] + label::before{
-    //                                 top: 2px;
-    //                                 right: -18px;
-    //                                 width: 12px !important;
-    //                                 height: 12px !important;
-    //                                 border-radius: 0;
-    //                                 -webkit-border-radius: 0;
-    //                                 -moz-border-radius: 0;
-    //                                 -ms-border-radius: 0;
-    //                                 -o-border-radius: 0;
-    //                             }
-    //                         }
-    //                         .buttons{
-    //                             margin-top: 55px;
-    //                             .sign{
-    //                                 margin-bottom: 12px;
-    //                             }
-    //                         }
-    //                     }    
-    //                 }    
-    //             }    
-    //         }
-    //     }
-    // }            
 }
