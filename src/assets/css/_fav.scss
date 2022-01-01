@@ -17,9 +17,7 @@
 
 // respnsive design (fav.html)
 
-@media (min-width: 992px) and (max-width: 1025px){
-  
-}
+
 
 @media (max-width: 991.98px){
     .favorites{
@@ -96,6 +94,13 @@
                             font-size: 14pt !important;
                         }
                     }  
+                    .card-body{
+                        .btn{
+                            span{
+                                font-size: 15pt !important;
+                            }
+                        }
+                    }
                 }     
             }   
         }   

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr">
+<html lang="ar" dir="rtl">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,10 +76,16 @@
                                         <img src="./assets/icons/cart (1).svg" alt="cart">
                                     </a>
                                 </li>
-                                <li class="nav-item profile">
-                                    <a class="nav-link" href="./profile.html">
+                                <li class="nav-item dropdown profile">
+                                    <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="./assets/icons/Profile (1).svg" alt="profile">
                                     </a>
+                                    <ul class="dropdown-menu custom-dropdown-log" aria-labelledby="navbarDropdown">
+                                        <li><a id="signin"  class="dropdown-item first" href="#register">تسجيل الدخول</a></li>
+                                        <li><a id = "signup" class="dropdown-item second" href="#create">إنشاء حساب</a></li>
+                                        <li><a id="my-acount" class="dropdown-item first" href="./profile.html">حسابي</a></li>
+                                        <li><a id = "logout" class="dropdown-item second" href="#">تسجيل الخروج</a></li>
+                                    </ul>
                                 </li>
                             </div>
                         </ul>    

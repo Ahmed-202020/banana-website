@@ -18,7 +18,7 @@
         overflow-x: hidden;
     }
 
-  // index.html rtl
+    // index.html rtl
 
     body{
         font-family:  $min-font , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
@@ -151,7 +151,7 @@
                         display: flex;
                         align-items: center;
                         .heart{
-                            margin-left: 20px;
+                            margin-left: 20px ;
                             .nav-link:hover{
                                 img{
                                     content: url(../icons/Heart-selected.svg);
@@ -159,7 +159,7 @@
                             }
                         }
                         .cart{
-                            margin-left: 20px;
+                            margin-left: 20px ;
                             .nav-link:hover{
                                 img{
                                     content: url(../icons/cart-selected.svg);
@@ -593,7 +593,7 @@
                     .info{
                         position: absolute;
                         top: 200px;
-                        left: 130px;
+                        left: 140px;
                         .name-pro{
                             color: $black-color;
                             font-size: 20pt;

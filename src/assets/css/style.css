@@ -191,6 +191,9 @@
   .favorites .products .product .card .info .name-pro {
     font-size: 14pt !important;
   }
+  .favorites .products .product .card .card-body .btn span {
+    font-size: 15pt !important;
+  }
 }
 
 @media (min-width: 280px) and (max-width: 350px) {
@@ -705,10 +708,6 @@
   }
 }
 
-html[dir="ltr"] body {
-  overflow-x: hidden;
-}
-
 html[dir="ltr"] .header .navbar .navbar-brand img {
   left: 600px;
 }
@@ -891,8 +890,9 @@ html[dir="ltr"] .footer .overlay .contact .form-group .form-control {
     font-size: 15pt;
   }
   html[dir="ltr"] .common-products .products .product .card .info {
-    right: 115px;
-    top: 190px;
+    right: 115px !important;
+    top: 190px !important;
+    left: initial !important;
   }
 }
 
@@ -928,9 +928,9 @@ html[dir="ltr"] .footer .overlay .contact .form-group .form-control {
     margin-left: 5px;
   }
   html[dir="ltr"] .common-products .products .product .card .info {
-    top: 170px;
-    right: 100px;
-    left: initial;
+    top: 170px !important;
+    right: 100px  !important;
+    left: initial !important;
   }
 }
 
@@ -955,9 +955,9 @@ html[dir="ltr"] .footer .overlay .contact .form-group .form-control {
     right: 30%;
   }
   html[dir="ltr"] .common-products .products .product .card .info {
-    right: 85px;
-    left: initial;
-    top: 150px;
+    right: 85px !important;
+    left: initial !important;
+    top: 150px  !important;
   }
 }
 
@@ -1007,8 +1007,9 @@ html[dir="ltr"] .footer .overlay .contact .form-group .form-control {
     right: -30px;
   }
   html[dir="ltr"] .common-products .products .product .card .info {
-    left: 100px;
-    right: initial;
+    left: 75px !important;
+    right: initial !important;
+    top: 135px !important;
   }
 }
 
@@ -1047,6 +1048,11 @@ html[dir="ltr"] .footer .overlay .contact .form-group .form-control {
     right: -40px;
     left: initial;
   }
+  html[dir="ltr"] .common-products .products .card .info {
+    right: 110px !important;
+    left: initial !important;
+    top: 165px !important;
+  }
   html[dir="ltr"] .app .col-sm-3 {
     margin-left: 100px;
   }
@@ -1060,8 +1066,9 @@ html[dir="ltr"] .footer .overlay .contact .form-group .form-control {
     left: 16%;
   }
   html[dir="ltr"] .common-products .products .product .card .info {
-    right: 60px;
-    top: 120px;
+    right: 60px !important;
+    top: 120px !important;
+    left: initial !important;
   }
   html[dir="ltr"] .app .mobile .info {
     position: relative;
@@ -1124,8 +1131,9 @@ html[dir="ltr"] .footer .overlay .contact .form-group .form-control {
   html[dir="ltr"] .common-products .title::after {
     right: 85px;
   }
-  html[dir="ltr"] .common-products .products .card .info {
-    right: 120px !important;
+  html[dir="ltr"] .common-products .products .product .card .info {
+    right: 130px !important;
+    left: initial !important;
     top: 190px !important;
   }
   html[dir="ltr"] .app .col-sm-3 {
@@ -1143,6 +1151,9 @@ html[dir="ltr"] .footer .overlay .contact .form-group .form-control {
 }
 
 @media (min-width: 280px) and (max-width: 350.98px) {
+  html[dir="ltr"] body {
+    overflow-x: hidden;
+  }
   html[dir="ltr"] .header .navbar {
     padding-inline: 0;
   }
@@ -1185,6 +1196,7 @@ html[dir="ltr"] .footer .overlay .contact .form-group .form-control {
     right: 115px;
   }
   html[dir="ltr"] .common-products .products .product .card .info {
+    left: initial !important;
     right: 95px !important;
     top: 165px !important;
   }
@@ -1333,6 +1345,97 @@ html[dir="ltr"] .modal .modal-dialog .row .col-6 .signup .form-group .rules inpu
   html[dir="ltr"] .modal .modal-dialog .row .col-6 .signup .form-group .rules input[type="checkbox"] + label::before {
     left: -18px !important;
     right: initial !important;
+  }
+}
+
+html[dir="ltr"] .about-us .title {
+  text-align: left;
+}
+
+html[dir="ltr"] .about-us .title:after {
+  left: 0;
+}
+
+html[dir="ltr"] .favorites .show-case .title::after {
+  right: 31px;
+}
+
+html[dir="ltr"] .favorites .products .info {
+  right: 75px;
+}
+
+@media (max-width: 1280.98px) {
+  html[dir="ltr"] .favorites .products .product .card .info {
+    right: 100px !important;
+    left: initial !important;
+  }
+}
+
+@media (max-width: 1024.98px) {
+  html[dir="ltr"] .favorites .products .product .card .info {
+    right: 65px !important;
+    left: initial !important;
+    top: 125px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  html[dir="ltr"] .favorites .products .product .card .info {
+    left: initial !important;
+    right: 65px !important;
+    top: 122px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html[dir="ltr"] .favorites .products .product .card .info {
+    left: initial !important;
+    right: 115px !important;
+    top: 185px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html[dir="ltr"] .favorites .products .product .card .info {
+    left: initial !important;
+    right: 65px !important;
+    top: 130px !important;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 420px) {
+  html[dir="ltr"] .favorites .show-case .title::after {
+    left: 5px !important;
+    right: initial !important;
+  }
+  html[dir="ltr"] .favorites .products .product .card .info {
+    top: 95px !important;
+    left: 60px !important;
+    right: initial !important;
+  }
+  html[dir="ltr"] .favorites .products .product .card .info .name-pro {
+    font-size: 14pt !important;
+  }
+}
+
+@media (max-width: 280.98px) {
+  html[dir="ltr"] .favorites .show-case .title::after {
+    left: 5px !important;
+    right: initial !important;
+  }
+  html[dir="ltr"] .favorites .products .product .card .info {
+    top: 165px !important;
+    left: initial !important;
+    right: 100px !important;
+  }
+  html[dir="ltr"] .favorites .products .product .card .info .name-pro {
+    font-size: 14pt !important;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 420px) {
+  html[dir="ltr"] .categories .show-case .title::after {
+    right: 40px !important;
   }
 }
 
@@ -2080,7 +2183,7 @@ body .show-case .title {
 .common-products .products .product .card .info {
   position: absolute;
   top: 200px;
-  left: 130px;
+  left: 140px;
 }
 
 .common-products .products .product .card .info .name-pro {

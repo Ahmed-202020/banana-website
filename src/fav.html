@@ -66,7 +66,7 @@
                                 </a>
                             </li>
                             <div class="icons">
-                                <li class="nav-item heart active">
+                                <li class="nav-item heart  active">
                                     <a class="nav-link " href="./fav.html">
                                         <img src="./assets/icons/Heart (1).svg" alt="favourites">
                                     </a>
@@ -76,10 +76,16 @@
                                         <img src="./assets/icons/cart (1).svg" alt="cart">
                                     </a>
                                 </li>
-                                <li class="nav-item profile">
-                                    <a class="nav-link" href="./profile.html">
+                                <li class="nav-item dropdown profile">
+                                    <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="./assets/icons/Profile (1).svg" alt="profile">
                                     </a>
+                                    <ul class="dropdown-menu custom-dropdown-log" aria-labelledby="navbarDropdown">
+                                        <li><a id="signin"  class="dropdown-item first" href="#register">تسجيل الدخول</a></li>
+                                        <li><a id = "signup" class="dropdown-item second" href="#create">إنشاء حساب</a></li>
+                                        <li><a id="my-acount" class="dropdown-item first" href="./profile.html">حسابي</a></li>
+                                        <li><a id = "logout" class="dropdown-item second" href="#">تسجيل الخروج</a></li>
+                                    </ul>
                                 </li>
                             </div>
                         </ul>    
@@ -146,11 +152,30 @@
             <div class="products">
                 <div   class="product">
                     <div class="card">
-                        <img src="./assets/images/توت.png" alt="blueberry">
-                        <div class="info">
-                            <h5 class="name-pro">توت</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a  href="./product.html">
+                            <img src="./assets/images/توت.png" alt="blueberry">
+                            <div class="info">
+                                <h5 class="name-pro">توت</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>     
+                        <div class="card-body">
+                            <button class="btn">
+                                <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
+                                <span>أضف للسلة</span>
+                            </button>
+                        </div>   
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <a href="./product.html">
+                            <img src="./assets/images/برتقال.png" alt="orange">
+                            <div class="info">
+                                <h5 class="name-pro">برتقال</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
@@ -161,26 +186,13 @@
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/برتقال.png" alt="orange">
-                        <div class="info">
-                            <h5 class="name-pro">برتقال</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
-                        <div class="card-body">
-                           <button class="btn">
-                               <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
-                               <span>أضف للسلة</span>
-                           </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="card">
-                        <img src="./assets/images/بصل.png" alt="onion">
-                        <div class="info">
-                            <h5 class="name-pro">بصل</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/بصل.png" alt="onion">
+                            <div class="info">
+                                <h5 class="name-pro">بصل</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
@@ -191,11 +203,13 @@
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/مانجو.png" alt="mango">
-                        <div class="info">
-                            <h5 class="name-pro">مانجو</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/مانجو.png" alt="mango">
+                            <div class="info">
+                                <h5 class="name-pro">مانجو</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
@@ -206,11 +220,13 @@
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/موز.png" alt="banana">
-                        <div class="info">
-                            <h5 class="name-pro">موز</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/موز.png" alt="banana">
+                            <div class="info">
+                                <h5 class="name-pro">موز</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>      
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
@@ -221,11 +237,30 @@
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/برتقال.png" alt="orange">
-                        <div class="info">
-                            <h5 class="name-pro">برتقال</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/برتقال.png" alt="orange">
+                            <div class="info">
+                                <h5 class="name-pro">برتقال</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
+                        <div class="card-body">
+                            <button class="btn">
+                                <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
+                                <span>أضف للسلة</span>
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <a href="./product.html">
+                            <img src="./assets/images/ذرة.png" alt="corn">
+                            <div class="info">
+                                <h5 class="name-pro">ذرة</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
@@ -236,11 +271,13 @@
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/ذرة.png" alt="corn">
-                        <div class="info">
-                            <h5 class="name-pro">ذرة</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/طماطم.png" alt="tomato">
+                            <div class="info">
+                                <h5 class="name-pro">طماطم</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
@@ -251,11 +288,30 @@
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/طماطم.png" alt="tomato">
-                        <div class="info">
-                            <h5 class="name-pro">طماطم</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/ذرة.png" alt="corn">
+                            <div class="info">
+                                <h5 class="name-pro">ذرة</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
+                        <div class="card-body">
+                            <button class="btn">
+                                <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
+                                <span>أضف للسلة</span>
+                            </button>
+                        </div>    
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <a href="./product.html">
+                            <img src="./assets/images/طماطم.png" alt="tomato">
+                            <div class="info">
+                                <h5 class="name-pro">طماطم</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>      
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
@@ -266,11 +322,13 @@
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/ذرة.png" alt="corn">
-                        <div class="info">
-                            <h5 class="name-pro">ذرة</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/توت.png" alt="blueberry">
+                            <div class="info">
+                                <h5 class="name-pro">توت</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
@@ -281,161 +339,149 @@
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/طماطم.png" alt="tomato">
-                        <div class="info">
-                            <h5 class="name-pro">طماطم</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/برتقال.png" alt="orange">
+                            <div class="info">
+                                <h5 class="name-pro">برتقال</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
                                 <span>أضف للسلة</span>
                             </button>
-                        </div>
+                        </div>   
                     </div>
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/توت.png" alt="blueberry">
-                        <div class="info">
-                            <h5 class="name-pro">توت</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/توت.png" alt="blueberry">
+                            <div class="info">
+                                <h5 class="name-pro">توت</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
                                 <span>أضف للسلة</span>
                             </button>
-                        </div>
+                        </div>  
                     </div>
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/برتقال.png" alt="orange">
-                        <div class="info">
-                            <h5 class="name-pro">برتقال</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/برتقال.png" alt="orange">
+                            <div class="info">
+                                <h5 class="name-pro">برتقال</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
                                 <span>أضف للسلة</span>
                             </button>
-                        </div>
+                        </div>    
                     </div>
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/توت.png" alt="blueberry">
-                        <div class="info">
-                            <h5 class="name-pro">توت</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/بصل.png" alt="onion">
+                            <div class="info">
+                                <h5 class="name-pro">بصل</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
                                 <span>أضف للسلة</span>
                             </button>
-                        </div>
+                        </div>    
                     </div>
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/برتقال.png" alt="orange">
-                        <div class="info">
-                            <h5 class="name-pro">برتقال</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/مانجو.png" alt="mango">
+                            <div class="info">
+                                <h5 class="name-pro">مانجو</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
                                 <span>أضف للسلة</span>
                             </button>
-                        </div>
+                        </div>   
                     </div>
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/بصل.png" alt="onion">
-                        <div class="info">
-                            <h5 class="name-pro">بصل</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/موز.png" alt="banana">
+                            <div class="info">
+                                <h5 class="name-pro">موز</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
                                 <span>أضف للسلة</span>
                             </button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="card">
+                        <a href="./product.html">
+                            <img src="./assets/images/برتقال.png" alt="orange">
+                            <div class="info">
+                                <h5 class="name-pro">برتقال</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
+                        <div class="card-body">
+                        <button class="btn">
+                            <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
+                            <span>أضف للسلة</span>
+                        </button>
                         </div>
                     </div>
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/مانجو.png" alt="mango">
-                        <div class="info">
-                            <h5 class="name-pro">مانجو</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/ذرة.png" alt="corn">
+                            <div class="info">
+                                <h5 class="name-pro">ذرة</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
                                 <span>أضف للسلة</span>
                             </button>
-                        </div>
+                        </div>    
                     </div>
                 </div>
                 <div class="product">
                     <div class="card">
-                        <img src="./assets/images/موز.png" alt="banana">
-                        <div class="info">
-                            <h5 class="name-pro">موز</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
-                        <div class="card-body">
-                            <button class="btn">
-                                <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
-                                <span>أضف للسلة</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="card">
-                        <img src="./assets/images/برتقال.png" alt="orange">
-                        <div class="info">
-                            <h5 class="name-pro">برتقال</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
-                        <div class="card-body">
-                           <button class="btn">
-                               <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
-                               <span>أضف للسلة</span>
-                           </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="card">
-                        <img src="./assets/images/ذرة.png" alt="corn">
-                        <div class="info">
-                            <h5 class="name-pro">ذرة</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
-                        <div class="card-body">
-                            <button class="btn">
-                                <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
-                                <span>أضف للسلة</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="card">
-                        <img src="./assets/images/طماطم.png" alt="tomato">
-                        <div class="info">
-                            <h5 class="name-pro">طماطم</h5>
-                            <span class="price">1.50 ر.س</span>
-                        </div>
+                        <a href="./product.html">
+                            <img src="./assets/images/طماطم.png" alt="tomato">
+                            <div class="info">
+                                <h5 class="name-pro">طماطم</h5>
+                                <span class="price">1.50 ر.س</span>
+                            </div>
+                        </a>    
                         <div class="card-body">
                             <button class="btn">
                                 <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
