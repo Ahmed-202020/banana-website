@@ -1140,3 +1140,97 @@ html[dir = "ltr"]{
         }  
     }    
 }    
+
+// profile.html(ltr)
+html[dir = "ltr"]{
+    .custom-header{
+        .bar{
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            left: initial;
+            right: 206px;
+        }
+        .content{
+            right: 375px;
+            left: initial;
+        }
+    }
+    .prof{
+        .info{
+            .form-group{
+                .form-control{
+                    text-align: left;
+                    padding-right: 0;
+                    padding-left: 20px;
+                }
+                .select{
+                    width: 75px;
+                    right: initial;
+                    left: 15px;
+                    label{
+                        img{
+                            left: -3px;
+                        }
+                        span{
+                            &::before{
+                                left: initial;
+                                right: -46px;
+                            }
+                        }
+                    }
+                }
+                .num{
+                    padding-left: 95px;
+                }
+            }
+            .addresses{
+                .info{
+                    left: 20px;
+                    right: initial;
+                }
+                .address{
+                    .editing{
+                        a+a{
+                            margin-left: 8px;
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &::before{
+                    left: 1px;
+                    right: initial;
+                }
+            }
+            .orders{
+                .order{
+                    padding: 12px 0 12px 20px;
+                }
+            }
+        }
+    }
+    #edit{
+        .modal-dialog{
+            .modal-content{
+                .editing{
+                    .form-control{
+                        padding-left: 15px !important;
+                        padding-right: 0 !important;
+                    }
+                    .arrow{
+                        left: initial;
+                        right: 62.5px;
+                    }
+                    .map{
+                        margin-left: 100px;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+
