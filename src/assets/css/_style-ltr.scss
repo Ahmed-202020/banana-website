@@ -1160,6 +1160,12 @@ html[dir = "ltr"]{
     }
     .prof{
         .info{
+            .user{
+                span{
+                    margin-left: 8px;
+                    margin-right: 0;
+                }
+            }
             .form-group{
                 .form-control{
                     text-align: left;
@@ -1228,9 +1234,264 @@ html[dir = "ltr"]{
                         margin-right: 0;
                     }
                 }
+                &::before{
+                    right: initial;
+                    left: 0;
+                }
             }
         }
     }  
 }
 
+//profile.html(ltr) reponsive design
+
+@media (max-width: 1399.98px){
+    html[dir = "ltr"]{
+        .custom-header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        right: initial !important;
+                        left: 550px !important;
+                    }
+                }
+            }
+            .bar{
+                left: initial;
+                right: 229px;
+            }
+        }
+    }    
+}
+@media (max-width: 1280.98px){
+    html[dir = "ltr"]{
+        .header.custom-header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        left: 485px !important;
+                        right: initial !important;
+                    }
+                }
+            }
+            .bar{
+                width: 1125px;
+                right: 156px;
+                left: initial;
+            }
+            .content{
+                right: 296.5px;
+                left: initial;
+            }
+        }
+    }    
+}
+@media (max-width: 1199.98px){
+    html[dir = "ltr"]{
+        .header.custom-header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        left: 435px !important;
+                        right: initial !important;
+                    }
+                }
+            }
+            .bar{
+                width: 1055px;
+                right: 146px;
+                left: initial;
+            }
+            .content{
+                right: 275px;
+                left: initial;
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1025px){
+    html[dir = "ltr"]{
+        .header.custom-header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        left: 378px !important;
+                        right: initial !important;
+                        bottom: -70px !important;
+                    }
+                }
+            }
+            .bar{
+                width: 820px;
+                top: 20px;
+                right: 205px ;
+                left: initial;
+            }
+            .content{
+                right: 309px;
+                left: initial;
+            }
+        }
+        .prof{
+            .info{
+                .user{
+                    right: 390px;
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 991.98px){
+    html[dir = "ltr"]{
+        .header.custom-header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        left: 500px !important;
+                        right: initial !important;
+                        top: 14px;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 768px){
+    html[dir = "ltr"]{
+        .header.custom-header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        right: initial !important;
+                        left: 340px !important;
+                    }
+                }
+                .navbar-toggler{
+                    left: -445px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575.98px){
+    html[dir = "ltr"]{
+        .header.custom-header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                        left: 255px !important;
+                        right: initial !important;
+                    }
+                }
+                .navbar-toggler{
+                    left: -325px;
+                }
+            }
+        }
+        #edit{
+            .modal-dialog{
+                .modal-content{
+                    .editing{
+                        .map{
+                            margin-left: 59px;
+                            margin-right: 0;
+                        }
+                        .arrow{
+                            right: 2px;
+                            left: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (min-width: 360px) and (max-width: 420px){
+    html[dir = "ltr"]{
+        .header.custom-header{
+            .navbar{
+                .navbar-brand{
+                    img{
+                    left: 200px !important;
+                    right: initial !important;
+                    }
+                }
+                .navbar-toggler{
+                    left: -230px !important;
+                }
+            }
+        }
+        .prof{
+            .info{
+                .addresses{
+                    .address{
+                        .editing{
+                            a + a{
+                                margin-left: 5px;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #edit{
+            .modal-dialog{
+                .modal-content{
+                    .editing{
+                        .map{
+                            margin-left: 100px;
+                            margin-right: 0;
+                        }
+                        .arrow{
+                            right: -35px;
+                            left: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (min-width: 280px) and (max-width: 350.98px){
+    html[dir = "ltr"]{
+        .header.custom-header{
+            .navbar{
+                .navbar-toggler{
+                    left: -180px !important;
+                    right: initial !important;
+                }
+                .navbar-brand{
+                    img{
+                        left: 130px !important;
+                        right: initial !important;
+                    }
+                }
+            }
+        }
+        #edit{
+            .modal-dialog{
+                .modal-content{
+                    .editing{
+                        .map{
+                            margin-left: 0px;
+                            margin-right: 0;
+                        }
+                        .arrow{
+                            right: -10px;
+                            left: initial;
+                        }
+                        .custom-btn{
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                    }
+                    &::before{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
 
