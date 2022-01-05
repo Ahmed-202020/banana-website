@@ -1495,3 +1495,67 @@ html[dir = "ltr"]{
     }
 }
 
+
+// products.html(ltr)
+html[dir = "ltr"]{
+    .custom-categories{
+        padding: 50px 0 50px 50px !important;
+        .show-case{
+            .title {
+                margin-left: 75px;
+                margin-right: 0;
+                &::after{
+                    left: 0;
+                }
+            }
+            .navbar{
+                margin-left: 70px;
+                margin-right: 0;
+                border-right: none;
+                border-left: 0.5px solid $lighter-links;
+                .navbar-nav{
+                    padding-left: 0;
+                    padding-right: 40px;
+                }
+            }
+            .sub-nav{
+                margin-left: 300px;
+                margin-right: 0;
+            }
+        }
+        .info{
+            .details{
+                .form-group{
+                    .accor{
+                        .title{
+                            h5{
+                                margin-left: 15px;
+                                margin-right: 0;
+                                &::after{
+                                    right: 35px;
+                                    left: initial;
+                                }
+                            }
+                        }
+                        .rate{
+                            padding-left: 25px;
+                            padding-right: 0;
+                            label{
+                                margin-left: 35px;
+                                margin-right: 0;
+                                input + span::before{
+                                    left: -34px;
+                                    right: initial;
+                                    margin-right: 10px;
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+

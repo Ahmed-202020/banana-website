@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="ltr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -151,45 +151,45 @@
                 <nav class="navbar">
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-                            <a type="button" class="nav-link">فواكه وخضروات</a>
+                            <a type="button" class="nav-link active-bar custom-item">فواكه وخضروات</a>
                         </li>
                         <li class="nav-item ">
-                            <a  type="button" class="nav-link">مشروبات</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a type="button"  class="nav-link">حلويات</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a type="button" class="nav-link">مخابز</a>
+                            <a  type="button" class="nav-link custom-item">مشروبات</a>
                         </li>
                         <li class="nav-item">
-                            <a type="button" class="nav-link">منتجات البان</a>
-                        </li>
-                        <li class="nav-item">
-                            <a type="button" class="nav-link">لحوم</a>
-                        </li>
-                        <li class="nav-item">
-                            <a type="button" class="nav-link">منتجات البان</a>
+                            <a type="button"  class="nav-link custom-item">حلويات</a>
                         </li>
                         <li class="nav-item ">
-                            <a type="button" class="nav-link">مشروبات</a>
+                            <a type="button" class="nav-link custom-item">مخابز</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a type="button" class="nav-link custom-item">منتجات البان</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a type="button" class="nav-link custom-item">لحوم</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a type="button" class="nav-link custom-item">منتجات البان</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a type="button" class="nav-link custom-item">مشروبات</a>
                         </li>
                     </ul>
                 </nav>
                 <ul class="sub-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link custom-sort active-categ">
                             الكل
                         </a>
                     </li>
-                    <li href = "#" class="nav-item">
-                        <a class="nav-link">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link custom-sort">
                             فواكه
                         </a>
                     </li>
                     <li href = "#" class="nav-item">
-                        <a class="nav-link">
-                            وخضروات
+                        <a href="#" class="nav-link custom-sort">
+                            خضروات
                         </a>
                     </li>
                 </ul>
@@ -197,61 +197,70 @@
             <div class="info">
                 <div class="details">
                     <form action="." class="form-group">
-                        <div class="accor-price">
+                        <div class="accor">
                             <div class="title">
                                 <h5>حسب السعر</h5>
                             </div>
-                            <div class="rate-price">
+                            <div class="rate">
                                 <label for="from-less">
                                     <input type="checkbox"  id="from-less">
-                                    من الأقل للأعلى
+                                    <span> من الأقل للأعلي </span>
+                                
                                 </label>
                                 <label for="from-heigh">
                                     <input type="checkbox"  id="from-heigh">
-                                    من الأعلى للأقل
+                                    <span> من الأعلى للأقل</span>
                                 </label>
                             </div>
                         </div>
-                        <div class="accor-category">
+                        <div class="accor">
                             <div class="title">
                                 <h5>حسب الفئة</h5>
                             </div>
-                            <label for="apple">
-                                <input type="checkbox"  id="apple">
-                                    تفاح
-                            </label>
-                            <label for="tomato">
-                                <input type="checkbox"  id="tomato">
-                                    طماطم
-                            </label>
-                            <label for="banana">
-                                <input type="checkbox"  id="banana">
-                                    موز
-                            </label>
-                            <label for="mango">
-                                <input type="checkbox"  id="mango">
-                                    مانجو
-                            </label>
-                            <label for="corn">
-                                <input type="checkbox"  id="corn">
-                                    ذرة
-                            </label>
-                            <label for="orange">
-                                <input type="checkbox"  id="orange">
-                                    برتقال
-                            </label>
-                            <label for="onion">
-                                <input type="checkbox"  id="onion">
-                                    بصل
-                            </label>
+                            <div class="rate">
+                                <label for="apple">
+                                    <input  type="checkbox"  id="apple">
+                                    <span> تفاح</span>
+                                </label>
+                                <label for="tomato">
+                                    <input type="checkbox"  id="tomato">
+                                    <span>طماطم</span> 
+                                </label>
+                                <label for="banana">
+                                    <input type="checkbox"  id="banana">
+                                    <span>موز</span>
+                                </label>
+                                <label for="mango">
+                                    <input type="checkbox"  id="mango">
+                                    <span>مانجو</span>
+                                </label>
+                                <label for="corn">
+                                    <input type="checkbox"  id="corn">
+                                    <span>ذرة</span>
+                                </label>
+                                <label for="orange">
+                                    <input type="checkbox"  id="orange">
+                                    <span>برتقال</span> 
+                                </label>
+                                <label for="onion">
+                                    <input type="checkbox"  id="onion">
+                                    <span>بصل</span>
+                                </label>
+                            </div>
                         </div>
                         <div class="buttons">
-                            <button type="submit" class="btn">تطبيق</button>
-                            <button class="btn">مسح</button>
+                            <button type="submit" class="btn">
+                                <img src="./assets/icons/apply.svg" alt="apply">
+                                تطبيق
+                            </button>
+                            <button class="btn custom-btn">
+                                <img src="./assets/icons/Delete.svg" alt="delete">
+                                مسح
+                            </button>
                         </div>
                     </form>
                 </div>
-                <section class="common-products">
+                <section class="common-products custom-common-products">
                     <div class="products">
                         <div   class="product">
                             <div class="card">
@@ -458,11 +467,114 @@
                                 </div>
                             </div>
                         </div>
+                        <div   class="product">
+                            <div class="card">
+                                <a href="./product.html">
+                                    <img src="./assets/images/توت.png" alt="blueberry">
+                                    <div class="info">
+                                        <h5 class="name-pro">توت</h5>
+                                        <span class="price">1.50 ر.س</span>
+                                    </div>
+                                </a>       
+                                <div class="card-body">
+                                    <button class="btn">
+                                        <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
+                                        <span>أضف للسلة</span>
+                                    </button>
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div  class="card">
+                                <a href="./product.html">
+                                    <img src="./assets/images/برتقال.png" alt="orange">
+                                    <div class="info">
+                                        <h5 class="name-pro">برتقال</h5>
+                                        <span class="price">1.50 ر.س</span>
+                                    </div>
+                                </a>    
+                                <div class="card-body">
+                                   <button class="btn">
+                                       <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
+                                       <span>أضف للسلة</span>
+                                   </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card">
+                                <a  href="./product.html">
+                                    <img src="./assets/images/بصل.png" alt="onion">
+                                    <div class="info">
+                                        <h5 class="name-pro">بصل</h5>
+                                        <span class="price">1.50 ر.س</span>
+                                    </div>
+                                </a>    
+                                <div class="card-body">
+                                    <button class="btn">
+                                        <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
+                                        <span>أضف للسلة</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="product">
+                            <div class="card">
+                                <a  href="./product.html">
+                                    <img src="./assets/images/مانجو.png" alt="mango">
+                                    <div class="info">
+                                        <h5 class="name-pro">مانجو</h5>
+                                        <span class="price">1.50 ر.س</span>
+                                    </div>
+                                </a>    
+                                <div class="card-body">
+                                    <button class="btn">
+                                        <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
+                                        <span>أضف للسلة</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card">
+                                <a href="./product.html">
+                                    <img src="./assets/images/موز.png" alt="banana">
+                                    <div class="info">
+                                        <h5 class="name-pro">موز</h5>
+                                        <span class="price">1.50 ر.س</span>
+                                    </div>
+                                </a>    
+                                <div class="card-body">
+                                    <button class="btn">
+                                        <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
+                                        <span>أضف للسلة</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="card">
+                                <a href="./product.html" >
+                                    <img src="./assets/images/برتقال.png" alt="orange">
+                                    <div class="info">
+                                        <h5 class="name-pro">برتقال</h5>
+                                        <span class="price">1.50 ر.س</span>
+                                    </div>
+                                </a>    
+                                <div class="card-body">
+                                    <button class="btn">
+                                        <img class="icon" src="./assets/icons/add to cart.svg" alt="add-to-cart">
+                                        <span>أضف للسلة</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer custom-footer">
             <div class="overlay">
                 <div class="row">
                     <div class="col-sm-4">

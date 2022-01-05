@@ -14,7 +14,27 @@
   content: url(../icons/Profile-selected.svg) !important;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .prof .info .buttons .btn, #edit .modal-dialog .modal-content .editing .custom-btn, .utilities .utility .custom-overlay .btn {
+.active-bar {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #f7fffa !important;
+  background-color: #00963f;
+}
+
+.active-categ {
+  background-color: #2578b3;
+  color: #f7fffa !important;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .prof .info .buttons .btn, #edit .modal-dialog .modal-content .editing .custom-btn, .custom-categories .info .details .form-group .buttons .btn, .utilities .utility .custom-overlay .btn {
   background-color: #43c57a;
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
@@ -32,7 +52,7 @@
   -o-border-radius: 25px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign:focus, .prof .info .buttons .btn:focus, #edit .modal-dialog .modal-content .editing .custom-btn:focus, .utilities .utility .custom-overlay .btn:focus {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign:focus, .prof .info .buttons .btn:focus, #edit .modal-dialog .modal-content .editing .custom-btn:focus, .custom-categories .info .details .form-group .buttons .btn:focus, .utilities .utility .custom-overlay .btn:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -1575,7 +1595,15 @@
 }
 
 .custom-categories .show-case .navbar {
-  background-color: rgba(67, 197, 122, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: rgba(67, 197, 122, 0.1);
+  border-top: 0.5px solid #43c57a;
+  border-right: 0.5px solid #43c57a;
+  border-bottom: 0.5px solid #43c57a;
   margin-right: 70px;
   padding-block: 0;
   margin-bottom: 50px;
@@ -1594,27 +1622,232 @@
           justify-content: stretch;
 }
 
-.custom-categories .show-case .navbar .navbar-nav .nav-item {
-  padding-inline: 40px;
-  padding-block: 10px;
-}
-
 .custom-categories .show-case .navbar .navbar-nav .nav-item .nav-link {
-  font-size: 17pt;
-  color: #000;
+  display: inline-block;
+  padding-block: 15px;
+  padding-inline: 40px;
+  font-size: 15pt;
+  width: 100%;
+  color: #b4c9d8;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
 }
 
 .custom-categories .show-case .sub-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  list-style: none;
+  border: 0.5px solid #b4c9d8;
+  background-color: #f1f9ff;
+  width: 300px;
+  padding: 0;
+  margin-right: 300px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  filter: brightness(98%);
+  -webkit-filter: brightness(98%);
+}
+
+.custom-categories .show-case .sub-nav .nav-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.custom-categories .show-case .sub-nav .nav-item .nav-link {
+  padding-block: 10px;
+  text-align: center;
+  color: #b4c9d8;
+  font-size: 15pt;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+}
+
+.custom-categories .info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: "details details details   products products products products products products products products products  ";
+}
+
+.custom-categories .info .custom-common-products {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 9;
+  grid-area: products;
+  padding-right: 25px;
+}
+
+.custom-categories .info .custom-common-products .products {
+  -ms-grid-rows: (1fr)[6];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(6, 1fr)/repeat(3, 1fr);
+  gap: 15pt;
+}
+
+.custom-categories .info .custom-common-products .products .product .card {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.custom-categories .info .details {
+  height: 1000px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: details;
+  border: 0.5px solid #f9c810;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 70px;
+  background-color: #f2eacb;
+  filter: brightness(107%);
+  -webkit-filter: brightness(107%);
+}
+
+.custom-categories .info .details .form-group .accor .title {
+  background-color: #f9c810;
+  padding: 15px 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.custom-categories .info .details .form-group .accor .title h5 {
+  position: relative;
+  font-size: 15pt;
+  color: #2a2a2a;
+  margin-right: 15px;
+}
+
+.custom-categories .info .details .form-group .accor .title h5::after {
+  position: absolute;
+  top: 12px;
+  left: 35px;
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.custom-categories .info .details .form-group .accor .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 25px;
+}
+
+.custom-categories .info .details .form-group .accor .rate label {
+  position: relative;
+  font-size: 18px;
+  color: #2a2a2a;
+  margin-right: 35px;
+}
+
+.custom-categories .info .details .form-group .accor .rate label input + span::before {
+  position: absolute;
+  content: "";
+  border: 1px solid #f9c810;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: -34px;
+  margin-left: 10px;
+  background-color: #f7fffa;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.custom-categories .info .details .form-group .accor .rate label input:checked + span::before {
+  content: "\2714";
+  background-color: #00963f;
+  color: #f7fffa;
+}
+
+.custom-categories .info .details .form-group .accor .rate label input {
+  display: none;
+}
+
+.custom-categories .info .details .form-group .accor .rate label + label {
+  margin-top: 15px;
+}
+
+.custom-categories .info .details .form-group .accor + .accor {
+  margin-top: 80px;
+}
+
+.custom-categories .info .details .form-group .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.custom-categories .info .details .form-group .buttons .btn {
+  height: 42px;
+  line-height: 22px;
+  -webkit-box-shadow: 0 0  2px 1px;
+          box-shadow: 0 0  2px 1px;
+}
+
+.custom-categories .info .details .form-group .buttons .custom-btn {
+  background-color: #ff3003;
+}
+
+.custom-categories .info .details .form-group .buttons .btn + .btn {
+  margin-top: 15px;
+}
+
+.custom-footer {
+  margin-top: 0;
 }
 
 html[dir="ltr"] .header .navbar .navbar-brand img {
@@ -2578,6 +2811,63 @@ html[dir="ltr"] #edit .modal-dialog .modal-content::before {
   html[dir="ltr"] #edit .modal-dialog .modal-content::before {
     width: 200px;
   }
+}
+
+html[dir="ltr"] .custom-categories {
+  padding: 50px 0 50px 50px !important;
+}
+
+html[dir="ltr"] .custom-categories .show-case .title {
+  margin-left: 75px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .custom-categories .show-case .title::after {
+  left: 0;
+}
+
+html[dir="ltr"] .custom-categories .show-case .navbar {
+  margin-left: 70px;
+  margin-right: 0;
+  border-right: none;
+  border-left: 0.5px solid #43c57a;
+}
+
+html[dir="ltr"] .custom-categories .show-case .navbar .navbar-nav {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+html[dir="ltr"] .custom-categories .show-case .sub-nav {
+  margin-left: 300px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .custom-categories .info .details .form-group .accor .title h5 {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .custom-categories .info .details .form-group .accor .title h5::after {
+  right: 35px;
+  left: initial;
+}
+
+html[dir="ltr"] .custom-categories .info .details .form-group .accor .rate {
+  padding-left: 25px;
+  padding-right: 0;
+}
+
+html[dir="ltr"] .custom-categories .info .details .form-group .accor .rate label {
+  margin-left: 35px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .custom-categories .info .details .form-group .accor .rate label input + span::before {
+  left: -34px;
+  right: initial;
+  margin-right: 10px;
+  margin-left: 0;
 }
 
 ::after, ::before, body, html {

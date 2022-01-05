@@ -17,9 +17,6 @@ form.addEventListener("blur" , function(){
 });
 
 
-
-
-
 $(function(){
     $("#sort").on("click" , function(){
       $("#sorting").fadeToggle() ; 
@@ -28,6 +25,14 @@ $(function(){
         $('input[type="checkbox"]').not(this).prop('checked', false);
      });
     }) ; 
+    $(".custom-item").on("click" , function(){
+      $(".custom-item").removeClass("active-bar") ; 
+      $(this).addClass("active-bar") ; 
+    })
+    $(".custom-sort").on("click" , function(){
+      $(".custom-sort").removeClass("active-categ") ; 
+      $(this).addClass("active-categ") ; 
+    })
 
     $("#signin").on("click" , function(){
       $(".register").fadeIn(500)
