@@ -124,6 +124,12 @@
   }
 }
 
+.t_c .title::after {
+  width: 90px;
+  top: 40px;
+  right: -2px;
+}
+
 .favorites {
   -webkit-padding-after: 170px !important;
           padding-block-end: 170px !important;
@@ -1525,6 +1531,90 @@
   #edit .modal-dialog .modal-content::before {
     width: 200px;
   }
+}
+
+.custom-categories {
+  padding: 50px 50px 50px 0 !important;
+}
+
+.custom-categories .show-case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.custom-categories .show-case .title {
+  position: relative;
+  margin-bottom: 70px;
+  margin-right: 75px;
+}
+
+.custom-categories .show-case .title::after {
+  position: absolute;
+  content: "";
+  width: 92px;
+  height: 5px;
+  background-color: #00963f;
+  top: 42px;
+  right: 0;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.custom-categories .show-case .navbar {
+  background-color: rgba(67, 197, 122, 0.5);
+  margin-right: 70px;
+  padding-block: 0;
+  margin-bottom: 50px;
+}
+
+.custom-categories .show-case .navbar .navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.custom-categories .show-case .navbar .navbar-nav .nav-item {
+  padding-inline: 40px;
+  padding-block: 10px;
+}
+
+.custom-categories .show-case .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 17pt;
+  color: #000;
+}
+
+.custom-categories .show-case .sub-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 html[dir="ltr"] .header .navbar .navbar-brand img {
@@ -3222,27 +3312,40 @@ body .show-case .title {
 }
 
 .common-products .products .product .card {
-  position: relative;
   background-color: #f7fffa;
   width: 100%;
 }
 
-.common-products .products .product .card img {
+.common-products .products .product .card a {
+  text-decoration: none;
+}
+
+.common-products .products .product .card a img {
   width: 100%;
 }
 
-.common-products .products .product .card .info {
-  position: absolute;
-  top: 200px;
-  left: 140px;
+.common-products .products .product .card a .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.common-products .products .product .card .info .name-pro {
+.common-products .products .product .card a .info .name-pro {
   color: #2a2a2a;
   font-size: 20pt;
 }
 
-.common-products .products .product .card .info .price {
+.common-products .products .product .card a .info .price {
   color: #00963f;
   font-size: 12pt;
   font-weight: bold;

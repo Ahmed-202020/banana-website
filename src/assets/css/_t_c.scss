@@ -1,0 +1,9 @@
+.t_c{
+    .title{
+        &::after{
+                width: 90px;
+                top: 40px;
+                right: -2px;
+        }
+    }
+}

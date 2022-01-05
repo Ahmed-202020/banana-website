@@ -1,11 +1,13 @@
 @import "./vars" ; 
 @import "./about-us" ; 
+@import "./t_c" ; 
 @import "./fav" ; 
 @import "./404" ; 
 @import "./signin" ; 
 @import "./signup" ; 
 @import "./categories" ; 
 @import "./profile" ; 
+@import "./products" ; 
 @import "./style-ltr" ; 
 
 
@@ -15,9 +17,10 @@
     align-items: stretch;
     justify-content: center;
 }
-    html{
-        overflow-x: hidden;
-    }
+
+html{
+    overflow-x: hidden;
+}
 
     // index.html rtl
 
@@ -560,6 +563,7 @@
             }
         }
     }    
+    // common-productsخد ال كله 
     .common-products{
         padding: 70px;
         .title::after{
@@ -585,24 +589,27 @@
             .product{
                 text-decoration: none;
                 .card{
-                    position: relative;
                     background-color: $white;
                     width: 100%;
-                    img{
-                        width: 100%;
-                    }
-                    .info{
-                        position: absolute;
-                        top: 200px;
-                        left: 140px;
-                        .name-pro{
-                            color: $black-color;
-                            font-size: 20pt;
+                    a{
+                        text-decoration: none;
+                        img{
+                            width: 100%;
                         }
-                        .price{
-                            color: $color-button;
-                            font-size: 12pt;
-                            font-weight: bold;
+                        .info{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            .name-pro{
+                                color: $black-color;
+                                font-size: 20pt;
+                            }
+                            .price{
+                                color: $color-button;
+                                font-size: 12pt;
+                                font-weight: bold;
+                            }
                         }
                     }
                     .card-body{
@@ -828,7 +835,6 @@
             }
         }
     }
- 
 
 
 // respnsive design (index.html) rtl
