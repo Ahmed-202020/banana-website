@@ -1,3 +1,5 @@
+//products.html (rtl)
+
 .custom-categories{
     padding: 50px 50px 50px 0 !important;
     .show-case{
@@ -184,6 +186,7 @@
                             }
                             input:checked + span::before{
                                 content: "\2714";
+                                border: 1px solid $color-button;
                                 background-color: $color-button;
                                 color: $white;
                             }
@@ -226,3 +229,205 @@
     margin-top: 0;
 }
 
+// responsive design products.html(rtl)
+@media (max-width: 1280.98px){
+    .custom-categories{
+        .show-case{
+            .navbar{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            padding-inline: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+@media (max-width: 1199.98px){
+    .custom-categories{
+        .show-case{
+            .navbar{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            padding-inline: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+@media (min-width: 992px) and (max-width: 1025px){
+    .custom-categories{
+        padding-inline: 0 !important;
+        .show-case{
+            .navbar{
+                margin-inline: 25px;
+                border-left: 1px solid $lighter-links;
+                .navbar-nav{
+                    flex-direction: column;
+                    width: 100%;
+                    padding-block: 40px;
+                    .nav-item{
+                        width: 90%;
+                        text-align: center;
+                        .nav-link{
+                            padding-inline: 14px;
+                        }
+                    }
+                    .nav-item + .nav-item{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .info{
+            padding-inline: 25px;
+            .custom-common-products{
+                padding-left: 0;
+                padding-right: 25px;
+            }
+            .details{
+                .form-group{
+                    .accor{
+                        .title{
+                            h5{
+                                font-size: 13pt;
+                                &::after{
+                                    left: 11px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .buttons{
+                    .btn{
+                        width: 90% !important;
+                    }
+                }
+            }
+        }
+    }  
+}
+@media (max-width: 991.98px){
+    .custom-categories{
+        padding-inline: 0 !important;
+        .show-case{
+            .navbar{
+                margin-inline: 25px ;
+                border-left: 1px solid $lighter-links;
+                .navbar-nav{
+                        flex-direction: column;
+                        width: 100%;
+                        padding-block: 40px;
+                        .nav-item{
+                            width: 90%;
+                            text-align: center;
+                            .nav-link{
+                                padding-inline: 14px;
+                            }
+                        }
+                        .nav-item + .nav-item{
+                            margin-right: 0;
+                        }
+                }
+            }
+        }
+        .info{
+            padding-inline: 25px;
+            grid-template-areas: "details details details details  products products products products products products products products ";
+            .custom-common-products{
+                padding-left: 0;
+                padding-right: 25px;
+                .products{
+                    grid-template: repeat(9 , 1fr)/repeat(2, 1fr);
+                }
+            }
+            .details{
+                .form-group{
+                    .accor{
+                        .title{
+                            h5{
+                                &::after{
+                                    left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .custom-categories{
+        .info{
+            .details{
+                .form-group{
+                    .buttons{
+                        .btn{
+                            width: 85%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575.98px){
+    .custom-categories{
+        .show-case{
+            .sub-nav{
+                margin-right: 200px;
+            }
+        }
+        .info{
+            grid-template-areas:"details details details details details details details details details details details details "
+            "products products products products products products products products products products products products";
+            .custom-common-products{
+                padding-right: 0;
+                .products{
+                    grid-template : repeat(18 , 1fr) / 1fr;
+                }
+            }
+            .details{
+                .form-group{
+                    .accor{
+                        .title{
+                            h5{
+                                &::after{
+                                    left: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  (min-width: 360px) and (max-width: 420px){
+    .custom-categories{
+        .show-case{
+            .sub-nav{
+                margin-right: 30px;
+            }
+        }
+    }
+}
+@media (min-width: 280px) and (max-width: 350.98px){
+    .custom-categories{
+        .show-case{
+            .title{
+                margin-right: 25px ;
+            }
+            .sub-nav{
+                margin-right: 15px;
+                width: 90%;
+            }
+        }
+    }
+}
