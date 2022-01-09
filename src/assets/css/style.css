@@ -2,6 +2,11 @@
   color: #f9c810 !important;
 }
 
+.active-quantity {
+  background-color: #00963f !important;
+  color: #f7fffa !important;
+}
+
 .icons .heart.active img {
   content: url(../icons/Heart-selected.svg) !important;
 }
@@ -34,7 +39,7 @@
   -o-border-radius: 30px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .prof .info .buttons .btn, #edit .modal-dialog .modal-content .editing .custom-btn, .custom-categories .info .details .form-group .buttons .btn, .utilities .utility .custom-overlay .btn {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .prof .info .buttons .btn, #edit .modal-dialog .modal-content .editing .custom-btn, .custom-categories .info .details .form-group .buttons .btn, .prod .btn, .utilities .utility .custom-overlay .btn, #des .modal-dialog .modal-content .overlay .col-12 .btn {
   background-color: #43c57a;
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
@@ -52,7 +57,7 @@
   -o-border-radius: 25px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign:focus, .prof .info .buttons .btn:focus, #edit .modal-dialog .modal-content .editing .custom-btn:focus, .custom-categories .info .details .form-group .buttons .btn:focus, .utilities .utility .custom-overlay .btn:focus {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign:focus, .prof .info .buttons .btn:focus, #edit .modal-dialog .modal-content .editing .custom-btn:focus, .custom-categories .info .details .form-group .buttons .btn:focus, .prod .btn:focus, .utilities .utility .custom-overlay .btn:focus, #des .modal-dialog .modal-content .overlay .col-12 .btn:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -1851,6 +1856,36 @@
   margin-top: 0;
 }
 
+.login-first {
+  display: initial !important;
+}
+
+.login-first .modal-dialog .modal-content .show-case {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px !important;
+}
+
+.login-first .modal-dialog .modal-content .show-case .image {
+  width: 70px;
+  margin-left: 20px;
+}
+
+.login-first .modal-dialog .modal-content .show-case .image img {
+  width: 100%;
+}
+
+.login-first .modal-dialog .modal-content .show-case .title {
+  font-size: 17pt !important;
+}
+
+.login-first .modal-dialog .modal-content .custom-btn {
+  margin-top: 0 !important;
+  width: 300px !important;
+  margin: auto !important;
+}
+
 @media (max-width: 1280.98px) {
   .custom-categories .show-case .navbar .navbar-nav .nav-item .nav-link {
     padding-inline: 30px;
@@ -1991,6 +2026,240 @@
     margin-right: 15px;
     width: 90%;
   }
+}
+
+@media (min-width: 280px) and (max-width: 412px) {
+  .login-first .modal-dialog .modal-content .show-case .title {
+    font-size: 10pt !important;
+  }
+  .login-first .modal-dialog .modal-content .show-case .image {
+    width: 50px;
+  }
+  .login-first .modal-dialog .modal-content .custom-btn {
+    width: 150px !important;
+    font-size: 12pt !important;
+  }
+}
+
+.custom-body {
+  background-color: #fff !important;
+}
+
+.product-header .bar {
+  top: -105px;
+  z-index: -1;
+  left: 202px;
+  transform: rotateX(134deg);
+  border-radius: 15px;
+  -webkit-transform: rotateX(134deg);
+  -moz-transform: rotateX(134deg);
+  -ms-transform: rotateX(134deg);
+  -o-transform: rotateX(134deg);
+}
+
+.prod {
+  padding: 30px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prod .content {
+  position: relative;
+  width: 100%;
+  background-color: #f7fffa;
+  padding: 30px;
+  border: 2px solid #e9ffe1;
+}
+
+.prod .content .icons {
+  text-align: left;
+}
+
+.prod .content .icons .heart {
+  background-color: #f9c810;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.prod .content .icons .heart + .heart {
+  margin-right: 10px;
+}
+
+.prod .content .icons .share {
+  background-color: #43c57a;
+}
+
+.prod .content .show-case {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.prod .content .show-case .title {
+  margin-top: 60px;
+}
+
+.prod .content .show-case .title h5 {
+  font-size: 25px;
+  color: #2a2a2a;
+}
+
+.prod .content .show-case .title p {
+  font-size: 18px;
+}
+
+.prod .content .quantity {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 150px;
+}
+
+.prod .content .quantity .show-case {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.prod .content .quantity .show-case .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  margin-bottom: 30px;
+}
+
+.prod .content .quantity .show-case .title span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.prod .content .quantity .show-case .title img {
+  width: 35px;
+  margin-left: 20px;
+}
+
+.prod .content .quantity .show-case .type-quantity {
+  margin-right: 50px;
+}
+
+.prod .content .quantity .show-case .type-quantity a {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #43c57a;
+  border: 1px solid #43c57a;
+  padding: 10px 25px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.prod .content .quantity .show-case .type-quantity a + a {
+  margin-right: 10px;
+}
+
+.prod .content .quantity .price {
+  background-color: #f9c810;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  color: #f7fffa;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.prod .content .quantity::after {
+  position: absolute;
+  bottom: -110px;
+  right: 25px;
+  content: "";
+  background-color: #fff;
+  width: 330px;
+  height: 50px;
+  border: 1px solid #43c57a;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.prod .content .data {
+  position: absolute;
+  bottom: 78px;
+  right: 105px;
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prod .content .data img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.prod .content .data span {
+  width: 100%;
+  text-align: center;
+}
+
+.prod .btn {
+  position: relative;
+  margin-top: 60px;
+  width: 320px;
+  background-color: #43c57a;
+}
+
+.prod .btn svg {
+  margin-bottom: 5px;
+}
+
+.prod .btn:hover {
+  color: #f7fffa;
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
 }
 
 html[dir="ltr"] .header .navbar .navbar-brand img {
@@ -4169,6 +4438,108 @@ body .show-case .title {
   font-size: 12pt;
   margin-top: 75px;
   margin-bottom: 0;
+}
+
+#des {
+  display: initial;
+}
+
+#des .modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#des .modal-dialog .modal-content {
+  background-image: url("../images/welcome@2x.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+}
+
+#des .modal-dialog .modal-content .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#des .modal-dialog .modal-content .overlay .close {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#des .modal-dialog .modal-content .overlay .col-12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#des .modal-dialog .modal-content .overlay .col-12 .sub {
+  color: #f7fffa;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#des .modal-dialog .modal-content .overlay .col-12 .sub .number {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#des .modal-dialog .modal-content .overlay .col-12 .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#des .modal-dialog .modal-content .overlay .col-12 .image .des {
+  width: 200px;
+}
+
+#des .modal-dialog .modal-content .overlay .col-12 .image .number {
+  width: 100px;
+  margin-top: 15px;
+}
+
+#des .modal-dialog .modal-content .overlay .col-12 .btn {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  height: 42px;
+  line-height: 20px;
 }
 
 @media (max-width: 1399.98px) {

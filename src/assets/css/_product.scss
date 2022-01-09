@@ -1,0 +1,167 @@
+.custom-body{
+    background-color: #fff !important;
+}
+.product-header{
+    .bar{
+        top: -105px;
+        z-index: -1;
+        left: 202px;
+        transform: rotateX(134deg);
+        border-radius: 15px;
+        -webkit-transform: rotateX(134deg);
+        -moz-transform: rotateX(134deg);
+        -ms-transform: rotateX(134deg);
+        -o-transform: rotateX(134deg);
+}
+}
+.prod{
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content{
+        position: relative;
+        width: 100%;
+        background-color:$white;
+        padding: 30px;
+        border: 2px solid $lighter-button;
+        .icons{
+            text-align: left;
+            .heart{
+                background-color: $button-bg-products;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            .heart + .heart{
+                margin-right: 10px;
+            }
+            .share{
+                background-color: $lighter-links;
+            }
+        }
+        .show-case{
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 0;
+            .title{
+                margin-top: 60px;
+                h5{
+                    font-size: 25px;
+                    color: $black-color;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }   
+        .quantity{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 150px;
+            .show-case{
+                flex-direction: column;
+                .title{
+                    display: flex;
+                    align-items: unset;
+                    margin-bottom: 30px;
+                    span{
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                    img{
+                        width: 35px;
+                        margin-left: 20px;
+                    }
+                }
+                .type-quantity{
+                    margin-right: 50px;
+                    a{
+                        text-decoration: none;
+                        cursor: pointer;
+                        background-color: #fff; 
+                        color:  $lighter-links;
+                        border: 1px solid $lighter-links; 
+                        padding: 10px 25px;
+                        border-radius: 30px;
+                        -webkit-border-radius: 30px;
+                        -moz-border-radius: 30px;
+                        -ms-border-radius: 30px;
+                        -o-border-radius: 30px;
+                    }
+                    a + a{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .price{
+                background-color: $button-bg-products;
+                padding: 10px;
+                width: 100px;
+                text-align: center;
+                color: $white;
+                border-radius: 25px;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                -ms-border-radius: 25px;
+                -o-border-radius: 25px;
+            }
+            &::after{
+                position: absolute;
+                bottom: -110px;
+                right: 25px;
+                content: "";
+                background-color: #fff;
+                width: 330px;
+                height: 50px;
+                border: 1px solid $lighter-links;
+                border-radius: 25px;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                -ms-border-radius: 25px;
+                -o-border-radius: 25px;
+            }
+        }
+        .data{
+            position: absolute;
+            bottom: 78px;
+            right: 105px;
+            width: 220px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                width: 30px;
+                cursor: pointer;
+            }
+            span{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .btn{
+        position: relative;
+        @extend %btn ; 
+        margin-top: 60px;
+        width: 320px;
+        background-color: $lighter-links ; 
+        svg{
+            margin-bottom: 5px;
+        }
+        &:hover{
+            color: $white;
+            filter: brightness(90%);
+            -webkit-filter: brightness(90%);
+        }
+    }
+}

@@ -23,6 +23,10 @@ $min-size-font : "20pt" ;
         color: $button-bg-products !important;
     }
 }
+.active-quantity{
+    background-color: $color-button !important;
+    color: $white !important;
+}
 .icons{
     .heart.active{
         img{

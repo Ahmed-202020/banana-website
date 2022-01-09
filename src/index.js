@@ -18,46 +18,56 @@ form.addEventListener("blur" , function(){
 
 
 $(function(){
-    $("#sort").on("click" , function(){
-      $("#sorting").fadeToggle() ; 
+  $("#sort").on("click" , function(){
+    $("#sorting").fadeToggle() ; 
+    $('input[type="checkbox"]').on('change', function() {
+      $('input[type="checkbox"]').not(this).prop('checked', false);
+   });
+  }) ; 
+  $(".custom-item").on("click" , function(){
+    $(".custom-item").removeClass("active-bar") ; 
+    $(this).addClass("active-bar") ; 
+  })
+  $(".custom-sort").on("click" , function(){
+    $(".custom-sort").removeClass("active-categ") ; 
+    $(this).addClass("active-categ") ; 
+  })
 
-      $('input[type="checkbox"]').on('change', function() {
-        $('input[type="checkbox"]').not(this).prop('checked', false);
-     });
-    }) ; 
-    $(".custom-item").on("click" , function(){
-      $(".custom-item").removeClass("active-bar") ; 
-      $(this).addClass("active-bar") ; 
-    })
-    $(".custom-sort").on("click" , function(){
-      $(".custom-sort").removeClass("active-categ") ; 
-      $(this).addClass("active-categ") ; 
-    })
+  $("#signin").on("click" , function(){
+    $(".register").fadeIn(500)
+  })
+  $("#signup").on("click" , function(){
+    $(".create").fadeIn(500) ; 
+  })
 
-    $("#signin").on("click" , function(){
-      $(".register").fadeIn(500)
-    })
-    $("#signup").on("click" , function(){
-      $(".create").fadeIn(500) ; 
-    })
-    $("#have-acount").on("click" , function(){
-      $(".create").fadeOut(500); 
-      $(".register").fadeIn(500)
-      
-    })
-    $("#havent-acount").on("click" , function(){
-      $(".register").fadeOut(500) ; 
-      $(".create").fadeIn(500) ; 
-    })
-    
-    $(".common-products .btn").on("click" , function(){
-      Swal.fire(
-        "تم" , 
-        'تم اضافة المنتج الى عربة الشراء',
-        'success'
-      ) ; 
-    })
+  $("#have-acount").on("click" , function(){
+    $(".create").fadeOut(500); 
+    $(".register").fadeIn(500)
+  })
+
+  $("#havent-acount").on("click" , function(){
+    $(".register").fadeOut(500) ; 
+    $(".create").fadeIn(500) ; 
+  })
+
+  $("#des .close a").on("click" , function(){
+    $(this).parentsUntil("body").fadeOut(700)
+  })
+
+  $(".common-products .btn").on("click" , function(){
+    Swal.fire(
+      "تم" , 
+      'تم اضافة المنتج الى عربة الشراء',
+      'success'
+    ) ; 
+  })
 })
+
+
+
+
+
+
 
 
 
