@@ -13,3 +13,14 @@ $(".subtract").on("click" , function(){
         $(".value-content").text(counter)
     }
 })
+
+$(".hearty").on("click" , function(){
+    $(this).toggleClass("active-fav");
+})
+$(".add-to-cart").on("click" , function(){
+    Swal.fire(
+        "تم" , 
+        'تم اضافة المنتج الى عربة الشراء',
+        'success'
+    ) ; 
+})

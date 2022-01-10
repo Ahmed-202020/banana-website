@@ -27,7 +27,15 @@ $min-size-font : "20pt" ;
     background-color: $color-button !important;
     color: $white !important;
 }
-
+.active-fav{
+    background-color: $light-line !important;
+    svg{
+        path{
+            fill: $button-bg-products;
+            stroke: $button-bg-products;
+        }
+    }
+}
 .active-orders{
     background-color: $button-bg-products;
     border-radius: 25px;

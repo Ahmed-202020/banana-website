@@ -1730,6 +1730,13 @@ html[dir = "ltr"]{
     .prod{
         .content{
             .icons{
+                text-align: right;
+                .heart{
+                    .wrapper{
+                        right: 45px;
+                        left: initial;
+                    }
+                }
                 .heart + .heart{
                     margin-left: 10px;
                     margin-right: 0;
@@ -1766,7 +1773,7 @@ html[dir = "ltr"]{
         
     }
 }
-@media (min-width: 360px) and (max-width: 420px){
+@media (min-width: 360px) and (max-width: 520px){
     html[dir = "ltr"]{
         .prod{
             .content{
@@ -1787,7 +1794,7 @@ html[dir = "ltr"]{
                     }
                 }
                 .data{
-                    left: 53px;
+                    left: 33px;
                     right: 0 ;
                 }
             }
@@ -1798,6 +1805,12 @@ html[dir = "ltr"]{
     html[dir = "ltr"]{
         .prod{
             .content{
+                .icons{
+                    .heart + .heart{
+                        margin-left: 1px;
+                        margin-right: 0;
+                    }
+                }
                 .quantity{
                     .show-case{
                         .title{
@@ -1821,7 +1834,7 @@ html[dir = "ltr"]{
                     }
                 }
                 .data{
-                    left: 28px;
+                    left: 18.5px;
                     right: initial;
                 }
             }

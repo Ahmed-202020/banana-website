@@ -1,3 +1,17 @@
+.custom-header{
+    .navbar{
+        .navbar-collapse{
+            .navbar-nav{
+                .active{
+                    .nav-link{
+                        color: $button-bg-products !important;
+                    }
+                }
+            }
+        }
+        
+    }
+}
 .orders{
     padding: 0px 50px;
     margin-bottom: 125px;
