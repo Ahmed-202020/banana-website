@@ -27,6 +27,19 @@ $min-size-font : "20pt" ;
     background-color: $color-button !important;
     color: $white !important;
 }
+
+.active-orders{
+    background-color: $button-bg-products;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    .item-link{
+        color: $black-color !important;
+        font-weight: bold;
+    }
+}
 .icons{
     .heart.active{
         img{

@@ -1712,3 +1712,191 @@ html[dir = "ltr"]{
         }
     }
 }
+
+// product.html(ltr)
+
+html[dir = "ltr"]{
+    .product-header{
+        .bar{
+            right: 202px;
+            left: initial;
+            transform: rotateX(134deg);
+            -webkit-transform: rotateX(134deg);
+            -moz-transform: rotateX(134deg);
+            -ms-transform: rotateX(134deg);
+            -o-transform: rotateX(134deg);
+        }
+    }
+    .prod{
+        .content{
+            .icons{
+                .heart + .heart{
+                    margin-left: 10px;
+                    margin-right: 0;
+                }
+            }
+            .quantity{
+                .show-case{
+                    .title{
+                        img{
+                            margin-right: 20px;
+                            margin-left: 0;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
+
+// responsive design products.html(ltr)
+
+@media (max-width: 1399.98px){
+    html[dir = "ltr"]{
+        .product-header{
+            .bar{
+                right: 228px;
+                left: initial;
+            }
+        }
+    }
+}
+@media (max-width: 1280.98px){
+    html[dir = "ltr"]{
+        
+    }
+}
+@media (min-width: 360px) and (max-width: 420px){
+    html[dir = "ltr"]{
+        .prod{
+            .content{
+                .quantity{
+                    .show-case{
+                        .type-quantity{
+                            margin-right: 0;
+                            margin-left: 0;
+                            a + a{
+                                margin-right: 0;
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+                    &::after{
+                        left: 3px;
+                        right: initial;
+                    }
+                }
+                .data{
+                    left: 53px;
+                    right: 0 ;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 280px) and (max-width: 350.98px){
+    html[dir = "ltr"]{
+        .prod{
+            .content{
+                .quantity{
+                    .show-case{
+                        .title{
+                            img{
+                                margin-left: 0;
+                                margin-right: 13px;
+                            }
+                        }
+                        .type-quantity{
+                            margin-right: 0;
+                            margin-left: 0;
+                            a + a{
+                                margin-left: 15px;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    &::after{
+                        left: 3px;
+                        right: initial;
+                    }
+                }
+                .data{
+                    left: 28px;
+                    right: initial;
+                }
+            }
+        }
+    }    
+}
+
+// orders.html(ltr)
+
+html[dir = "ltr"]{
+    .orders{
+        .title{
+            h3{
+                &::after{
+                    right: initial;
+                    left: 1px;
+                }
+            }
+        }
+        .type-orders{
+            .items{
+                padding-left: 0;
+                .item + .item{
+                    margin-left: 30px;
+                    margin-right: 0;
+                }
+            }
+        }
+        .current-orders{
+            .info{
+                right: initial;
+                left: 7px;
+            }
+            .show-case{
+                .number-order{
+                    img{
+                        margin-left: 0;
+                        margin-right: 7px;
+                    }
+                }
+            }
+            .date{
+                margin-left: 30px;
+                margin-right: 0;
+            }
+        }
+    } 
+}
+
+// responsive design orders.html(ltr)
+@media (min-width: 360px) and (max-width: 420px){
+    html[dir = "ltr"]{
+        .orders{
+            .type-orders{
+                .items{
+                    .item + .item{
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 280px) and (max-width: 350.98px){
+    html[dir = "ltr"]{
+        .orders{
+            .type-orders{
+                .items{
+                    .item + .item{
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
