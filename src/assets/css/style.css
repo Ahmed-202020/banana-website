@@ -4897,6 +4897,7 @@ body .show-case .title {
 }
 
 .header .navbar .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+  cursor: pointer;
   min-width: 10rem;
   min-height: 10rem;
   border-radius: 8px;

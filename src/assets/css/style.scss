@@ -107,6 +107,7 @@ html{
                             color: $lighter-links;
                         }
                         .dropdown-menu{
+                            cursor: pointer;
                             min-width: 10rem;
                             min-height: 10rem ;
                             border-radius: 8px;

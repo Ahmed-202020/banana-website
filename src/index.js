@@ -40,16 +40,6 @@ $(function(){
     $(".create").fadeIn(500) ; 
   })
 
-  $("#have-acount").on("click" , function(){
-    $(".create").fadeOut(500); 
-    $(".register").fadeIn(500)
-  })
-
-  $("#havent-acount").on("click" , function(){
-    $(".register").fadeOut(500) ; 
-    $(".create").fadeIn(500) ; 
-  })
-
   $("#des .close a").on("click" , function(){
     $(this).parentsUntil("body").fadeOut(700)
   })

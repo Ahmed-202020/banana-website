@@ -82,9 +82,9 @@
                                     </a>
                                     <ul class="dropdown-menu custom-dropdown-log" aria-labelledby="navbarDropdown">
                                         <!-- تسجيل الدخول -->
-                                        <li><a id="signin"  class="dropdown-item first" href="#register">تسجيل الدخول</a></li>
+                                        <li><a id="signin" data-bs-toggle= "modal" data-bs-target="#register"  class="dropdown-item first" >تسجيل الدخول</a></li>
                                         <!-- إنشاء حساب -->
-                                        <li><a id = "signup" class="dropdown-item second" href="#create">إنشاء حساب</a></li>
+                                        <li><a id = "signup" data-bs-toggle= "modal" data-bs-target="#create" class="dropdown-item second">إنشاء حساب</a></li>
                                         <!-- حسابي -->
                                         <li><a id="my-acount" class="dropdown-item first" href="./profile.html">حسابي</a></li>
                                         <!-- تسجيل الخروج -->
@@ -591,7 +591,7 @@
             </div>
         </div>
     </div>
-    <div id = "register"  class="modal register" tabindex="-1">
+    <div id = "register"  class="modal register fade" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row">
@@ -622,7 +622,7 @@
                                 <a href="#" class="forget">نسيت كلمة المرور ؟</a>
                                 <div class="buttons">
                                     <button   type="submit" class = "btn sign"  >تسجيل الدخول</button>
-                                    <a id="havent-acount" class="signup btn" href="#create">ليس لديك حساب؟</a>
+                                    <a id="havent-acount" data-bs-toggle= "modal" data-bs-target="#create" class="signup btn" >ليس لديك حساب؟</a>
                                 </div>
                             </form>
                         </div>
@@ -634,7 +634,7 @@
             </div>
         </div>
     </div>
-    <div id = "create"  class="modal  create" tabindex="-1">
+    <div id = "create"  class="modal  create fade" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row">
@@ -670,7 +670,7 @@
                                 <div class="buttons">
                                     <button  class = "btn sign" type="submit" >تسجيل الدخول</button>
                                     <button class = "btn sign custom-btn" type="submit" >تصفح المنتجات</button>
-                                    <a id="have-acount" href="#register" class=" signup btn">لديك حساب بالفعل ؟</a>
+                                    <a id="have-acount" data-bs-toggle= "modal" data-bs-target="#register" class=" signup btn">لديك حساب بالفعل ؟</a>
                                 </div>
                             </form>
                         </div>
