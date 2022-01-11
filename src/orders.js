@@ -20,11 +20,5 @@ $(function(){
                 $(".prev-orders").show() ; 
             }
         });
-
-        $(".edition").on("click" , function(){
-            $(".orders").remove() ; 
-            $(this).text("حفظ") ;
-            $(this).css(({backgroundColor : "#ff3003"}))
-        })
     }) ;
 });

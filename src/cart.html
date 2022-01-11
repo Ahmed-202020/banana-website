@@ -18,7 +18,7 @@
         <title>banana website</title>
     </head>
     <body class="custom-body">
-        <header id="header" class="header custom-header product-header"> 
+        <header id="header" class="header custom-header product-header cart-header"> 
             <nav class="navbar custom-navbar navbar-expand-lg">
                 <div class="container-fluid p-0">
                     <a class="navbar-brand logo" href="./index.html">
@@ -71,7 +71,7 @@
                                         <img src="./assets/icons/Heart.svg" alt="favourites">
                                     </a>
                                 </li>
-                                <li class="nav-item cart">
+                                <li class="nav-item cart active">
                                     <a class="nav-link " href="./cart.html">
                                         <img src="./assets/icons/cart.svg" alt="cart">
                                     </a>
@@ -91,102 +91,88 @@
                 </div>
             </nav>
             <img class="bar" src="./assets/images/orange-bar.png" alt="bar">
+            <span class="cont">الحد الادني للطلب 50 ر.س</span>
         </header> 
-        <section class="prod">
-            <div class="content">
-                <div class="icons">
-                    <a class="heart share" href="#">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="18.785" height="22.982" viewBox="0 0 18.785 22.982">
-                            <g id="Icon_feather-share" data-name="Icon feather-share" transform="translate(1 1)">
-                                <path id="Path_11504" data-name="Path 11504" d="M6,18v8.393a2.1,2.1,0,0,0,2.1,2.1H20.687a2.1,2.1,0,0,0,2.1-2.1V18" transform="translate(-6 -7.509)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                <path id="Path_11505" data-name="Path 11505" d="M20.393,7.2,16.2,3,12,7.2" transform="translate(-7.804 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                                <path id="Path_11506" data-name="Path 11506" d="M18,3V16.638" transform="translate(-9.607 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                            </g>
-                        </svg>
-                        <div class="wrapper">
-                            <div class="icon facebook">
-                                <div class="tooltip">
-                                    Facebook
-                                </div>
-                                <span><i class="fab fa-facebook-f"></i></span>
+        <section class="orders cart">
+            <div class="title">
+                <h3>السلة</h3>
+            </div>
+            <div class="show-case">
+                <div class="current-orders">
+                    <div class="current-order">
+                        <div class="show">
+                            <span class="name">توت</span>
+                            <div class="order">
+                                <img src="./assets/images/توت.png" alt="product">
+                                <button class="btn delete-order">حذف المنتج</button>
                             </div>
-                            <div class="icon twitter">
-                                <div class="tooltip">
-                                    Twitter
-                                </div>
-                                <span><i class="fab fa-twitter"></i></span>
+                        </div>    
+                        <div class="cost-order">
+                            <span>150 ر.س</span>
+                            <div class="quantity">
                             </div>
-                            <div class="icon instagram">
-                                <div class="tooltip">
-                                    Instagram
-                                </div>
-                                <span><i class="fab fa-instagram"></i></span>
+                            <div class="data">
+                                <img class="add" src="./assets/icons/Icon ionic-ios-add-circle.svg" alt="">
+                                <span class="value-content">0.5</span>
+                                <img class="subtract" src="./assets/icons/Icon awesome-minus-circle.svg" alt="">
                             </div>
-                            <div class="icon github">
-                                <div class="tooltip">
-                                    Github
-                                </div>
-                                <span><i class="fab fa-github"></i></span>
-                            </div>
-                            <div class="icon youtube">
-                                <div class="tooltip">
-                                    YouTube
-                                </div>
-                                <span><i class="fab fa-youtube"></i></span>
-                            </div>
-                        </div>
-                    </a>
-                    <a  class="heart hearty" href="#">
-                        <svg  xmlns="http://www.w3.org/2000/svg" width="25.512" height="23.012" viewBox="0 0 25.512 23.012">
-                            <g id="Heart-filled" transform="translate(0.778 0.859)">
-                                <path id="Path_1560" data-name="Path 1560" d="M3.019,14.769c-1.353-4.225.23-9.477,4.665-10.9A6.141,6.141,0,0,1,14.531,6a5.965,5.965,0,0,1,6.835-2.131c4.434,1.428,6.025,6.68,4.673,10.9-2.106,6.7-9.454,10.184-11.508,10.184S5.2,21.543,3.019,14.769Z" transform="translate(-2.55 -3.55)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
-                                <path id="Path_1561" data-name="Path 1561" d="M15.789,7.564a2.717,2.717,0,0,1,2.417,3.054" transform="translate(0.906 -2.502)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-                <div class="show-case">
-                    <div class="image">
-                        <img src="./assets/images/مانجو.png" alt="mango">
-                    </div>
-                    <div class="title">
-                        <h5>مانجو</h5>
-                        <p>مانجو من خير الطبيعة غنية بالفيتامينات</p>
-                    </div>
-                </div>
-                <div class="quantity">
-                    <div class="show-case">
-                        <div class="title">
-                            <img src="./assets/icons/img/quantity.png" alt="quantity">
-                            <span>تحديد الكمية</span>
-                        </div>
-                        <div class="type-quantity">
-                            <a  class="quant active-quantity">كيلو</a>  
-                            <a  class="quant">كرتون</a>
+                            <span class="type">كرتون</span>
                         </div>
                     </div>
-                    <div class="price">
-                        <span>1.50 رس</span>
+                    <div class="current-order">
+                        <div class="show">
+                            <span class="name">موز</span>
+                            <div class="order">
+                                <img src="./assets/images/موز.png" alt="product">
+                                <button class="btn delete-order">حذف المنتج</button>
+                            </div>
+                        </div>    
+                        <div class="cost-order">
+                            <span>150 ر.س</span>
+                            <div class="quantity">
+                            </div>
+                            <div class="data">
+                                <img class="add" src="./assets/icons/Icon ionic-ios-add-circle.svg" alt="">
+                                <span class="value-content">0.5</span>
+                                <img class="subtract" src="./assets/icons/Icon awesome-minus-circle.svg" alt="">
+                            </div>
+                            <span class="type">كرتون</span>
+                        </div>
                     </div>
-                </div>
-                <div class="data">
-                    <img class="add" src="./assets/icons/Icon ionic-ios-add-circle.svg" alt="">
-                    <span class="value-content">0.5</span>
-                    <img class="subtract" src="./assets/icons/Icon awesome-minus-circle.svg" alt="">
+                    <div class="info">
+                        <img src="./assets/icons/img/orders.png" alt="address">
+                        <span>المنتجات</span>
+                    </div>
+                </div>    
+                <div class="bill">
+                    <div class="details">
+                        <div class="detail">
+                            <span class="sub">الاجمالي :</span>
+                            <span class="price">60 ر.س</span>
+                        </div>
+                        <div class="detail">
+                            <span class="sub">رسوم التوصيل :</span>
+                            <span class="price">20 ر.س</span>
+                        </div>
+                        <div class="detail">
+                            <span class="sub">الضريبة :</span>
+                            <span class="price">20 ر.س</span>
+                        </div>
+                    </div>
+                    <div class="final-cost">
+                        <div class="detail">
+                            <span class="sub">التكلفة النهائية :</span>
+                            <span class="price">100 ر.س</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="./assets/icons/img/bill.png" alt="bill">
+                        <span>الفاتورة</span>
+                    </div>
                 </div>
             </div>
-            <button class="btn add-to-cart"> 
-                <svg id="add_to_cart" data-name="add to cart" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 12.217 15.264">
-                    <g id="cart">
-                      <g id="Group_42050" data-name="Group 42050">
-                        <path id="Path_11327" data-name="Path 11327" d="M61.014,13.194,60.14,3.352a.421.421,0,0,0-.418-.384h-1.8a3.016,3.016,0,0,0-6.031,0H50.1a.418.418,0,0,0-.418.384L48.8,13.194c0,.012,0,.025,0,.037a2.175,2.175,0,0,0,2.291,2.032h7.635a2.175,2.175,0,0,0,2.291-2.032A.152.152,0,0,0,61.014,13.194ZM54.909.843a2.175,2.175,0,0,1,2.172,2.126H52.736A2.175,2.175,0,0,1,54.909.843Zm3.817,13.578H51.091a1.345,1.345,0,0,1-1.448-1.171l.837-9.436H51.89v1.28a.421.421,0,1,0,.843,0V3.814h4.348v1.28a.421.421,0,1,0,.843,0V3.814h1.411l.84,9.436A1.347,1.347,0,0,1,58.726,14.421Z" transform="translate(-48.8 0)" fill="#f7fffa"/>
-                      </g>
-                    </g>
-                    <path id="Icon_ionic-ios-add" data-name="Icon ionic-ios-add" d="M12.408,10.572H11.029V9.193a.229.229,0,0,0-.457,0v1.379H9.193a.229.229,0,0,0,0,.457h1.379v1.379a.229.229,0,1,0,.457,0V11.029h1.379a.229.229,0,0,0,0-.457Z" transform="translate(-4.692 -1.333)" fill="#f7fffa" stroke="#f7fffa" stroke-width="0.5"/>
-                  </svg>
-                أضف الى السلة
-            </button>     
-        </section>
+            <a  href="./confirm.html" class="btn confirm">تأكيد الطلب</a>
+        </section>    
         <footer class="footer custom-footer">
             <div class="overlay">
                 <div class="row">

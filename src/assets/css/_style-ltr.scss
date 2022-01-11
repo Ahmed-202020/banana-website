@@ -1913,3 +1913,204 @@ html[dir = "ltr"]{
         }
     }
 }
+
+// cart.html(ltr)
+html[dir="ltr"]{
+    .cart-header{
+        .cont{
+            left: 85px ;
+            right: initial;
+        }
+    }    
+    .orders.cart{
+        .show-case{
+            .current-orders{
+                .current-order{
+                    .cost-order{
+                        .quantity{
+                            &::after{
+                                left: -266px;
+                                right: initial;
+                            }
+                        }
+                        .data{
+                            left: -235px;
+                            right: initial;
+                        }
+                        .type{
+                            top: 159px;
+                            right: 12px;
+                            left: initial;
+                        }
+                    }
+                }
+                .info{
+                    content: "";
+                    left: 7px;
+                    right: initial;
+                    img{
+                        margin-right: 10px;
+                        margin-left: 0;
+                    }
+                }
+            }
+            .bill{
+                .final-cost{
+                    &::after{
+                        left: -2px;
+                        right: initial;
+                    }
+                }
+                .info{
+                    img{
+                        margin-right: 10px;
+                        margin-left: 0;
+                    }    
+                }
+            }
+        }
+    }
+}    
+
+// responsive design cart.html(ltr)
+@media (min-width: 992px) and (max-width: 1025px){
+    html[dir = "ltr"]{
+        .orders.cart{
+            .show-case{
+                .current-orders{
+                    .current-order{
+                        .cost-order{
+                            .quantity{
+                                &::after{
+                                    left: -241px ; 
+                                    right: initial;
+                                }
+                            }
+                            .data{
+                                left: -213px;
+                                right: initial;
+                            }
+                            .type{
+                                top: 190px;
+                                right: 1px;
+                                left: initial;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991.98px){
+    html[dir = "ltr"]{
+        .orders.cart{
+            .show-case{
+                .current-orders{
+                    .current-order{
+                        .cost-order{
+                            .type{
+                                top: 185px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    html[dir = "ltr"]{
+        .orders.cart{
+            .show-case{
+                .current-orders{
+                    .current-order{
+                        .cost-order{
+                            .quantity{
+                                &::after{
+                                    left: -245px;
+                                }
+                            }
+                            .data{
+                                left: -218px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 360px) and (max-width: 420px){
+    html[dir = "ltr"]{
+        .cart-header{
+            .cont{
+                left: 20px;
+                right: initial;
+            }
+        }
+        .orders.cart{
+            .show-case{
+                .current-orders{
+                    .current-order{
+                        .cost-order{
+                            .quantity{
+                                &::after{
+                                    left: -195px;
+                                    right: initial;
+                                }
+                            }
+                            .data{
+                                left: -178px;
+                                right: initial;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 280px) and (max-width: 350.98px){
+    html[dir = "ltr"]{
+        .cart-header{
+            .bar{
+                right:55px !important;
+                left:  initial !important;
+            }
+            .cont{
+                left: 20px;
+                right: initial 
+            }
+        }
+        .orders.cart{
+            .show-case{
+                .current-orders{
+                    .current-order{
+                        .show{
+                            .name{
+                                margin-left: 0;
+                                margin-right: 25px;
+                            }
+                        }
+                        .cost-order{
+                            .quantity{
+                                &::after{
+                                    left: -195px;
+                                    right: initial;
+                                }
+                            }
+                            .type{
+                                margin-top:70px;
+                            }
+                            .data{
+                                left: -178px;
+                                right: initial;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
