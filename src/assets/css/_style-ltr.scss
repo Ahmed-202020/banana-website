@@ -179,6 +179,27 @@ html[dir = "ltr"]{
             }
         }
     }
+    .modal-type-sort{
+        .modal-dialog{
+            .modal-content{
+                .sort{
+                    .title{
+                        h6{
+                            font-size: 20pt;
+                            margin-right: 0;
+                            margin-left: 20px;
+                        }
+                    }
+                    .contents{
+                        .content + .content{
+                            margin-left: 20px;
+                            margin-right: 0 ; 
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1399.98px){

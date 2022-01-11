@@ -30,6 +30,15 @@
   font-weight: bold;
 }
 
+.active-content {
+  background-color: #f9c810;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
 .icons .heart.active img {
   content: url(../icons/Heart-selected.svg) !important;
 }
@@ -62,7 +71,7 @@
   -o-border-radius: 30px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .prof .info .buttons .btn, #edit .modal-dialog .modal-content .editing .custom-btn, .custom-categories .info .details .form-group .buttons .btn, .prod .btn, .orders.cart .confirm, .utilities .utility .custom-overlay .btn, #des .modal-dialog .modal-content .overlay .col-12 .btn {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .prof .info .buttons .btn, #edit .modal-dialog .modal-content .editing .custom-btn, .custom-categories .info .details .form-group .buttons .btn, .prod .btn, .orders.cart .confirm, .utilities .utility .custom-overlay .btn, #des .modal-dialog .modal-content .overlay .col-12 .btn, .modal-type-sort .modal-dialog .modal-content .sort .done {
   background-color: #43c57a;
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
@@ -80,7 +89,7 @@
   -o-border-radius: 25px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign:focus, .prof .info .buttons .btn:focus, #edit .modal-dialog .modal-content .editing .custom-btn:focus, .custom-categories .info .details .form-group .buttons .btn:focus, .prod .btn:focus, .orders.cart .confirm:focus, .utilities .utility .custom-overlay .btn:focus, #des .modal-dialog .modal-content .overlay .col-12 .btn:focus {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign:focus, .prof .info .buttons .btn:focus, #edit .modal-dialog .modal-content .editing .custom-btn:focus, .custom-categories .info .details .form-group .buttons .btn:focus, .prod .btn:focus, .orders.cart .confirm:focus, .utilities .utility .custom-overlay .btn:focus, #des .modal-dialog .modal-content .overlay .col-12 .btn:focus, .modal-type-sort .modal-dialog .modal-content .sort .done:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -3580,6 +3589,17 @@ html[dir="ltr"] .footer .overlay .contact .form-group .form-control {
   text-align: left;
 }
 
+html[dir="ltr"] .modal-type-sort .modal-dialog .modal-content .sort .title h6 {
+  font-size: 20pt;
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+html[dir="ltr"] .modal-type-sort .modal-dialog .modal-content .sort .contents .content + .content {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
 @media (max-width: 1399.98px) {
   html[dir="ltr"] .header .navbar .navbar-brand img {
     right: initial;
@@ -5934,6 +5954,93 @@ body .show-case .title {
   line-height: 20px;
 }
 
+.modal-type-sort .modal-dialog .modal-content .sort {
+  padding: 70px 40px 30px 40px !important;
+}
+
+.modal-type-sort .modal-dialog .modal-content .sort .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal-type-sort .modal-dialog .modal-content .sort .title img {
+  width: 50px;
+}
+
+.modal-type-sort .modal-dialog .modal-content .sort .title h6 {
+  font-size: 20pt;
+  margin-right: 20px;
+}
+
+.modal-type-sort .modal-dialog .modal-content .sort .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.modal-type-sort .modal-dialog .modal-content .sort .contents .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #f2eacb;
+  padding: 30px;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+}
+
+.modal-type-sort .modal-dialog .modal-content .sort .contents .content img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.modal-type-sort .modal-dialog .modal-content .sort .contents .content + .content {
+  margin-right: 20px;
+}
+
+.modal-type-sort .modal-dialog .modal-content .sort .done {
+  margin: auto;
+  display: block;
+  margin-bottom: 25px;
+  width: 300px;
+}
+
+.modal-type-sort .modal-dialog .modal-content .sort .done:hover {
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+}
+
 @media (max-width: 1399.98px) {
   .header .navbar .navbar-brand img {
     right: 590px;
@@ -6538,6 +6645,12 @@ body .show-case .title {
     margin-right: 30px;
     font-size: 10pt;
   }
+  .modal-type-sort .modal-dialog .modal-content .sort {
+    padding: 30px !important;
+  }
+  .modal-type-sort .modal-dialog .modal-content .sort .contents .content {
+    padding: 15px;
+  }
 }
 
 @media (min-width: 280px) and (max-width: 350.98px) {
@@ -6689,6 +6802,21 @@ body .show-case .title {
     margin-left: 0;
     margin-right: 30px;
     font-size: 10pt;
+  }
+  .modal-type-sort .modal-dialog .modal-content .sort {
+    padding: 30px !important;
+  }
+  .modal-type-sort .modal-dialog .modal-content .sort .title h6 {
+    font-size: 15pt !important;
+  }
+  .modal-type-sort .modal-dialog .modal-content .sort .contents .content {
+    padding: 15px 25px;
+  }
+  .modal-type-sort .modal-dialog .modal-content .sort .contents .content img {
+    width: 50px;
+  }
+  .modal-type-sort .modal-dialog .modal-content .sort .done {
+    width: 220px;
   }
 }
 /*# sourceMappingURL=style.css.map */

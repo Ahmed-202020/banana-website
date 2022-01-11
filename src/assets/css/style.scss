@@ -839,7 +839,6 @@ html{
             }
         }
     }
-
     #des{
         display: initial;
         .modal-dialog{
@@ -896,6 +895,71 @@ html{
                             line-height: 20px;
                         }
                     }    
+                }
+            }
+        }
+    }
+    .modal-type-sort{
+        .modal-dialog{
+            .modal-content{
+                .sort{
+                    padding: 70px 40px 30px 40px !important;
+                    .title{
+                        display: flex ;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        img{
+                            width: 50px;
+                        }
+                        h6{
+                            font-size: 20pt;
+                            margin-right: 20px;
+                        }
+                    }
+                    .contents{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 50px;
+                        .content{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid $light-line;
+                            padding: 30px;
+                            width: 200px;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            -ms-border-radius: 5px;
+                            -o-border-radius: 5px;
+                            transition: all 300ms ease;
+                            -webkit-transition: all 300ms ease;
+                            -moz-transition: all 300ms ease;
+                            -ms-transition: all 300ms ease;
+                            -o-transition: all 300ms ease;
+                            img{
+                                width: 80px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        .content + .content{
+                            margin-right: 20px;
+                        }
+                    }
+                    .done{
+                        @extend %btn ; 
+                        margin: auto;
+                        display: block;
+                        margin-bottom: 25px;
+                        width: 300px;
+                        &:hover{
+                            filter: brightness(90%);
+                            -webkit-filter: brightness(90%);
+                        }
+                    }
                 }
             }
         }
@@ -1664,6 +1728,20 @@ html{
             }
         }
     }
+    .modal-type-sort{
+        .modal-dialog{
+            .modal-content{
+                .sort{
+                    padding:  30px !important;
+                    .contents{
+                        .content{
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }  
 }
 @media (min-width: 280px) and (max-width: 350.98px){
     .header{
@@ -1847,4 +1925,29 @@ html{
             }
         }
     }
+    .modal-type-sort{
+        .modal-dialog{
+            .modal-content{
+                .sort{
+                    padding:  30px !important;
+                    .title{
+                        h6{
+                            font-size: 15pt !important;
+                        }
+                    }
+                    .contents{
+                        .content{
+                            padding: 15px 25px;
+                            img{
+                                width: 50px;
+                            }
+                        }
+                    }
+                    .done{
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }  
 }

@@ -41,9 +41,17 @@ $(function(){
   })
 
   $("#des .close a").on("click" , function(){
-    $(this).parentsUntil("body").fadeOut(700)
+    $(this).parentsUntil("body").fadeOut(700 , function(){
+      $(".modal-type-sort").modal("show") ; 
+      $(".modal-type-sort .done").on("click" , function(){
+        $(".modal-type-sort").modal("hide") ; 
+      })
+    })
   })
-
+  $(".modal-type-sort .content").on("click" , function(){
+    $(".modal-type-sort .content").removeClass("active-content") ; 
+    $(this).addClass("active-content") ; 
+  })
   $(".common-products .btn").on("click" , function(){
     Swal.fire(
       "تم" , 

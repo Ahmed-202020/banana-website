@@ -48,6 +48,14 @@ $min-size-font : "20pt" ;
         font-weight: bold;
     }
 }
+.active-content{
+    background-color: $button-bg-products;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 .icons{
     .heart.active{
         img{
