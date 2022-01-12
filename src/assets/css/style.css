@@ -71,7 +71,7 @@
   -o-border-radius: 30px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .prof .info .buttons .btn, #edit .modal-dialog .modal-content .editing .custom-btn, .custom-categories .info .details .form-group .buttons .btn, .prod .btn, .orders.cart .confirm, .utilities .utility .custom-overlay .btn, #des .modal-dialog .modal-content .overlay .col-12 .btn, .modal-type-sort .modal-dialog .modal-content .sort .done {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .prof .info .buttons .btn, #edit .modal-dialog .modal-content .editing .custom-btn, .custom-categories .info .details .form-group .buttons .btn, .prod .btn, .orders.cart .confirm, .utilities .utility .custom-overlay .btn, #des .modal-dialog .modal-content .overlay .col-12 .btn, .modal-type-sort .modal-dialog .modal-content .sort .done, .modal-location .modal-dialog .modal-content .select-location .buttons .btn {
   background-color: #43c57a;
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
@@ -89,7 +89,7 @@
   -o-border-radius: 25px;
 }
 
-.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign:focus, .prof .info .buttons .btn:focus, #edit .modal-dialog .modal-content .editing .custom-btn:focus, .custom-categories .info .details .form-group .buttons .btn:focus, .prod .btn:focus, .orders.cart .confirm:focus, .utilities .utility .custom-overlay .btn:focus, #des .modal-dialog .modal-content .overlay .col-12 .btn:focus, .modal-type-sort .modal-dialog .modal-content .sort .done:focus {
+.modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign:focus, .prof .info .buttons .btn:focus, #edit .modal-dialog .modal-content .editing .custom-btn:focus, .custom-categories .info .details .form-group .buttons .btn:focus, .prod .btn:focus, .orders.cart .confirm:focus, .utilities .utility .custom-overlay .btn:focus, #des .modal-dialog .modal-content .overlay .col-12 .btn:focus, .modal-type-sort .modal-dialog .modal-content .sort .done:focus, .modal-location .modal-dialog .modal-content .select-location .buttons .btn:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -117,7 +117,7 @@
   z-index: -1;
 }
 
-.prof .info .addresses, .prof .modal-dialog .modal-content .prof {
+.prof .info .addresses, .modal-addresses .modal-dialog .modal-content .prof {
   position: relative;
   background-color: #fff;
   padding: 15px 20px 30px 20px;
@@ -127,7 +127,7 @@
   margin-bottom: 30px;
 }
 
-.prof .info .addresses .address, .prof .modal-dialog .modal-content .prof .address {
+.prof .info .addresses .address, .modal-addresses .modal-dialog .modal-content .prof .address {
   background-color: #fffcee;
   padding: 10px 30px 40px 30px;
   border: 1px solid #f2eacb;
@@ -145,41 +145,41 @@
           justify-content: space-between;
 }
 
-.prof .info .addresses .address .sub .title, .prof .modal-dialog .modal-content .prof .address .sub .title {
+.prof .info .addresses .address .sub .title, .modal-addresses .modal-dialog .modal-content .prof .address .sub .title {
   color: #00963f;
   font-size: 12pt;
   font-weight: bold;
 }
 
-.prof .info .addresses .address .sub .title::after, .prof .modal-dialog .modal-content .prof .address .sub .title::after {
+.prof .info .addresses .address .sub .title::after, .modal-addresses .modal-dialog .modal-content .prof .address .sub .title::after {
   content: initial;
 }
 
-.prof .info .addresses .address .sub .text, .prof .modal-dialog .modal-content .prof .address .sub .text {
+.prof .info .addresses .address .sub .text, .modal-addresses .modal-dialog .modal-content .prof .address .sub .text {
   margin-top: 8px;
 }
 
-.prof .info .addresses .address .editing a, .prof .modal-dialog .modal-content .prof .address .editing a {
+.prof .info .addresses .address .editing a, .modal-addresses .modal-dialog .modal-content .prof .address .editing a {
   cursor: pointer;
 }
 
-.prof .info .addresses .address .editing a + a, .prof .modal-dialog .modal-content .prof .address .editing a + a {
+.prof .info .addresses .address .editing a + a, .modal-addresses .modal-dialog .modal-content .prof .address .editing a + a {
   margin-right: 8px;
 }
 
-.prof .info .addresses .home, .prof .modal-dialog .modal-content .prof .home {
+.prof .info .addresses .home, .modal-addresses .modal-dialog .modal-content .prof .home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.prof .info .addresses .work, .prof .modal-dialog .modal-content .prof .work {
+.prof .info .addresses .work, .modal-addresses .modal-dialog .modal-content .prof .work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.prof .info .addresses::before, .prof .modal-dialog .modal-content .prof::before {
+.prof .info .addresses::before, .modal-addresses .modal-dialog .modal-content .prof::before {
   position: absolute;
   content: "";
   width: 200px;
@@ -192,7 +192,7 @@
   z-index: -1;
 }
 
-.prof .info .addresses .info, .prof .modal-dialog .modal-content .prof .info {
+.prof .info .addresses .info, .modal-addresses .modal-dialog .modal-content .prof .info {
   position: absolute;
   top: -40px;
   right: 20px;
@@ -202,11 +202,11 @@
   border: none;
 }
 
-.prof .info .addresses .info img, .prof .modal-dialog .modal-content .prof .info img {
+.prof .info .addresses .info img, .modal-addresses .modal-dialog .modal-content .prof .info img {
   width: 40px;
 }
 
-.prof .info .addresses .info .text, .prof .modal-dialog .modal-content .prof .info .text {
+.prof .info .addresses .info .text, .modal-addresses .modal-dialog .modal-content .prof .info .text {
   color: #f7fffa;
   font-size: 12pt;
   font-weight: bold;
@@ -441,6 +441,7 @@
 }
 
 .modal .modal-dialog .row .col-6 .signin .out a {
+  cursor: pointer;
   color: #2a2a2a;
   text-decoration: none;
   font-size: 12pt;
@@ -3423,6 +3424,10 @@
   }
 }
 
+body {
+  padding: 0;
+}
+
 .confirm .title h3::after {
   width: 100px;
   top: 42px;
@@ -3551,16 +3556,21 @@
   margin-bottom: 5px;
 }
 
-.prof .modal-dialog .modal-content {
+.modal-addresses {
+  padding-inline: 0;
+  padding-left: 0 !important;
+}
+
+.modal-addresses .modal-dialog .modal-content {
   padding: 100px 60px 30px;
 }
 
-.prof .modal-dialog .modal-content .prof {
+.modal-addresses .modal-dialog .modal-content .prof {
   background-color: transparent;
   width: 670px;
 }
 
-.prof .modal-dialog .modal-content .prof .addresses {
+.modal-addresses .modal-dialog .modal-content .prof .addresses {
   position: relative;
   background-color: #fffcee;
   padding: 25px;
@@ -3568,7 +3578,7 @@
   border-top-left-radius: 25px;
 }
 
-.prof .modal-dialog .modal-content .prof .addresses .address {
+.modal-addresses .modal-dialog .modal-content .prof .addresses .address {
   -webkit-box-align: start !important;
       -ms-flex-align: start !important;
           align-items: flex-start !important;
@@ -3579,11 +3589,11 @@
   padding: 15px 20px;
 }
 
-.prof .modal-dialog .modal-content .prof .addresses .address .editing {
+.modal-addresses .modal-dialog .modal-content .prof .addresses .address .editing {
   padding: 0px 20px 0px !important;
 }
 
-.prof .modal-dialog .modal-content .prof .another-address {
+.modal-addresses .modal-dialog .modal-content .prof .another-address {
   text-decoration: none;
   display: block;
   cursor: pointer;
@@ -3594,14 +3604,72 @@
   margin-bottom: 25px;
 }
 
-.prof .modal-dialog .modal-content::before {
-  top: -12px !important;
+.modal-addresses .modal-dialog .modal-content .prof::before {
+  z-index: 0;
+  right: 22px;
+  top: -35px;
 }
 
-.prof::before {
-  top: -34px !important;
-  right: 22px !important;
-  z-index: 0 !important;
+@media (max-width: 575.98px) {
+  .modal-addresses .modal-dialog .modal-content {
+    padding-inline: 20px;
+  }
+  .modal-addresses .modal-dialog .modal-content .prof .addresses {
+    padding-inline: 12px;
+  }
+  .modal-addresses .modal-dialog .modal-content .prof .addresses .address {
+    padding-inline: 12px;
+  }
+  .modal-addresses .modal-dialog .modal-content .prof .addresses .address .editing {
+    padding-inline: 5px !important;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 420px) {
+  .modal-addresses .modal-content {
+    padding-inline: 0 !important;
+  }
+  .modal-addresses .modal-content .prof .addresses {
+    padding-inline: 10px !important;
+    width: 320px;
+  }
+  .modal-addresses .modal-content .prof .addresses .address .sub .text {
+    font-size: 8pt;
+  }
+  .modal-addresses .modal-content .editing a img {
+    width: 12px;
+  }
+  .modal-addresses .modal-content .editing a + a {
+    margin-right: 4px !important;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 350px) {
+  .modal-addresses .modal-content {
+    padding-inline: 0 !important;
+  }
+  .modal-addresses .modal-content .prof .addresses {
+    padding-inline: 10px !important;
+    width: 220px;
+  }
+  .modal-addresses .modal-content .prof .addresses .another-address {
+    font-size: 10pt;
+  }
+  .modal-addresses .modal-content .prof .addresses .address .sub .title {
+    font-size: 10pt;
+  }
+  .modal-addresses .modal-content .prof .addresses .address .sub .text {
+    font-size: 5pt;
+  }
+  .modal-addresses .modal-content .prof::before {
+    width: 215px !important;
+  }
+  .modal-addresses .modal-content .editing a img {
+    width: 8px !important;
+  }
+  .modal-addresses .modal-content .editing a + a {
+    margin-right: 0 !important;
+  }
 }
 
 html[dir="ltr"] .header .navbar .navbar-brand img {
@@ -3779,6 +3847,25 @@ html[dir="ltr"] .modal-type-sort .modal-dialog .modal-content .sort .title h6 {
 html[dir="ltr"] .modal-type-sort .modal-dialog .modal-content .sort .contents .content + .content {
   margin-left: 20px;
   margin-right: 0;
+}
+
+html[dir="ltr"] .modal-location .modal-dialog .modal-content .select-location .title img {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+html[dir="ltr"] .modal-location .modal-dialog .modal-content .select-location .buttons {
+  margin-left: 55px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .modal-location .modal-dialog .modal-content .select-location .buttons .btn + .btn {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .modal-location .modal-dialog .close {
+  text-align: right;
 }
 
 @media (max-width: 1399.98px) {
@@ -4054,6 +4141,21 @@ html[dir="ltr"] .modal-type-sort .modal-dialog .modal-content .sort .contents .c
   }
   html[dir="ltr"] .footer .overlay {
     padding: 200px 70px 40px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 420px) {
+  html[dir="ltr"] .modal-location .modal-dialog .modal-content .select-location .title img {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+  html[dir="ltr"] .modal-location .modal-dialog .modal-content .select-location .buttons {
+    margin-right: 0px;
+    margin-left: 0;
+  }
+  html[dir="ltr"] .modal-location .modal-dialog .modal-content .select-location .buttons .btn + .btn {
+    margin-right: 0;
+    margin-left: 3px;
   }
 }
 
@@ -4960,6 +5062,48 @@ html[dir="ltr"] .orders.cart .show-case .bill .info img {
   html[dir="ltr"] .orders.cart .show-case .current-orders .current-order .cost-order .data {
     left: -178px;
     right: initial;
+  }
+}
+
+html[dir="ltr"] .modal-addresses {
+  padding-right: 0 !important;
+}
+
+html[dir="ltr"] .modal-addresses .modal-dialog .modal-content .prof .address .editing a + a {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .modal-addresses .modal-dialog .modal-content .prof .another-address {
+  text-align: right;
+}
+
+html[dir="ltr"] .modal-addresses .modal-dialog .modal-content .prof::before {
+  left: 22px;
+  right: 0;
+}
+
+html[dir="ltr"] .modal-addresses .modal-dialog .modal-content .prof .info {
+  left: 20px;
+  right: initial;
+}
+
+html[dir="ltr"] .modal-addresses::before {
+  right: initial !important;
+  left: 22px !important;
+}
+
+@media (min-width: 360px) and (max-width: 420px) {
+  html[dir="ltr"] .modal-addresses .modal-content .editing a + a {
+    margin-left: 4px !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 350px) {
+  html[dir="ltr"] .modal-addresses .modal-content .editing a + a {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
   }
 }
 
@@ -6222,6 +6366,73 @@ body .show-case .title {
   -webkit-filter: brightness(90%);
 }
 
+.modal-location {
+  padding-inline: 0 !important;
+}
+
+.modal-location .modal-dialog .modal-content {
+  margin: auto;
+  width: 900px;
+  padding: 25px 40px 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.modal-location .modal-dialog .modal-content .select-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-location .modal-dialog .modal-content .select-location .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.modal-location .modal-dialog .modal-content .select-location .title img {
+  margin-left: 10px;
+}
+
+.modal-location .modal-dialog .modal-content .select-location .buttons {
+  margin-right: 55px;
+}
+
+.modal-location .modal-dialog .modal-content .select-location .buttons .btn {
+  width: 130px;
+  height: 42px;
+  line-height: 25px;
+}
+
+.modal-location .modal-dialog .modal-content .select-location .buttons .no {
+  background-color: #f9c810;
+}
+
+.modal-location .modal-dialog .modal-content .select-location .buttons .btn + .btn {
+  margin-right: 15px;
+}
+
+.modal-location .modal-dialog .close {
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.modal-location .modal-dialog .close img {
+  cursor: pointer;
+}
+
 @media (max-width: 1399.98px) {
   .header .navbar .navbar-brand img {
     right: 590px;
@@ -6330,6 +6541,9 @@ body .show-case .title {
   }
   .footer {
     margin-top: -85px;
+  }
+  .modal-location .modal-dialog .modal-content {
+    width: 700px;
   }
 }
 
@@ -6491,6 +6705,9 @@ body .show-case .title {
   .footer .overlay .contact .form-group .form-control {
     width: 100%;
   }
+  .modal-location .modal-dialog .modal-content {
+    width: 800px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -6559,6 +6776,12 @@ body .show-case .title {
   }
   .footer .overlay .contact .form-group .form-control {
     width: 100%;
+  }
+  .modal-location .modal-dialog {
+    margin-inline: 35px !important;
+  }
+  .modal-location .modal-dialog .modal-content {
+    width: 700px;
   }
 }
 
@@ -6696,6 +6919,12 @@ body .show-case .title {
   .footer .overlay .items .item + .item {
     margin-right: 10px;
   }
+  .modal-location .modal-dialog {
+    margin-inline: 35px !important;
+  }
+  .modal-location .modal-dialog .modal-content {
+    width: 450px;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 420px) {
@@ -6831,6 +7060,45 @@ body .show-case .title {
   }
   .modal-type-sort .modal-dialog .modal-content .sort .contents .content {
     padding: 15px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 420px) {
+  .modal-location .modal-dialog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .modal-location .modal-dialog .modal-content {
+    padding-inline: 15px;
+  }
+  .modal-location .modal-dialog .modal-content .select-location {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal-location .modal-dialog .modal-content .select-location .title img {
+    width: 20px;
+    margin-left: 5px;
+  }
+  .modal-location .modal-dialog .modal-content .select-location h5 {
+    font-size: 8pt;
+    margin-bottom: 2px;
+  }
+  .modal-location .modal-dialog .modal-content .select-location .buttons {
+    margin-right: 0px;
+  }
+  .modal-location .modal-dialog .modal-content .select-location .buttons .btn {
+    width: 85px;
+    height: 30px;
+    font-size: 12pt;
+    line-height: 15px;
+  }
+  .modal-location .modal-dialog .modal-content .select-location .buttons .btn + .btn {
+    margin-right: 3px;
   }
 }
 

@@ -200,6 +200,31 @@ html[dir = "ltr"]{
             }
         }
     }
+    .modal-location{
+        .modal-dialog{
+            .modal-content{
+                .select-location{
+                    .title{
+                        img{
+                            margin-left: 0;
+                            margin-right: 10px;
+                        }
+                    }
+                    .buttons{
+                        margin-left: 55px;
+                        margin-right: 0;
+                        .btn + .btn{
+                            margin-left: 15px;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .close{
+                text-align: right;
+            }
+        }
+    }
 }
 
 @media (max-width: 1399.98px){
@@ -641,6 +666,32 @@ html[dir = "ltr"]{
             }
         }
     }
+}
+@media (min-width: 280px) and (max-width: 420px){
+    html[dir = "ltr"]{
+        .modal-location{
+            .modal-dialog{
+                .modal-content{
+                    .select-location{
+                        .title{
+                            img{
+                                margin-left: 0px;
+                                margin-right: 5px;
+                            }
+                        }
+                        .buttons{
+                            margin-right: 0px;
+                            margin-left: 0;
+                            .btn + .btn{
+                                margin-right: 0;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
 }
 @media (min-width: 280px) and (max-width: 350.98px){
     html[dir = "ltr"]{
@@ -2129,6 +2180,72 @@ html[dir="ltr"]{
                                 right: initial;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//confirm.html(ltr)
+html[dir = "ltr"]{
+    .modal-addresses{
+        padding-right: 0 !important;
+        .modal-dialog{
+            .modal-content{
+                .prof{
+                    .address{
+                        .editing{
+                            a + a {
+                                margin-left: 8px;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    .another-address{
+                        text-align: right;
+                    }
+                    &::before{
+                        left: 22px;
+                        right: 0;
+                    }
+                    .info{
+                        left: 20px;
+                        right: initial;
+                    }
+                }
+            }
+        }
+        &::before{
+            right: initial !important;
+            left: 22px !important;
+        }
+    }
+}
+
+// responsive design confirm.html(ltr)
+@media (min-width: 360px) and (max-width: 420px){
+    html[dir = "ltr"]{
+        .modal-addresses{
+            .modal-content{
+                .editing{
+                    a + a{
+                        margin-left: 4px !important;
+                        margin-right: 0 !important;
+                    }
+                }
+            }
+        }  
+    }
+}
+@media (min-width: 280px) and (max-width: 350px){
+    html[dir = "ltr"]{
+        .modal-addresses{
+            .modal-content{
+                .editing{
+                    a + a{
+                        margin-right: 0 !important;
+                        margin-left: 0 !important;
                     }
                 }
             }

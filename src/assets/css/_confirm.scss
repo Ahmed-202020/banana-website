@@ -1,3 +1,6 @@
+body{
+    padding: 0;
+}
 .confirm{
     .title{
         h3{
@@ -106,7 +109,10 @@
         }
     }
 }
-.prof{
+
+.modal-addresses{
+    padding-inline: 0 ;
+    padding-left: 0 !important;
     .modal-dialog{
         .modal-content{
             padding: 100px 60px 30px;
@@ -140,15 +146,110 @@
                     font-weight: bold;
                     margin-bottom: 25px;
                 }
-            }
-            &::before{
-                top: -12px !important;
+                &::before{
+                    z-index: 0;
+                    right: 22px;
+                    top: -35px;
+                }
             }
         }
     }
-    &::before{
-        top: -34px !important;
-        right: 22px !important;
-        z-index: 0 !important;
+}
+
+//responsive design confirm.html(rtl)
+
+@media (max-width: 1399.98px){}
+@media (max-width: 1280.98px){}
+@media (max-width: 1199.98px){}
+@media (max-width: 768px){}
+@media (max-width: 575.98px){
+    .modal-addresses{
+        .modal-dialog{
+            .modal-content{
+                padding-inline: 20px;
+                .prof{
+                    .addresses{
+                        padding-inline: 12px;
+                        .address{
+                            padding-inline: 12px;
+                            .editing{
+                                padding-inline: 5px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+@media (min-width: 360px) and (max-width: 420px){
+    .modal-addresses{
+        .modal-content{
+            padding-inline: 0 !important;
+            .prof{
+                .addresses{
+                    padding-inline: 10px !important;
+                    width: 320px;
+                    .address{
+                        .sub{
+                            .text{
+                                font-size: 8pt;
+                            }
+                        }
+                    }
+                }
+            }
+            .editing{
+                a{
+                    img{
+                        width: 12px;
+                    }
+                }
+                a + a{
+                    margin-right: 4px !important;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 280px) and (max-width: 350px){
+    .modal-addresses{
+        .modal-content{
+            padding-inline: 0 !important;
+            .prof{
+                .addresses{
+                    padding-inline: 10px !important;
+                    width: 220px;
+                    .another-address{
+                        font-size: 10pt;
+                    }
+                    .address{
+                        .sub{
+                            .title{
+                                font-size: 10pt;
+                            }
+                            .text{
+                                font-size: 5pt;
+                            }
+                        }
+                    }
+                }
+                &::before{
+                    width: 215px !important;
+                }
+            }
+            .editing{
+                a{
+                    img{
+                        width: 8px !important;
+                    }
+                }
+                a + a{
+                    margin-right: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+

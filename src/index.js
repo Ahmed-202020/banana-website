@@ -34,10 +34,18 @@ $(function(){
   })
 
   $("#signin").on("click" , function(){
-    $(".register").fadeIn(500)
+    $(".register").modal("show")
   })
   $("#signup").on("click" , function(){
-    $(".create").fadeIn(500) ; 
+    $(".create").modal("show") ; 
+  })
+
+  $(".close-register").on("click" , function(){
+    $(".register").modal("hide") ; 
+  })
+
+  $(".close-create").on("click" , function(){
+    $(".create").modal("hide") ; 
   })
 
   $("#des .close a").on("click" , function(){
@@ -45,9 +53,15 @@ $(function(){
       $(".modal-type-sort").modal("show") ; 
       $(".modal-type-sort .done").on("click" , function(){
         $(".modal-type-sort").modal("hide") ; 
+        $(".modal-location").modal("show");
       })
     })
   })
+
+  $(".modal-location .close img").on("click" , function(){
+    $(".modal-location").modal("hide");
+  })
+
   $(".modal-type-sort .content").on("click" , function(){
     $(".modal-type-sort .content").removeClass("active-content") ; 
     $(this).addClass("active-content") ; 

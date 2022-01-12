@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="ltr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -564,7 +564,26 @@
             </div>
         </footer>
     </body>
-    <div id = "edit"  class="modal fade modal-type-sort" aria-hidden="true"  tabindex="-1">
+    <div class="modal fade modal-location" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close">
+                    <img src="./assets/icons/Group 40856.svg" alt="close">
+                </div>
+                <div class="select-location">
+                    <div class="title">
+                        <img src="./assets/icons/Group 424211.svg" alt="location">
+                        <h5>السماح لموقع بنانا بتحديد موقعك؟</h5>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" class="btn" data-bs-dismiss="modal">نعم</button>
+                        <button type="button" class="btn no" data-bs-dismiss="modal">لا</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "edit"  class="modal fade modal-type-sort" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row justify-content-center">
@@ -584,7 +603,7 @@
                                     <h5 class="sub">تجزئة</h5>
                                 </div>
                             </div>
-                            <a  class="btn done">تم</a>
+                            <a  class="btn done"  data-bs-dismiss="modal">تم</a>
                         </div>
                     </div>
                 </div>
@@ -618,14 +637,14 @@
             </div>
         </div>
     </div>
-    <div id = "register"  class="modal register fade" aria-hidden="true" tabindex="-1">
+    <div id = "register"  class="modal modal-register register fade" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row">
                     <div class="col-6">
                         <div class="signin">
                             <span class="out">
-                                <a href="./index.html"> x</a>
+                                <a class="close-register"> x</a>
                             </span>
                             <nav class="navbar">
                                 <div class="navbar-brand">
@@ -648,7 +667,7 @@
                                 <input type="password" class="form-control" name = "password"  placeholder="كلمة السر" required>
                                 <a href="#" class="forget">نسيت كلمة المرور ؟</a>
                                 <div class="buttons">
-                                    <button   type="submit" class = "btn sign"  >تسجيل الدخول</button>
+                                    <button  type="button" class = "btn sign"  >تسجيل الدخول</button>
                                     <a id="havent-acount" data-bs-toggle= "modal" data-bs-target="#create" class="signup btn" >ليس لديك حساب؟</a>
                                 </div>
                             </form>
@@ -661,14 +680,14 @@
             </div>
         </div>
     </div>
-    <div id = "create"  class="modal  create fade" aria-hidden="true" tabindex="-1">
+    <div id = "create"  class="modal modal-create  create fade" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row">
                     <div class="col-6">
                         <div class="signin signup">
                             <span class="out">
-                                <a href="./index.html"> x</a>
+                                <a class="close-create"> x</a>
                             </span>
                             <nav class="navbar">
                                 <div class="navbar-brand">
@@ -695,8 +714,8 @@
                                     <label for="agree">أوافق على الشروط والأحكام</label>
                                 </div>
                                 <div class="buttons">
-                                    <button  class = "btn sign" type="submit" >تسجيل الدخول</button>
-                                    <button class = "btn sign custom-btn" type="submit" >تصفح المنتجات</button>
+                                    <button  class = "btn sign" type="button" >تسجيل الدخول</button>
+                                    <button class = "btn sign custom-btn" type="button" >تصفح المنتجات</button>
                                     <a id="have-acount" data-bs-toggle= "modal" data-bs-target="#register" class=" signup btn">لديك حساب بالفعل ؟</a>
                                 </div>
                             </form>

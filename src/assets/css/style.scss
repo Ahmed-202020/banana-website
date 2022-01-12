@@ -965,6 +965,56 @@ html{
             }
         }
     }
+    .modal-location{
+        padding-inline: 0 !important;
+        .modal-dialog{
+            .modal-content{
+                margin: auto;
+                width: 900px;
+                padding: 25px 40px 50px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                .select-location{
+                    display: flex;
+                    flex-direction: column;
+                    .title{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 25px;
+                        img{
+                            margin-left: 10px;
+                        }
+                    }
+                    .buttons{
+                        margin-right: 55px;
+                        .btn{
+                            @extend %btn ;
+                            width: 130px;
+                            height: 42px;
+                            line-height: 25px;
+                        }
+                        .no{
+                            background-color: $button-bg-products;
+                        }
+                        .btn + .btn{
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+            .close{
+                text-align: left;
+                display: inline-block;
+                margin-bottom: 20px;
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 
 // responsive design (index.html) rtl
 
@@ -1133,6 +1183,13 @@ html{
     }
     .footer{
         margin-top: -85px;
+    }
+    .modal-location{
+        .modal-dialog{
+            .modal-content{
+                width: 700px;
+            }
+        }
     }
 }
 @media (max-width: 991.98px) {
@@ -1321,6 +1378,13 @@ html{
             }
         }
     }
+    .modal-location{
+        .modal-dialog{
+            .modal-content{
+                width: 800px;
+            }
+        }
+    }
 }
 @media (max-width: 768px) {
     .header{
@@ -1420,6 +1484,14 @@ html{
                         width: 100%;
                     }
                 }
+            }
+        }
+    }
+    .modal-location{
+        .modal-dialog{
+            margin-inline: 35px !important;
+            .modal-content{
+                width: 700px;
             }
         }
     }
@@ -1576,6 +1648,14 @@ html{
                 .item+.item{
                     margin-right: 10px;
                 }
+            }
+        }
+    }
+    .modal-location{
+        .modal-dialog{
+            margin-inline: 35px !important;
+            .modal-content{
+                width: 450px;
             }
         }
     }
@@ -1743,6 +1823,42 @@ html{
             }
         }
     }  
+}
+@media (min-width: 280px) and (max-width: 420px){
+    .modal-location{
+        .modal-dialog{
+            display: flex;
+            justify-content: center;
+            .modal-content{
+                padding-inline: 15px;
+                .select-location{
+                  align-items: center;
+                    .title{
+                        img{
+                            width: 20px;
+                            margin-left: 5px;
+                        }
+                    }
+                    h5{
+                        font-size: 8pt;
+                        margin-bottom: 2px;
+                    }
+                    .buttons{
+                        margin-right: 0px;
+                        .btn{
+                            width: 85px;
+                            height: 30px;
+                            font-size: 12pt;
+                            line-height: 15px;
+                        }
+                        .btn + .btn{
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media (min-width: 280px) and (max-width: 350.98px){
     .header{
