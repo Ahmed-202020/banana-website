@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+            integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <title>banana website</title>
+    </head>
+    <body class="custom-body">
+        <header id="header" class="header custom-header  product-header"> 
+            <nav class="navbar custom-navbar navbar-expand-lg">
+                <div class="container-fluid p-0">
+                    <a class="navbar-brand logo" href="./index.html">
+                        <img src="./assets/logo/new3.png" alt = "logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=" fas fa-bars fa-2x"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    اللغة
+                                </a>
+                                <ul class="dropdown-menu custom-dropdown-menu-lang" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item first" href="#">العربية</a></li>
+                                    <li><a class="dropdown-item second" href="#">English</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item sort-buying dropdown">
+                                <a class="nav-link   dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    تحديد نوع الشراء
+                                </a>
+                                <ul class="dropdown-menu custom-dropdown-menu-sort" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item first" href="#">تجزئة</a></li>
+                                    <li><a class="dropdown-item second" href="#">جملة</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item home">
+                                <a class="nav-link " aria-current="page" href="./index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item who-are">
+                                <a class="nav-link " href="./about-us.html">
+                                    من نحن
+                                </a>
+                            </li>
+                            <li class="nav-item  ">
+                                <a class="nav-link" href="./categories.html">
+                                    جميع الأقسام
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./orders.html">
+                                    الطلبات
+                                </a>
+                            </li>
+                            <div class="icons">
+                                <li class="nav-item heart ">
+                                    <a class="nav-link " href="./fav.html">
+                                        <img src="./assets/icons/Heart.svg" alt="favourites">
+                                    </a>
+                                </li>
+                                <li class="nav-item cart">
+                                    <a class="nav-link " href="./cart.html">
+                                        <img src="./assets/icons/cart.svg" alt="cart">
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown profile">
+                                    <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./assets/icons/Profile.svg" alt="profile">
+                                    </a>
+                                    <ul class="dropdown-menu custom-dropdown-log" aria-labelledby="navbarDropdown">
+                                        <li><a id="my-acount" class="dropdown-item first" href="./profile.html">حسابي</a></li>
+                                        <li><a id = "logout" class="dropdown-item second" href="#">تسجيل الخروج</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>    
+                    </div>
+                </div>
+            </nav>
+            <img class="bar" src="./assets/images/orange-bar.png" alt="bar">
+        </header> 
+        <section class="orders cart confirm">
+            <div class="title">
+                <h3>تأكيد الطلب</h3>
+            </div>
+            <div class="show-case">
+                <div class="inform">
+                    <div class="addresses">
+                        <div class="editing">
+                            <a  class="edit modal-confirm">
+                                <img src="./assets/icons/Edit-blue.svg" alt="edit">
+                            </a>
+                        </div>
+                        <div class="address home">
+                            <div class="sub">
+                                <span><img src="./assets/icons/Home.svg" alt="home"></span>
+                                <span class="title">المنزل</span>
+                                <p class="text"> ش محمد فهمى ، المنطقة الأولى ، مدينة نصر القاهرة</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <img src="./assets/icons/img/addresses.png" alt="address">
+                            <span class="text">عنوان التوصيل</span>
+                        </div>
+                    </div>
+                    <div class="addresses order-time">
+                        <div class="address home">
+                            <div class="sub">
+                                <p class="text">التوصيل خلال 20-30 دقيقة</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <img src="./assets/icons/img/services.png" alt="time">
+                            <span class="text">وقت التوصيل</span>
+                        </div>
+                    </div>
+                    <div class="current-orders">
+                        <div class="current-order">
+                            <div class="show">
+                                <span class="name">توت</span>
+                                <div class="order">
+                                    <img src="./assets/images/توت.png" alt="product">
+                                    <button class="btn delete-order">حذف المنتج</button>
+                                </div>
+                            </div>    
+                            <div class="cost-order">
+                                <span>150 ر.س</span>
+                                <div class="quantity">
+                                </div>
+                                <div class="data">
+                                    <img class="add add-1" src="./assets/icons/Icon ionic-ios-add-circle.svg" alt="">
+                                    <span class="value-content value-content-1">0.5</span>
+                                    <img class="subtract subtract-1" src="./assets/icons/Icon awesome-minus-circle.svg" alt="">
+                                </div>
+                                <span class="type">كرتون</span>
+                            </div>
+                        </div>
+                        <div class="current-order">
+                            <div class="show">
+                                <span class="name">موز</span>
+                                <div class="order">
+                                    <img src="./assets/images/موز.png" alt="product">
+                                    <button class="btn  delete-order">حذف المنتج</button>
+                                </div>
+                            </div>    
+                            <div class="cost-order">
+                                <span>150 ر.س</span>
+                                <div class="quantity">
+                                </div>
+                                <div class="data">
+                                    <img class="add add-2" src="./assets/icons/Icon ionic-ios-add-circle.svg" alt="">
+                                    <span class="value-content value-content-2">0.5</span>
+                                    <img class="subtract subtract-2" src="./assets/icons/Icon awesome-minus-circle.svg" alt="">
+                                </div>
+                                <span class="type">كرتون</span>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <img src="./assets/icons/img/orders.png" alt="address">
+                            <span>المنتجات</span>
+                        </div>
+                    </div>    
+                    <div class="addresses notes">
+                        <textarea name="note" id="note" cols="60" rows="4" placeholder="ملاحظات" ></textarea>
+                        <img class="holder" src="./assets/note@3x.png" alt="">
+                        <div class="info">
+                            <img src="./assets/icons/img/Group 42446@3x.png" alt="note">
+                            <span class="text">ملاحظات مع الطلب</span>
+                        </div>
+                    </div>
+                    <div class="addresses coupon">
+                        <div class="address home">
+                            <div class="sub">
+                                <p class="text">التوصيل خلال 20-30 دقيقة</p>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <img src="./assets/icons/img/Group 42448@3x.png" alt="coupon">
+                            <span class="text">اضافة كوبون</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bill">
+                    <div class="details">
+                        <div class="detail">
+                            <span class="sub">الاجمالي :</span>
+                            <span class="price">60 ر.س</span>
+                        </div>
+                        <div class="detail">
+                            <span class="sub">رسوم التوصيل :</span>
+                            <span class="price">20 ر.س</span>
+                        </div>
+                        <div class="detail">
+                            <span class="sub">الضريبة :</span>
+                            <span class="price">20 ر.س</span>
+                        </div>
+                    </div>
+                    <div class="final-cost">
+                        <div class="detail">
+                            <span class="sub">التكلفة النهائية :</span>
+                            <span class="price">100 ر.س</span>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img src="./assets/icons/img/bill.png" alt="bill">
+                        <span>الفاتورة</span>
+                    </div>
+                </div>
+            </div>
+            <a  href="./confirm.html" class="btn confirm">ارسال الطلب</a>
+        </section>    
+        <footer class="footer custom-footer">
+            <div class="overlay">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="logo">
+                            <img src="./assets/logo/logo.png" alt="logo">
+                        </div>
+                        <div class="explanation">
+                            <p class="text">بنانا هو تطبيق لتوصيل جميع أنواع الخضروات والفاكهة الطازجة وغيرها من المنتجات بجودة عالية وأسعار  مناسبة لتناسب جميع الأذواق ، فنحن نعمل على راحتك دائما</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 order-3 order-sm-2  d-flex flex-column justify-content-center align-items-center">
+                        <ul class="items">
+                            <li class="item">
+                                <a href="./index.html" class="link">الرئيسية</a>
+                            </li>
+                            <li class="item">
+                                <a href="./about-us.html" class="link">من نحن</a>
+                            </li>
+                            <li class="item">
+                                <a href="./categories.html" class="link">جميع الاقسام</a>
+                            </li>
+                            <li class="item">
+                                <a href="./orders.html" class="link">الطلبات</a>
+                            </li>
+                            <li class="item">
+                                <a href="./profile.html" class="link">حسابى</a>
+                            </li>
+                            <li class="item">
+                                <a href="t_c.html" class="link">الشروط والاحكام</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">سياسة الخصوصية</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 order-2 order-sm-3">
+                        <div class="contact">
+                            <div class="title">
+                                <h6>تواصل معنا</h6>
+                            </div>
+                            <form class="form-group" action=".">
+                                <input class="form-control" type="text" name = "name" placeholder="الاسم" required />
+                                <input class="form-control" type="email" name = "email" placeholder="البريد الالكتروني" required />
+                                <input class="form-control" type="text" name = "number" placeholder="رقم الهاتف" required />
+                                <textarea name="text" class="form-control" placeholder="رسالتك"  cols="30" rows="5"></textarea>
+                                <button class="btn" type="submit">ارسال</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <p class="copyright">حقوق ملكية©2021 </p>
+            </div>
+        </footer>
+    </body>
+    <div id = "edit"  class="modal fade prof  modal-addresses register" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row justify-content-center">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <section class="prof">
+                            <div class="addresses">
+                                <a class="another-address">+أضف عنوان أخر</a>
+                                <div class="address home">
+                                    <div class="sub">
+                                        <span><img src="./assets/icons/Home.svg" alt="home"></span>
+                                        <span class="title">المنزل</span>
+                                        <p class="text"> ش محمد فهمى ، المنطقة الأولى ، مدينة نصر القاهرة</p>
+                                    </div>
+                                    <div class="editing">
+                                        <a  class="edit modal-edit" ><img src="./assets/icons/Edit-yellow.svg" alt="edit"></a>
+                                        <a  class="delete"><img src="./assets/icons/Delete-red.svg" alt="delete"></a>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <img src="./assets/icons/img/addresses.png" alt="address">
+                                    <span class="text">عناوين التوصيل</span>
+                                </div>
+                                <div class="address work">
+                                    <div class="sub">
+                                        <span><img src="./assets/icons/company.svg" alt=""></span>
+                                        <span class="title">العمل</span>
+                                        <p class="text"> ش محمد فهمى ، المنطقة الأولى ، مدينة نصر القاهرة</p>
+                                    </div>
+                                    <div class="editing">
+                                        <a class="edit" data-bs-toggle= "modal" data-bs-target="#edit"><img src="./assets/icons/Edit-yellow.svg" alt="edit"></a>
+                                        <a  class="delete"><img src="./assets/icons/Delete-red.svg" alt="delete"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div id = "edit"  class="modal fade modal-edit-address  register" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="signin editing">
+                            <h6 class="title" >تعديل العنوان</h6>
+                            <form action="."   class="form-group">
+                                <input type="text" class="form-control" name = "name"  placeholder="اسم العنوان" required>
+                                <select class="form-control" name="type-address" id="">
+                                    <option value="" disabled selected>نوع العنوان</option>
+                                    <option value="home" >المنزل</option>
+                                    <option value="work">العمل</option>
+                                </select>
+                                <input type="text" class="form-control" name = "number"  placeholder="رقم الشقة | عنوان الشارع" required>
+                                <input type="text" class="form-control" name = "details"  placeholder="تفاصيل أخرى" required>
+                                <a class="map" href="https://www.google.com.eg/maps/@25.7936576,31.4865787,6z?hl=ar" target="_blank">+تعديل العنوان على الخريطة</a>
+                                <button type="submit" href="./profile.html"  class = "btn custom-btn" type="submit" >تعديل</button>
+                            </form>
+                            <i class="fas fa-sort-down arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "edit"  class="modal fade modal-add-address  register" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="signin editing">
+                            <h6 class="title" >اضافة عنوان</h6>
+                            <form action="."   class="form-group">
+                                <input type="text" class="form-control" name = "name"  placeholder="اسم العنوان" required>
+                                <select class="form-control" name="type-address" id="">
+                                    <option value="" disabled selected>نوع العنوان</option>
+                                    <option value="home" >المنزل</option>
+                                    <option value="work">العمل</option>
+                                </select>
+                                <input type="text" class="form-control" name = "number"  placeholder="رقم الشقة | عنوان الشارع" required>
+                                <input type="text" class="form-control" name = "details"  placeholder="تفاصيل أخرى" required>
+                                <a class="map" href="https://www.google.com.eg/maps/@25.7936576,31.4865787,6z?hl=ar" target="_blank">+تعديل العنوان على الخريطة</a>
+                                <button type="submit" href="./profile.html"  class = "btn custom-btn" type="submit" >اضافة</button>
+                            </form>
+                            <i class="fas fa-sort-down arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./product.js"></script>
+</html>
