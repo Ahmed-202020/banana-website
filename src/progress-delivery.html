@@ -60,7 +60,7 @@
                                     جميع الأقسام
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="./orders.html">
                                     الطلبات
                                 </a>
@@ -92,12 +92,22 @@
             </nav>
             <img class="bar" src="./assets/images/orange-bar.png" alt="bar">
         </header> 
-        <section class="orders cart confirm">
+        <section class="orders cart confirm progress-delivery">
             <div class="title">
-                <h3   id="switch-title">تأكيد الطلب</h3>
+                <h3   id="switch-title">تفاصيل الطلب</h3>
             </div>
             <div class="show-case">
                 <div class="inform">
+                    <div id="waiting-process" class="addresses order-time waiting-process">
+                        <div class="address home waiting">
+                            <img id="img-waiting" src="./assets/icons/img/waiting@3x.png" alt="waiting">
+                            <span id="title-waiting" >في الانتظار</span>
+                        </div>
+                        <div class="info">
+                            <img src="./assets/icons/img/orders.png" alt="stutes">
+                            <span class="text">حالة الطلب</span>
+                        </div>
+                    </div>
                     <div class="addresses">
                         <div class="editing">
                             <a  class="edit modal-confirm">
@@ -236,24 +246,6 @@
                             <span class="text">طريقة الدفع</span>
                         </div>
                     </div>
-                    <div class="addresses notes">
-                        <textarea name="note" id="note" cols="60" rows="4" placeholder="ملاحظات" ></textarea>
-                        <img class="holder" src="./assets/icons/note.svg" alt="note">
-                        <div class="info">
-                            <img src="./assets/icons/img/Group 42446@3x.png" alt="note">
-                            <span class="text">ملاحظات مع الطلب</span>
-                        </div>
-                    </div>
-                    <div class="addresses coupon">
-                        <div class="cop">
-                            <img class="holder" src="./assets/icons/coupon.svg" alt="cop">
-                            <input name="cop" id="coupon"  placeholder="اضافة كوبون للخصم" /> 
-                        </div>
-                        <div class="info">
-                            <img src="./assets/icons/img/Group 42448@3x.png" alt="coupon">
-                            <span class="text">اضافة كوبون</span>
-                        </div>
-                    </div>
                 </div>
                 <div class="bill">
                     <div class="details">
@@ -282,8 +274,9 @@
                     </div>
                 </div>
             </div>
-            <a id="send-req"  href="#" class="btn confirm">
-               ارسال الطلب
+            <a   href="#" class="btn confirm">
+                <img id="status-delete" src="./assets/icons/Delete.svg" alt="delete">
+                <span>الغاء الطلب</span>
             </a>
         </section>    
         <footer class="footer custom-footer">
@@ -341,17 +334,6 @@
             </div>
         </footer>
     </body>
-    <div id = "edit"  class="modal fade  successfull-req modal-addresses " aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">  
-                <div class="image">
-                    <img src="./assets/icons/img/success.png" alt="success">
-                </div>
-                <h3>تم الطلب بنجاح!</h3>
-                <a href="./index.html" class="btn">الذهاب للرئيسية</a>
-            </div>
-        </div>
-    </div>
     <div id = "edit"  class="modal fade prof  modal-addresses register" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">

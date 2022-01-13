@@ -1587,7 +1587,7 @@ html[dir = "ltr"]{
                 border-left: 0.5px solid $lighter-links;
                 .navbar-nav{
                     padding-left: 0;
-                    padding-right: 40px;
+                    padding-right: 60px;
                 }
             }
             .sub-nav{
@@ -1655,6 +1655,9 @@ html[dir = "ltr"]{
                 .navbar{
                     margin-inline: 25px;
                     border-right: 1px solid $lighter-links;
+                    .navbar-nav{
+                        padding-right: 0;
+                    }
                 }
             }
             .info{
@@ -1688,6 +1691,10 @@ html[dir = "ltr"]{
                 .navbar{
                     margin-inline: 25px ;
                     border-right: 1px solid $lighter-links;
+                    .navbar-nav{
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
                 }
             }
             .info{
@@ -1725,7 +1732,7 @@ html[dir = "ltr"]{
                     }
                 }
                 .sub-nav{
-                    margin-left: 200px ;
+                    margin-left: 180px ;
                     margin-right: 0;
                 }
             }
@@ -1762,7 +1769,7 @@ html[dir = "ltr"]{
             .show-case{
                 .sub-nav{
                     margin-right: 0;
-                    margin-left: 30px;
+                    margin-left: 10px;
                 }
             }
         }

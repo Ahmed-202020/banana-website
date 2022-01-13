@@ -22,10 +22,10 @@ $(function(){
     $("#sorting").fadeToggle() ; 
     $('input[type="checkbox"]').on('change', function() {
       $('input[type="checkbox"]').not(this).prop('checked', false);
-   });
+    });
   }) ; 
-  $(".custom-item").on("click" , function(){
-    $(".custom-item").removeClass("active-bar") ; 
+  $(".custom-item ").on("click" , function(){
+    $(".custom-item ").removeClass("active-bar") ; 
     $(this).addClass("active-bar") ; 
   })
   $(".custom-sort").on("click" , function(){
@@ -65,7 +65,127 @@ $(function(){
   $(".modal-type-sort .content").on("click" , function(){
     $(".modal-type-sort .content").removeClass("active-content") ; 
     $(this).addClass("active-content") ; 
+  });
+
+  $(".custom-categories .custom-item").on("click" , function(){
+    if($(".custom-categories .custom-item").hasClass("active-bar")){
+      var text =  $(this).text() ; 
+      $("#title-products").text(text) ;
+    }
   })
+
+  if($(".fruits-vegetables").hasClass("active-bar")){
+    $(".custom-common-products .fruits-vegetables").css({display: "grid"}) ;
+    $(".custom-common-products .drinks").hide() ;
+    $(".custom-common-products .sweets").hide() ;
+    $(".custom-common-products .bakeries").hide() ;
+    $(".custom-common-products .dairies").hide() ;
+    $(".custom-common-products .meates").hide() ;
+
+    $(".custom-sub-item-1").text("فواكه") ;
+    $(".custom-sub-item-2").text("خضروات") ;
+  }
+  $(".custom-categories .fruits-vegetables").on("click" , function(){
+    if($(".fruits-vegetables").hasClass("active-bar")){
+        $(".custom-common-products .fruits-vegetables").css({display: "grid"}) ;
+        $(".custom-common-products .drinks").hide() ;
+        $(".custom-common-products .sweets").hide() ;
+        $(".custom-common-products .bakeries").hide() ;
+        $(".custom-common-products .dairies").hide() ;
+        $(".custom-common-products .meates").hide() ;
+
+        $(".custom-sub-item-1").text("فواكه") ;
+        $(".custom-sub-item-2").text("خضروات") ;
+    }
+  });
+
+ $(".custom-categories .drinks").on("click" , function(){
+  if($(".drinks").hasClass("active-bar")){
+      $(".custom-common-products .drinks").css({display: "grid"}) ;
+      $(".custom-common-products .fruits-vegetables").hide() ;
+      $(".custom-common-products .sweets").hide() ;
+      $(".custom-common-products .bakeries").hide() ;
+      $(".custom-common-products .dairies").hide() ;
+      $(".custom-common-products .meates").hide() ;
+
+      $(".custom-sub-item-1").text("بيبسي") ;
+      $(".custom-sub-item-2").text("كولا") ;
+    }
+  });
+  
+ $(".custom-categories .sweets").on("click" , function(){
+  if($(".sweets").hasClass("active-bar")){
+      $(".custom-common-products .sweets").css({display: "grid"}) ;
+      $(".custom-common-products .fruits-vegetables").hide() ;
+      $(".custom-common-products .drinks").hide() ;
+      $(".custom-common-products .bakeries").hide() ;
+      $(".custom-common-products .dairies").hide() ;
+      $(".custom-common-products .meates").hide() ;
+
+      $(".custom-sub-item-1").text("شرقية") ;
+      $(".custom-sub-item-2").text("غربية") ;
+    }
+  });
+  
+ $(".custom-categories .bakeries").on("click" , function(){
+  if($(".bakeries").hasClass("active-bar")){
+      $(".custom-common-products .bakeries").css({display: "grid"}) ;
+      $(".custom-common-products .fruits-vegetables").hide() ;
+      $(".custom-common-products .sweets").hide() ;
+      $(".custom-common-products .drinks").hide() ;
+      $(".custom-common-products .dairies").hide() ;
+      $(".custom-common-products .meates").hide() ;
+
+      $(".custom-sub-item-1").text("شرقية") ;
+      $(".custom-sub-item-2").text("غربية") ;
+    }
+  });
+  
+ $(".custom-categories .dairies").on("click" , function(){
+  if($(".dairies").hasClass("active-bar")){
+      $(".custom-common-products .dairies").css({display: "grid"}) ;
+      $(".custom-common-products .fruits-vegetables").hide() ;
+      $(".custom-common-products .sweets").hide() ;
+      $(".custom-common-products .bakeries").hide() ;
+      $(".custom-common-products .drinks").hide() ;
+      $(".custom-common-products .meates").hide() ;
+
+      $(".custom-sub-item-1").text("خالي الدسم") ;
+      $(".custom-sub-item-2").text("كامل الدسم") ;
+    }
+  });
+  
+ $(".custom-categories .meates").on("click" , function(){
+  if($(".meates").hasClass("active-bar")){
+      $(".custom-common-products .meates").css({display: "grid"}) ;
+      $(".custom-common-products .fruits-vegetables").hide() ;
+      $(".custom-common-products .sweets").hide() ;
+      $(".custom-common-products .bakeries").hide() ;
+      $(".custom-common-products .dairies").hide() ;
+      $(".custom-common-products .drinks").hide() ;
+
+      $(".custom-sub-item-1").text("مثلجة") ;
+      $(".custom-sub-item-2").text("بلدي") ;
+    }
+  });
+
+  if($(".custom-sub-item-all").hasClass("active-categ")){
+    $(".custom-common-products product-1").css({display: "block"}) ;
+    $(".custom-common-products product-2").css({display: "block"}) ;
+  }
+  $(".custom-sub-item-all").on("click" , function(){
+    $(".custom-common-products .product-1").css({display: "block"}) ;
+    $(".custom-common-products .product-2").css({display: "block"}) ;
+  })
+  $(".custom-sub-item-1").on("click" , function(){
+    $(".custom-common-products .product").hide() ;
+    $(".custom-common-products .product-1").css({display: "block"}) ;
+  })
+  $(".custom-sub-item-2").on("click" , function(){
+    $(".custom-common-products .product").hide() ;
+    $(".custom-common-products .product-2").css({display: "block"}) ;
+  })
+  
   $(".common-products .btn").on("click" , function(){
     Swal.fire(
       "تم" , 
@@ -74,6 +194,9 @@ $(function(){
     ) ; 
   })
 })
+
+
+
 
 
 

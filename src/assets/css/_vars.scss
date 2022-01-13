@@ -56,6 +56,18 @@ $min-size-font : "20pt" ;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.active-pay{
+    background-color: $button-bg-products !important;
+    border: 1px solid $button-bg-products !important;
+}
+.active-card{
+    border: 0.5px solid $button-bg-products;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 .icons{
     .heart.active{
         img{
@@ -84,17 +96,21 @@ $min-size-font : "20pt" ;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    color: $white !important;
     background-color: $color-button;
+    .nav-link{
+        color: $white !important;
+    }
 }
 .active-categ{
     background-color: $blue-color;
-    color: $white !important;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    .nav-link{
+        color: $white !important;
+    }
 }
 // buttons
 %btn{

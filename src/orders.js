@@ -5,9 +5,12 @@ $(function(){
     })
     $(function(){
         $(".delete-order").on("click" , function(){
+            $(this).parentsUntil(".current-orders").on("click" , function(e){
+                e.preventDefault();
+            })
             $(this).parentsUntil(".orders").fadeOut(200) ; 
         })
-
+        
         $(".current-orders-item").on("click" , function(){
             if($(".current-orders-item").hasClass("active-orders")){
                 $(".current-orders").show() ; 

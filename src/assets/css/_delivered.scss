@@ -1,0 +1,28 @@
+.delivered{
+    .show-case{
+        .inform{
+            .current-orders{
+                .current-order{
+                    .cost-order{
+                        .quantity{
+                            &::after{
+                                content: initial;
+                            }
+                        }
+                    }
+                }
+            }
+            .payments{
+                .cash-payment{
+                    .payed{
+                        span{
+                            border: 1px solid $light-line;
+                            background-color: transparent !important;
+                            color: $light-line !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

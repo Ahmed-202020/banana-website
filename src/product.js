@@ -26,10 +26,6 @@ $(".subtract-2").on("click" , function(){
 })
 
 
-// $(".notes #note").on("keypress" , function(){
-//     $(".holder").css("display" , "none") ;
-// })
-
 $(".hearty").on("click" , function(){
     $(this).toggleClass("active-fav");
 })
@@ -55,6 +51,22 @@ $(".another-address").on("click" , function(){
 $(".delete").on("click" , function(){
     $(this).parentsUntil(".addresses").fadeOut() ; 
 })
+$("#send-req").on("click" , function(){
+    $(".successfull-req").modal("show") ; 
+});
+  
+    $('input[type="radio"]').on('change', function() {
+        $('input[type="radio"]').not(this).prop('checked', false);
+    });        
+    $(".payment .payed span").on("click" , function(){
+        $(".payment .payed span").removeClass("active-pay") ;
+        $(this).addClass("active-pay") ; 
+    })
+
+    $(".payment .type-card img").on("click" , function(){
+        $(".payment .type-card img").removeClass("active-card") ;
+        $(this).addClass("active-card") ; 
+    }) ; 
 
 $(".add-to-cart").on("click" , function(){
     Swal.fire(
@@ -63,3 +75,5 @@ $(".add-to-cart").on("click" , function(){
         'success'
     ) ; 
 })
+
+

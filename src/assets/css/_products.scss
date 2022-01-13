@@ -27,6 +27,7 @@
             }
         }
         .navbar{
+            padding: 0;
             border-radius: 5px;
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
@@ -37,25 +38,27 @@
             border-right: 0.5px solid $lighter-links;
             border-bottom: 0.5px solid $lighter-links;
             margin-right: 70px;
-            padding-block: 0;
             margin-bottom: 50px;
             .navbar-nav{
                 flex-direction: row;
-                align-items: center;
-                justify-content: stretch;
+                flex-grow: 1;
+                padding-left: 60px;
                 .nav-item{
+                    width: calc(100% / 8);
+                    display: inline-block;
+                    text-align: center;
+                    padding-block: 5px;
+                    width: 100%;
+                    height: 100%;
+                    color: $subcategories-slider;
+                    transition: all 300ms ease;
+                    -webkit-transition: all 300ms ease;
+                    -moz-transition: all 300ms ease;
+                    -ms-transition: all 300ms ease;
+                    -o-transition: all 300ms ease;
                     .nav-link{
-                        display: inline-block;
-                        padding-block: 15px;
-                        padding-inline: 40px;
-                        font-size: 15pt;
-                        width: 100%;
                         color: $subcategories-slider;
-                        transition: all 300ms ease;
-                        -webkit-transition: all 300ms ease;
-                        -moz-transition: all 300ms ease;
-                        -ms-transition: all 300ms ease;
-                        -o-transition: all 300ms ease;
+                        font-size: 15pt;
                     }
                 }
             }
@@ -64,11 +67,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-grow: 1;
             list-style: none;
             border: 0.5px solid  $subcategories-slider;
             background-color: #f1f9ff;
-            width: 300px;
             padding: 0;
+            width: 370px;
             margin-right: 300px;
             border-radius: 30px;
             -webkit-border-radius: 30px;
@@ -78,17 +82,24 @@
             filter: brightness(98%);
             -webkit-filter: brightness(98%);
             .nav-item{
-                flex-grow: 1;
+                cursor: pointer;
+                padding-block: 15px;
+                display: flex;
+                padding-inline: 5px;
+                align-items: center;justify-content: center;
+                flex-wrap: wrap;
+                width: calc(100% / 3);
+                text-align: center;
+                transition: all 300ms ease;
+                -webkit-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                -ms-transition: all 300ms ease;
+                -o-transition: all 300ms ease;
                 .nav-link{
-                    padding-block: 10px;
                     text-align: center;
                     color: $subcategories-slider;
                     font-size: 15pt;
-                    transition: all 300ms ease;
-                    -webkit-transition: all 300ms ease;
-                    -moz-transition: all 300ms ease;
-                    -ms-transition: all 300ms ease;
-                    -o-transition: all 300ms ease;
+                    padding: 0;
                 }
             }
         }
@@ -101,7 +112,7 @@
             grid-area: products ;
             padding-right: 25px;
             .products{
-                grid-template: repeat(6, 1fr)/repeat(3, 1fr);
+                grid-template: auto /repeat(3, 1fr);
                 gap: 15pt;
                 .product{
                     .card{
@@ -256,36 +267,8 @@
     }
 }
 // responsive design products.html(rtl)
-@media (max-width: 1280.98px){
-    .custom-categories{
-        .show-case{
-            .navbar{
-                .navbar-nav{
-                    .nav-item{
-                        .nav-link{
-                            padding-inline: 30px;
-                        }
-                    }
-                }
-            }
-        }
-    }  
-}
-@media (max-width: 1199.98px){
-    .custom-categories{
-        .show-case{
-            .navbar{
-                .navbar-nav{
-                    .nav-item{
-                        .nav-link{
-                            padding-inline: 25px;
-                        }
-                    }
-                }
-            }
-        }
-    }  
-}
+
+
 @media (min-width: 992px) and (max-width: 1025px){
     .custom-categories{
         padding-inline: 0 !important;
@@ -295,14 +278,14 @@
                 border-left: 1px solid $lighter-links;
                 .navbar-nav{
                     flex-direction: column;
+                   align-items: center;
+                   padding-inline: 0;
                     width: 100%;
                     padding-block: 40px;
                     .nav-item{
                         width: 90%;
                         text-align: center;
-                        .nav-link{
-                            padding-inline: 14px;
-                        }
+                      
                     }
                     .nav-item + .nav-item{
                         margin-right: 0;
@@ -343,10 +326,14 @@
         padding-inline: 0 !important;
         .show-case{
             .navbar{
+                display: flex;
+                justify-content: center;
                 margin-inline: 25px ;
                 border-left: 1px solid $lighter-links;
                 .navbar-nav{
                         flex-direction: column;
+                        align-items: center;
+                        padding-left: 0px;
                         width: 100%;
                         padding-block: 40px;
                         .nav-item{
@@ -407,7 +394,7 @@
     .custom-categories{
         .show-case{
             .sub-nav{
-                margin-right: 200px;
+                margin-right: 180px;
             }
         }
         .info{
@@ -439,7 +426,8 @@
     .custom-categories{
         .show-case{
             .sub-nav{
-                margin-right: 30px;
+                width: 300px;
+                margin-right: 10px;
             }
         }
     }

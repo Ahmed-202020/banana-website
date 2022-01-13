@@ -95,6 +95,8 @@
         border-top-right-radius: 25px;
         padding: 20px 25px 40px 25px;
         .current-order{
+            display: block;
+            text-decoration: none;
             background-color: #fff;
             border: 1px solid $light-line;
             padding: 15px 15px 35px 15px;
@@ -116,6 +118,7 @@
                     }
                 }
                 .delete-order{
+                    z-index: 100;
                     cursor: pointer;
                 }
             }

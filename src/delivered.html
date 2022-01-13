@@ -60,7 +60,7 @@
                                     جميع الأقسام
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="./orders.html">
                                     الطلبات
                                 </a>
@@ -92,12 +92,22 @@
             </nav>
             <img class="bar" src="./assets/images/orange-bar.png" alt="bar">
         </header> 
-        <section class="orders cart confirm">
+        <section class="orders cart confirm progress-delivery delivered">
             <div class="title">
-                <h3   id="switch-title">تأكيد الطلب</h3>
+                <h3   id="switch-title">تفاصيل الطلب</h3>
             </div>
             <div class="show-case">
                 <div class="inform">
+                    <div id="waiting-process" class="addresses order-time waiting-process">
+                        <div class="address home waiting">
+                            <img id="img-waiting" src="./assets/icons/img/delivered@3x.png" alt="waiting">
+                            <span id="title-waiting" >تم التوصيل</span>
+                        </div>
+                        <div class="info">
+                            <img src="./assets/icons/img/orders.png" alt="stutes">
+                            <span class="text">حالة الطلب</span>
+                        </div>
+                    </div>
                     <div class="addresses">
                         <div class="editing">
                             <a  class="edit modal-confirm">
@@ -133,19 +143,13 @@
                                 <span class="name">توت</span>
                                 <div class="order">
                                     <img src="./assets/images/توت.png" alt="product">
-                                    <button class="btn delete-order">حذف المنتج</button>
                                 </div>
                             </div>    
                             <div class="cost-order">
                                 <span>150 ر.س</span>
                                 <div class="quantity">
                                 </div>
-                                <div class="data">
-                                    <img class="add add-1" src="./assets/icons/Icon ionic-ios-add-circle.svg" alt="">
-                                    <span class="value-content value-content-1">0.5</span>
-                                    <img class="subtract subtract-1" src="./assets/icons/Icon awesome-minus-circle.svg" alt="">
-                                </div>
-                                <span class="type">كرتون</span>
+                                <span class="type">x1كرتون</span>
                             </div>
                         </div>
                         <div class="current-order">
@@ -153,19 +157,13 @@
                                 <span class="name">موز</span>
                                 <div class="order">
                                     <img src="./assets/images/موز.png" alt="product">
-                                    <button class="btn  delete-order">حذف المنتج</button>
                                 </div>
                             </div>    
                             <div class="cost-order">
                                 <span>150 ر.س</span>
                                 <div class="quantity">
                                 </div>
-                                <div class="data">
-                                    <img class="add add-2" src="./assets/icons/Icon ionic-ios-add-circle.svg" alt="">
-                                    <span class="value-content value-content-2">0.5</span>
-                                    <img class="subtract subtract-2" src="./assets/icons/Icon awesome-minus-circle.svg" alt="">
-                                </div>
-                                <span class="type">كرتون</span>
+                                <span class="type">x1كرتون</span>
                             </div>
                         </div>
                         <div class="info">
@@ -192,66 +190,12 @@
                                 <i class="fas fa-sort-down arrow"></i>
                             </div>    
                             <div class="payed">
-                                <span class="active-pay">100 ر.س</span>
-                                <span>200 ر.س</span>
-                                <span>500 ر.س</span>
+                                <span >100 ر.س</span>
                             </div>
-                        </div>
-                        <div class="payment wallet-payment">
-                            <label for="wallet" class="radio">
-                                <input id="wallet" type="radio">
-                                <span>
-                                    <div class="custom-radio"></div>
-                                    <p>الدفع باستخدام المحفظة</p>
-                                </span>
-                            </label>
-                        </div>
-                        <div class="payment card-payment">
-                            <label for="card" class="radio">
-                                <input id="card" type="radio">
-                                <span>
-                                    <div class="custom-radio"></div>
-                                    <p>الدفع الكترونيا</p>
-                                </span>
-                            </label>
-                            <div class="type-card">
-                                <img class="active-card" src="./assets/icons/img/796px-Mada_Logo.svg@3x.png" alt="mada">
-                                <img src="./assets/icons/img/1200px-Stc_pay@3x.png" alt="Stc">
-                                <img src="./assets/icons/img/kisspng-apple-pay-google-pay-digital-wallet-payment-mango-vector-5ac90b4771b013.0060329815231250634657@3x.png" alt="apple">
-                                <img src="./assets/icons/img/Mastercard-logo.svg@3x.png" alt="mastercard">
-                                <img src="./assets/icons/img/5a3a175132e7e7.86450016151375649720858662@3x.png" alt="visa">
-                            </div>
-                            <form action="." class="form-group">
-                                <input class="form-control" type="text" name="card-name" placeholder="اسم البطاقة" required>
-                                <input class="form-control" type="text" name="card-number" placeholder="رقم البطاقة" required>
-                                <div class="secret-data">
-                                    <input class="form-control" type="text" name="date-card" placeholder="تاريخ البطاقة" required>
-                                    <input class="form-control" type="text" name="password" placeholder="الرقم السرى" required>
-                                </div>
-                                <button type="button" class="btn">تم</button>
-                            </form>
                         </div>
                         <div class="info">
                             <img src="./assets/icons/img/payments-ways.png" alt="payments">
                             <span class="text">طريقة الدفع</span>
-                        </div>
-                    </div>
-                    <div class="addresses notes">
-                        <textarea name="note" id="note" cols="60" rows="4" placeholder="ملاحظات" ></textarea>
-                        <img class="holder" src="./assets/icons/note.svg" alt="note">
-                        <div class="info">
-                            <img src="./assets/icons/img/Group 42446@3x.png" alt="note">
-                            <span class="text">ملاحظات مع الطلب</span>
-                        </div>
-                    </div>
-                    <div class="addresses coupon">
-                        <div class="cop">
-                            <img class="holder" src="./assets/icons/coupon.svg" alt="cop">
-                            <input name="cop" id="coupon"  placeholder="اضافة كوبون للخصم" /> 
-                        </div>
-                        <div class="info">
-                            <img src="./assets/icons/img/Group 42448@3x.png" alt="coupon">
-                            <span class="text">اضافة كوبون</span>
                         </div>
                     </div>
                 </div>
@@ -282,9 +226,6 @@
                     </div>
                 </div>
             </div>
-            <a id="send-req"  href="#" class="btn confirm">
-               ارسال الطلب
-            </a>
         </section>    
         <footer class="footer custom-footer">
             <div class="overlay">
@@ -308,7 +249,7 @@
                             <li class="item">
                                 <a href="./categories.html" class="link">جميع الاقسام</a>
                             </li>
-                            <li class="item">
+                            <li class="item active">
                                 <a href="./orders.html" class="link">الطلبات</a>
                             </li>
                             <li class="item">
@@ -341,17 +282,6 @@
             </div>
         </footer>
     </body>
-    <div id = "edit"  class="modal fade  successfull-req modal-addresses " aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">  
-                <div class="image">
-                    <img src="./assets/icons/img/success.png" alt="success">
-                </div>
-                <h3>تم الطلب بنجاح!</h3>
-                <a href="./index.html" class="btn">الذهاب للرئيسية</a>
-            </div>
-        </div>
-    </div>
     <div id = "edit"  class="modal fade prof  modal-addresses register" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
