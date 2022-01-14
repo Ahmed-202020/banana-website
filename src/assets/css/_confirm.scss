@@ -446,11 +446,80 @@ body{
 
 //responsive design confirm.html(rtl)
 
-@media (max-width: 1399.98px){}
-@media (max-width: 1280.98px){}
-@media (max-width: 1199.98px){}
-@media (max-width: 768px){}
+@media (min-width: 992px) and (max-width: 1025px){
+    .confirm{
+        .show-case{
+            .inform{
+                .addresses{
+                    width: 600px;
+                }
+                .payments{
+                    .card-payment{
+                        .type-card{
+                            margin-right: 20px ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991.98px){
+    .confirm{
+        .show-case{
+            .inform{
+                .payments{
+                    .card-payment{
+                        .type-card{
+                            margin-right: 12px;
+                            img + img{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+                .addresses{
+                    width: 550px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .confirm{
+        .show-case{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .inform{
+                order: 2;
+                width: 100%;
+                .addresses{
+                    width: 100%;
+                }
+                .current-orders{
+                    width: 100%;
+                }
+            }
+            .bill{
+                order: 1;
+                margin-right: 350px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
 @media (max-width: 575.98px){
+    .confirm{
+        .show-case{
+            .bill{
+                margin-bottom: 150px !important;
+                margin-top: 35px;
+            }
+        }
+    }
     .modal-addresses{
         .modal-dialog{
             .modal-content{
@@ -471,6 +540,58 @@ body{
     }
 }
 @media (min-width: 360px) and (max-width: 420px){
+    .confirm{
+        .show-case{
+            .inform{
+                .addresses{
+                    .address{
+                        .sub{
+                            .text{
+                                font-size: 8pt;
+                            }
+                        }
+                    }
+                }
+                .payments{
+                    .cash-payment{
+                        .ask{
+                            p{
+                                &::after{
+                                    width: 60% ;
+                                }
+                            }
+                        }
+                        .payed{
+                            span + span{
+                                margin-right: 3px;
+                            }
+                        }
+                    }
+                    .card-payment{
+                        .form-group{
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            justify-content: center;
+                            .secret-data{
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                margin-top: 15px;
+                                .form-control + .form-control{
+                                    margin-right: 0;
+                                }
+                            }
+                            .btn{
+                                width: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .modal-addresses{
         .modal-content{
             padding-inline: 0 !important;
@@ -501,6 +622,62 @@ body{
     }
 }
 @media (min-width: 280px) and (max-width: 350px){
+    .confirm{
+        .show-case{
+            .inform{
+                .addresses{
+                    .address{
+                        .sub{
+                            .text{
+                                font-size: 8pt;
+                            }
+                        }
+                    }
+                }
+                .payments{
+                    .cash-payment{
+                        .ask{
+                            p{
+                                &::after{
+                                    width: 50% ;
+                                }
+                            }
+                        }
+                        .payed{
+                            span{
+                                padding-inline: 4px !important;
+                                font-size: 8pt;
+                            }
+                            span + span{
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+                    .card-payment{
+                        .form-group{
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            justify-content: center;
+                            .secret-data{
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                margin-top: 15px;
+                                .form-control + .form-control{
+                                    margin-right: 0;
+                                }
+                            }
+                            .btn{
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .modal-addresses{
         .modal-content{
             padding-inline: 0 !important;
@@ -534,6 +711,15 @@ body{
                 }
                 a + a{
                     margin-right: 0 !important;
+                }
+            }
+        }
+    }
+    .successfull-req{
+        .modal-dialog{
+            .modal-content{
+                a{
+                    width: 220px;
                 }
             }
         }

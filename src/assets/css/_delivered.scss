@@ -4,6 +4,10 @@
             .current-orders{
                 .current-order{
                     .cost-order{
+                        .type{
+                            top: 125px;
+                            left: 20px;
+                        }
                         .quantity{
                             &::after{
                                 content: initial;
@@ -19,6 +23,47 @@
                             border: 1px solid $light-line;
                             background-color: transparent !important;
                             color: $light-line !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//ltr _delivered.html
+html[dir = "ltr"]{
+    .delivered{
+        .show-case{
+            .inform{
+                .current-orders{
+                    .current-order{
+                        .cost-order{
+                            .type{
+                                top: 125px !important;
+                                right: 20px !important;
+                                left: initial !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 280px) and (max-width: 350.98px){
+    html[dir = "ltr"]{
+        .delivered{
+            .show-case{
+                .inform{
+                    .current-orders{
+                        .current-order{
+                            .cost-order{
+                                .type{
+                                 margin-top: 0 !important;
+                                }
+                            }
                         }
                     }
                 }

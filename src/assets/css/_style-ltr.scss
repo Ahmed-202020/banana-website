@@ -2196,6 +2196,163 @@ html[dir="ltr"]{
 
 //confirm.html(ltr)
 html[dir = "ltr"]{
+    .confirm{
+        .show-case{
+            .inform{
+                .waiting-process{
+                    .info{
+                        img{
+                            margin-left: 0px !important ;
+                            margin-right: 10px !important;
+                        }
+                    }
+                }
+                .addresses{
+                    .info{
+                        left: 7px ;
+                        right: initial;
+                    }
+                    .editing{
+                        text-align: right;
+                    }
+                    .address{
+                        padding: 10px 0px 15px 30px;
+                    }
+                    .info{
+                        img{
+                            margin-left: 0;
+                            margin-right: 2px;
+                        }
+                    }
+                }
+                .payments{
+                    .payment{
+                        label{
+                            span{
+                                margin-right: 0;
+                                margin-left: 10px;
+                                img{
+                                    margin-left: 10px;
+                                    margin-right: 0;
+                                }
+                                p{
+                                    margin-left: 8px;
+                                    margin-right: 0;
+                                }
+                            }
+                            input[type = "radio"]:checked+span::before{
+                                left: 4.8px;
+                                right: initial;
+                            }
+                        }
+                    }
+                    .payment + .payment{
+                        &::before{
+                            left: 30px;
+                            right: initial;
+                        }
+                    }
+                    .cash-payment{
+                        .ask{
+                            p{
+                                &::after{
+                                    left: 125px;
+                                    right: initial;
+                                }
+                            }
+                            i{
+                                right: 22px;
+                                left: initial;
+                            }
+                        }
+                        .payed{
+                            display: flex;
+                            span+span{
+                                margin-right: 0;
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+                    .card-payment{
+                        .type-card{
+                            margin-left: 25px;
+                            margin-right: 0;
+                            img + img{
+                                margin-left: 15px;
+                                margin-right: 0;
+                            }
+                        }
+                        .form-group{
+                            .secret-data{
+                                .form-control + .form-control{
+                                    margin-left: 30px;
+                                    margin-right: 0 ; 
+                                }
+                            }
+                        }
+                    }
+                    .info{
+                        span{
+                            margin-left: 5px;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .notes{
+                position: relative;
+                textarea{
+                    padding: 10px 20px 10px 60px;
+                }
+                .holder{
+                    right: 0;
+                    left: 55px;
+                }
+                .info{
+                    img{
+                        margin-right: 5px;
+                        margin-left: 0;
+                    }
+                }
+            }
+            .coupon{
+                .cop{
+                    input{
+                        padding: 18px 20px 18px 70px;
+                    }
+                    .holder{
+                        right: initial;
+                        left: 50px;
+                    }
+                    &::after{
+                        left: 80px;
+                        right: initial;
+                    }
+                }
+            }
+            .bill{
+                .info{
+                    left: 7px;
+                    right: initial;
+                }
+            }
+            .current-orders{
+                .current-order{
+                    .show{
+                        .name{
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+        .confirm{
+            #status-delete{
+                margin-right: 5px;
+                margin-left: 0;
+            }
+        }
+    }
     .modal-addresses{
         padding-right: 0 !important;
         .modal-dialog{
@@ -2231,8 +2388,84 @@ html[dir = "ltr"]{
 }
 
 // responsive design confirm.html(ltr)
+@media (min-width: 992px) and (max-width: 1025px){
+    html[dir = "ltr"]{
+        .confirm{
+            .show-case{
+                .inform{
+                    .payments{
+                        .card-payment{
+                            .type-card{
+                                margin-left: 20px ;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 991.98px){
+    html[dir = "ltr"]{
+        .confirm{
+            .show-case{
+                .inform{
+                    .payments{
+                        .card-payment{
+                            .type-card{
+                                margin-left: 12px;
+                                margin-right: 0;
+                                img + img{
+                                    margin-left: 5px;
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+@media (max-width: 768px){
+    .confirm{
+        .show-case{
+            .bill{
+                margin-left: 350px;
+                margin-right: 0;
+            }
+        }
+    }
+}
 @media (min-width: 360px) and (max-width: 420px){
     html[dir = "ltr"]{
+        .confirm{
+            .show-case{
+                .inform{
+                    .payments{
+                        .cash-payment{
+                            .payed{
+                                span + span{
+                                    margin-left: 3px;
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                        .card-payment{
+                            .form-group{
+                                .secret-data{
+                                    .form-control + .form-control{
+                                        margin-right: 0;
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .modal-addresses{
             .modal-content{
                 .editing{
@@ -2247,6 +2480,32 @@ html[dir = "ltr"]{
 }
 @media (min-width: 280px) and (max-width: 350px){
     html[dir = "ltr"]{
+        .confirm{
+            .show-case{
+                .inform{
+                    .payments{
+                        .cash-payment{
+                            .payed{
+                                span + span{
+                                    margin-right: 0px;
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                        .card-payment{
+                            .form-group{
+                                .secret-data{
+                                    .form-control + .form-control{
+                                        margin-right: 0;
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .modal-addresses{
             .modal-content{
                 .editing{

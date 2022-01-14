@@ -3471,6 +3471,11 @@
   background-color: #ff3003 !important;
 }
 
+.delivered .show-case .inform .current-orders .current-order .cost-order .type {
+  top: 125px;
+  left: 20px;
+}
+
 .delivered .show-case .inform .current-orders .current-order .cost-order .quantity::after {
   content: initial;
 }
@@ -3479,6 +3484,18 @@
   border: 1px solid #f2eacb;
   background-color: transparent !important;
   color: #f2eacb !important;
+}
+
+html[dir="ltr"] .delivered .show-case .inform .current-orders .current-order .cost-order .type {
+  top: 125px !important;
+  right: 20px !important;
+  left: initial !important;
+}
+
+@media (min-width: 280px) and (max-width: 350.98px) {
+  html[dir="ltr"] .delivered .show-case .inform .current-orders .current-order .cost-order .type {
+    margin-top: 0 !important;
+  }
 }
 
 body {
@@ -4033,7 +4050,66 @@ body {
   -webkit-filter: brightness(90%);
 }
 
+@media (min-width: 992px) and (max-width: 1025px) {
+  .confirm .show-case .inform .addresses {
+    width: 600px;
+  }
+  .confirm .show-case .inform .payments .card-payment .type-card {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .confirm .show-case .inform .payments .card-payment .type-card {
+    margin-right: 12px;
+  }
+  .confirm .show-case .inform .payments .card-payment .type-card img + img {
+    margin-right: 5px;
+  }
+  .confirm .show-case .inform .addresses {
+    width: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+  .confirm .show-case {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .confirm .show-case .inform {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  .confirm .show-case .inform .addresses {
+    width: 100%;
+  }
+  .confirm .show-case .inform .current-orders {
+    width: 100%;
+  }
+  .confirm .show-case .bill {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: 350px;
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 575.98px) {
+  .confirm .show-case .bill {
+    margin-bottom: 150px !important;
+    margin-top: 35px;
+  }
   .modal-addresses .modal-dialog .modal-content {
     padding-inline: 20px;
   }
@@ -4049,6 +4125,50 @@ body {
 }
 
 @media (min-width: 360px) and (max-width: 420px) {
+  .confirm .show-case .inform .addresses .address .sub .text {
+    font-size: 8pt;
+  }
+  .confirm .show-case .inform .payments .cash-payment .ask p::after {
+    width: 60%;
+  }
+  .confirm .show-case .inform .payments .cash-payment .payed span + span {
+    margin-right: 3px;
+  }
+  .confirm .show-case .inform .payments .card-payment .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .confirm .show-case .inform .payments .card-payment .form-group .secret-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .confirm .show-case .inform .payments .card-payment .form-group .secret-data .form-control + .form-control {
+    margin-right: 0;
+  }
+  .confirm .show-case .inform .payments .card-payment .form-group .btn {
+    width: 300px;
+  }
   .modal-addresses .modal-content {
     padding-inline: 0 !important;
   }
@@ -4068,6 +4188,54 @@ body {
 }
 
 @media (min-width: 280px) and (max-width: 350px) {
+  .confirm .show-case .inform .addresses .address .sub .text {
+    font-size: 8pt;
+  }
+  .confirm .show-case .inform .payments .cash-payment .ask p::after {
+    width: 50%;
+  }
+  .confirm .show-case .inform .payments .cash-payment .payed span {
+    padding-inline: 4px !important;
+    font-size: 8pt;
+  }
+  .confirm .show-case .inform .payments .cash-payment .payed span + span {
+    margin-right: 0px;
+  }
+  .confirm .show-case .inform .payments .card-payment .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .confirm .show-case .inform .payments .card-payment .form-group .secret-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .confirm .show-case .inform .payments .card-payment .form-group .secret-data .form-control + .form-control {
+    margin-right: 0;
+  }
+  .confirm .show-case .inform .payments .card-payment .form-group .btn {
+    width: 200px;
+  }
   .modal-addresses .modal-content {
     padding-inline: 0 !important;
   }
@@ -4092,6 +4260,9 @@ body {
   }
   .modal-addresses .modal-content .editing a + a {
     margin-right: 0 !important;
+  }
+  .successfull-req .modal-dialog .modal-content a {
+    width: 220px;
   }
 }
 
@@ -5495,6 +5666,141 @@ html[dir="ltr"] .orders.cart .show-case .bill .info img {
   }
 }
 
+html[dir="ltr"] .confirm .show-case .inform .waiting-process .info img {
+  margin-left: 0px !important;
+  margin-right: 10px !important;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .addresses .info {
+  left: 7px;
+  right: initial;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .addresses .editing {
+  text-align: right;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .addresses .address {
+  padding: 10px 0px 15px 30px;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .addresses .info img {
+  margin-left: 0;
+  margin-right: 2px;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .payment label span {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .payment label span img {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .payment label span p {
+  margin-left: 8px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .payment label input[type="radio"]:checked + span::before {
+  left: 4.8px;
+  right: initial;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .payment + .payment::before {
+  left: 30px;
+  right: initial;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .ask p::after {
+  left: 125px;
+  right: initial;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .ask i {
+  right: 22px;
+  left: initial;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .payed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .payed span + span {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .card-payment .type-card {
+  margin-left: 25px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .card-payment .type-card img + img {
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .card-payment .form-group .secret-data .form-control + .form-control {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .confirm .show-case .inform .payments .info span {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .confirm .show-case .notes {
+  position: relative;
+}
+
+html[dir="ltr"] .confirm .show-case .notes textarea {
+  padding: 10px 20px 10px 60px;
+}
+
+html[dir="ltr"] .confirm .show-case .notes .holder {
+  right: 0;
+  left: 55px;
+}
+
+html[dir="ltr"] .confirm .show-case .notes .info img {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+html[dir="ltr"] .confirm .show-case .coupon .cop input {
+  padding: 18px 20px 18px 70px;
+}
+
+html[dir="ltr"] .confirm .show-case .coupon .cop .holder {
+  right: initial;
+  left: 50px;
+}
+
+html[dir="ltr"] .confirm .show-case .coupon .cop::after {
+  left: 80px;
+  right: initial;
+}
+
+html[dir="ltr"] .confirm .show-case .bill .info {
+  left: 7px;
+  right: initial;
+}
+
+html[dir="ltr"] .confirm .show-case .current-orders .current-order .show .name {
+  text-align: right;
+}
+
+html[dir="ltr"] .confirm .confirm #status-delete {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
 html[dir="ltr"] .modal-addresses {
   padding-right: 0 !important;
 }
@@ -5523,7 +5829,40 @@ html[dir="ltr"] .modal-addresses::before {
   left: 22px !important;
 }
 
+@media (min-width: 992px) and (max-width: 1025px) {
+  html[dir="ltr"] .confirm .show-case .inform .payments .card-payment .type-card {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  html[dir="ltr"] .confirm .show-case .inform .payments .card-payment .type-card {
+    margin-left: 12px;
+    margin-right: 0;
+  }
+  html[dir="ltr"] .confirm .show-case .inform .payments .card-payment .type-card img + img {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .confirm .show-case .bill {
+    margin-left: 350px;
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 360px) and (max-width: 420px) {
+  html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .payed span + span {
+    margin-left: 3px;
+    margin-right: 0;
+  }
+  html[dir="ltr"] .confirm .show-case .inform .payments .card-payment .form-group .secret-data .form-control + .form-control {
+    margin-right: 0;
+    margin-left: 0;
+  }
   html[dir="ltr"] .modal-addresses .modal-content .editing a + a {
     margin-left: 4px !important;
     margin-right: 0 !important;
@@ -5531,6 +5870,14 @@ html[dir="ltr"] .modal-addresses::before {
 }
 
 @media (min-width: 280px) and (max-width: 350px) {
+  html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .payed span + span {
+    margin-right: 0px;
+    margin-left: 0;
+  }
+  html[dir="ltr"] .confirm .show-case .inform .payments .card-payment .form-group .secret-data .form-control + .form-control {
+    margin-right: 0;
+    margin-left: 0;
+  }
   html[dir="ltr"] .modal-addresses .modal-content .editing a + a {
     margin-right: 0 !important;
     margin-left: 0 !important;
