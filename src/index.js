@@ -1,23 +1,21 @@
-let form = document.getElementById("frm") ; 
-let img = document.getElementById("img") ; 
-let sort = document.getElementById("sort") ;
 let sorting = document.getElementById("sorting") ; 
-
-form.addEventListener("focus" , function(){
-  img.setAttribute("src" , "./assets/icons/Search-black.svg") ; 
-});
-form.addEventListener("blur" , function(){
-  img.setAttribute("src" , "./assets/icons/Search.svg") ; 
-});
-form.addEventListener("focus" , function(){
-  sort.setAttribute("src" , "./assets/icons/Icon material-sort-green.svg") ; 
-});
-form.addEventListener("blur" , function(){
-  sort.setAttribute("src" , "./assets/icons/Icon material-sort.svg") ; 
-});
-
-
 $(function(){
+  $("#frm").on("focus" , function(){
+    $("#img path").css({"stroke" : "#2a2a2a"}) ;
+    $("#sort path").css({"fill" : "#00963f "}) ;
+  })
+  $("#frm").on("blur" , function(){
+    $("#img path").css({"stroke" : "#f2eacb"}) ;
+    $("#sort path").css({"fill" : "#f2eacb "}) ;
+  })
+  $("#sort").on("mouseenter" , function(){
+    $("#sort path").css({"fill" : "#00963f"}) ;
+  })
+  $("#sort").on("mouseleave" , function(){
+    $("#sort path").css({"fill" : "#f2eacb "}) ;
+  })
+  
+  
   $("#sort").on("click" , function(){
     $("#sorting").fadeToggle() ; 
     $('input[type="checkbox"]').on('change', function() {

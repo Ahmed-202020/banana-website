@@ -2139,6 +2139,11 @@
   margin-bottom: 20px !important;
 }
 
+.products-search .common-products .products .product .card a img {
+  min-height: 250px;
+  max-height: 250px;
+}
+
 .custom-body {
   background-color: #fff !important;
 }
@@ -6226,7 +6231,7 @@ body .show-case .title {
   width: 22px;
 }
 
-.header .slider .carousel-item .carousel-caption .form .search img {
+.header .slider .carousel-item .carousel-caption .form .search svg {
   width: 100%;
   height: 100%;
 }
@@ -6247,10 +6252,6 @@ body .show-case .title {
   left: 25px;
   height: 16px;
   cursor: pointer;
-}
-
-.header .slider .carousel-item .carousel-caption .form .sort:hover {
-  content: url("../icons/Icon material-sort-green.svg");
 }
 
 .header .slider .carousel-item .carousel-caption .form .sorting {
