@@ -67,6 +67,13 @@ $(function(){
     $(this).addClass("active-content") ; 
   });
 
+  $(".login-first").modal("show") ; 
+  $(".login-first .custom-btn").on("click" , function(){
+    $(".custom-modal-register").modal("show") ; 
+    $(".login-first").modal("hide") ; 
+
+  })
+
   $(".custom-categories .custom-item").on("click" , function(){
     if($(".custom-categories .custom-item").hasClass("active-bar")){
       var text =  $(this).text() ; 

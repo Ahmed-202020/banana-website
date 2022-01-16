@@ -241,7 +241,6 @@
 }
 
 .login-first{
-    display: initial !important;
     .modal-dialog{
         .modal-content{
             .show-case{
@@ -265,6 +264,9 @@
             }
         }
     }
+}
+.custom-modal-register{
+    opacity: 1 !important;
 }
 // responsive design products.html(rtl)
 

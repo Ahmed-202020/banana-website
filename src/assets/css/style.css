@@ -1950,10 +1950,6 @@
   margin-top: 0;
 }
 
-.login-first {
-  display: initial !important;
-}
-
 .login-first .modal-dialog .modal-content .show-case {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1978,6 +1974,10 @@
   margin-top: 0 !important;
   width: 300px !important;
   margin: auto !important;
+}
+
+.custom-modal-register {
+  opacity: 1 !important;
 }
 
 @media (min-width: 992px) and (max-width: 1025px) {
