@@ -2135,6 +2135,10 @@
   }
 }
 
+.products-search .title {
+  margin-bottom: 20px !important;
+}
+
 .custom-body {
   background-color: #fff !important;
 }
