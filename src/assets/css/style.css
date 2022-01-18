@@ -85,8 +85,10 @@
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  color: #f7fffa;
-  padding-block: 0;
+}
+
+.active-categ .nav-link {
+  color: #f7fffa !important;
 }
 
 .modal .modal-dialog .row .col-6 .signin .form-group .buttons .sign, .prof .info .buttons .btn, #edit .modal-dialog .modal-content .editing .custom-btn, .custom-categories .info .details .form-group .buttons .btn, .prod .btn, .orders.cart .confirm, .confirm .show-case .inform .payments .card-payment .form-group .btn, .successfull-req .modal-dialog .modal-content a, .utilities .utility .custom-overlay .btn, #des .modal-dialog .modal-content .overlay .col-12 .btn, .modal-type-sort .modal-dialog .modal-content .sort .done, .modal-location .modal-dialog .modal-content .select-location .buttons .btn {
@@ -1807,6 +1809,15 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.custom-categories .info .custom-common-products .tabcontent {
+  display: none;
+}
+
+.custom-categories .info .custom-common-products .default {
+  display: -ms-grid;
+  display: grid;
 }
 
 .custom-categories .info .details {

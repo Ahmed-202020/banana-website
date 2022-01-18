@@ -157,29 +157,29 @@
                 <h2 id="title-products" class="title test" >فواكه وخضروات</h2>
                 <nav class="navbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item custom-item active-bar fruits-vegetables">
-                            <a type="button" class="nav-link   ">فواكه وخضروات</a>
+                        <li onclick="openMenu(event , 'fruits-vegetables')" class="nav-item custom-item active-bar">
+                            <a type="button"  class="nav-link">فواكه وخضروات</a>
                         </li>
-                        <li class="nav-item custom-item  drinks">
-                            <a  type="button" class="nav-link ">مشروبات</a>
+                        <li onclick="openMenu(event, 'drinks')" class="nav-item custom-item">
+                            <a  type="button" class="nav-link">مشروبات</a>
                         </li>
-                        <li class="nav-item custom-item sweets">
-                            <a type="button"  class="nav-link  ">حلويات</a>
+                        <li onclick="openMenu(event, 'sweets')" class="nav-item custom-item">
+                            <a type="button"  class="nav-link">حلويات</a>
                         </li>
-                        <li class="nav-item custom-item bakeries">
-                            <a type="button" class="nav-link  ">مخابز</a>
+                        <li onclick="openMenu(event, 'bakeries')" class="nav-item custom-item">
+                            <a type="button" class="nav-link">مخابز</a>
                         </li>
-                        <li class="nav-item custom-item dairies">
-                            <a type="button" class="nav-link  ">منتجات البان</a>
+                        <li onclick="openMenu(event, 'dairies')" class="nav-item custom-item">
+                            <a type="button" class="nav-link">منتجات البان</a>
                         </li>
-                        <li class="nav-item  custom-item meates">
-                            <a type="button" class="nav-link ">لحوم</a>
+                        <li onclick="openMenu(event, 'meates')" class="nav-item  custom-item meates">
+                            <a type="button" class="nav-link">لحوم</a>
                         </li>
-                        <li class="nav-item custom-item dairies">
-                            <a type="button" class="nav-link  ">منتجات البان</a>
+                        <li onclick="openMenu(event, 'dairies')" class="nav-item custom-item">
+                            <a type="button" class="nav-link">منتجات البان</a>
                         </li>
-                        <li class="nav-item custom-item drinks">
-                            <a type="button" class="nav-link  ">مشروبات</a>
+                        <li onclick="openMenu(event, 'drinks')" class="nav-item custom-item">
+                            <a  type="button" class="nav-link">مشروبات</a>
                         </li>
                     </ul>
                 </nav>
@@ -195,7 +195,7 @@
                         </a>
                     </li>
                     <li class="nav-item custom-sub-item-2 custom-sort">
-                        <a  class="nav-link  ">
+                        <a  class="nav-link">
                             خضروات
                         </a>
                     </li>
@@ -268,7 +268,7 @@
                     </form>
                 </div>
                 <section class="common-products custom-common-products">
-                    <div class="products fruits-vegetables">
+                    <div id="fruits-vegetables" class="products tabcontent default">
                         <div  class="product product-1 fruit">
                             <div class="card">
                                 <a href="./product.html">
@@ -576,7 +576,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products drinks">
+                    <div id="drinks" class="products">
                         <div  class="product product-1 Pepsi">
                             <div class="card">
                                 <a href="./product.html">
@@ -884,7 +884,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products sweets">
+                    <div id="sweets" class="products">
                         <div  class="product product-1 eastern-sweets">
                             <div class="card">
                                 <a href="./product.html">
@@ -1192,7 +1192,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products bakeries">
+                    <div id="bakeries" class="products">
                         <div  class="product product-1 eastern-bakeries">
                             <div class="card">
                                 <a href="./product.html">
@@ -1500,7 +1500,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products dairies">
+                    <div id="dairies" class="products">
                         <div  class="product product-1 Dairies-fat-free">
                             <div class="card">
                                 <a href="./product.html">
@@ -1808,7 +1808,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products meates">
+                    <div id="meates" class="products">
                         <div  class="product product-1 frozen-meates">
                             <div class="card">
                                 <a href="./product.html">
@@ -2174,7 +2174,7 @@
             </div>
         </footer>
     </body>
-    <div id = "edit"  class=" login-first fade modal  register" aria-hidden="true" tabindex="-1">
+    <!-- <div id = "edit"  class=" login-first fade modal  register" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row justify-content-center">
@@ -2192,7 +2192,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div id = "register"  class="modal modal-register custom-modal-register register fade" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -2287,5 +2287,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./index.js"></script>
+    <script>
+        function openMenu(evt, menuName) {
+        // Declare all variables
+        var i, tabcontent  ;
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("products");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Show the current tab 
+        document.getElementById(menuName).style.display = "grid";
+    }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

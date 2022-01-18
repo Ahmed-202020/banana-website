@@ -62,7 +62,7 @@
                     }
                 }
             }
-        }
+        }    
         .sub-nav{
             display: flex;
             align-items: center;
@@ -123,6 +123,12 @@
                         -o-border-radius: 10px;
                     }
                 }
+            }
+            .tabcontent{
+                display: none;
+            }
+            .default{
+                display: grid;
             }
         }
         .details{

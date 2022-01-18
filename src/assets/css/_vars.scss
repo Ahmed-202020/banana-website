@@ -108,8 +108,9 @@ $min-size-font : "20pt" ;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    color: $white ;
-    padding-block: 0;
+    .nav-link{
+        color: $white !important;
+    }
 }
 // buttons
 %btn{
