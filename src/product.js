@@ -3,6 +3,7 @@ $(".quant").on("click" , function(){
     $(this).addClass("active-quantity") ; 
 });
 var counter = 0.5
+
 $(".add-1").on("click" , function(){
     counter = +counter+0.5 ; 
     $(".value-content-1").text(counter)

@@ -15,13 +15,14 @@ $(function(){
     $("#sort path").css({"fill" : "#f2eacb "}) ;
   })
   
-  
+
   $("#sort").on("click" , function(){
     $("#sorting").fadeToggle() ; 
     $('input[type="checkbox"]').on('change', function() {
       $('input[type="checkbox"]').not(this).prop('checked', false);
     });
-  }) ; 
+  });
+
   $(".custom-item ").on("click" , function(){
     $(".custom-item ").removeClass("active-bar") ; 
     $(this).addClass("active-bar") ; 
@@ -65,11 +66,12 @@ $(function(){
     $(this).addClass("active-content") ; 
   });
 
+
   $(".login-first").modal("show") ; 
+
   $(".login-first .custom-btn").on("click" , function(){
     $(".custom-modal-register").modal("show") ; 
     $(".login-first").modal("hide") ; 
-
   })
 
   $(".custom-categories .custom-item").on("click" , function(){
