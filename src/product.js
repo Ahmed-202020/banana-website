@@ -2,27 +2,33 @@ $(".quant").on("click" , function(){
     $(".quant").removeClass("active-quantity") ; 
     $(this).addClass("active-quantity") ; 
 });
-var counter = 0.5
 
+
+var counter1 =  $(".value-content-1").text() ; 
+var hiddenTag1 = $(".hidden-tag-1").text() ; 
 $(".add-1").on("click" , function(){
-    counter = +counter+0.5 ; 
-    $(".value-content-1").text(counter)
+    counter1 = +counter1+ +hiddenTag1 ; 
+    $(".value-content-1").text(counter1) ; 
 })
 $(".subtract-1").on("click" , function(){
-    if(counter > 0.5){
-        counter = +counter-0.5 ; 
-        $(".value-content-1").text(counter)
+    if(counter1 > 0.5){
+        counter1 = +counter1- +hiddenTag1 ; 
+        $(".value-content-1").text(counter1);
     }
 })
 
+
+var counter2 =  $(".value-content-2").text() ; 
+var hiddenTag2 = $(".hidden-tag-2").text() ; 
+
 $(".add-2").on("click" , function(){
-    counter = +counter+0.5 ; 
-    $(".value-content-2").text(counter)
+    counter2 = +counter2+ +hiddenTag2 ; 
+    $(".value-content-2").text(counter2)
 })
 $(".subtract-2").on("click" , function(){
-    if(counter > 0.5){
-        counter = +counter-0.5 ; 
-        $(".value-content-2").text(counter)
+    if(counter2 > 0.5){
+        counter2 = +counter2- +hiddenTag2 ; 
+        $(".value-content-2").text(counter2);
     }
 })
 
