@@ -89,15 +89,6 @@ $(function(){
   $(".custom-sub-item-all").on("click" , function(){
     $(".custom-common-products .product").css({display: "block"}) ;
   })
-  $(".custom-sub-item-1").on("click" , function(){
-    $(".custom-common-products .product-1").css({display: "block"}) ;
-    $(".custom-common-products .product-2").hide() ;
- 
-  })
-  $(".custom-sub-item-2").on("click" , function(){
-    $(".custom-common-products .product-2").css({display: "block"}) ;
-    $(".custom-common-products .product-1").hide() ;
-  })
   
   $(".common-products .btn").on("click" , function(){
     Swal.fire(

@@ -5,13 +5,14 @@ $(".quant").on("click" , function(){
 
 
 var counter1 =  $(".value-content-1").text() ; 
+var min1 = $(".value-content-1").text()  ; 
 var hiddenTag1 = $(".hidden-tag-1").text() ; 
 $(".add-1").on("click" , function(){
     counter1 = +counter1+ +hiddenTag1 ; 
     $(".value-content-1").text(counter1) ; 
 })
 $(".subtract-1").on("click" , function(){
-    if(counter1 > 0.5){
+    if(counter1 > min1){
         counter1 = +counter1- +hiddenTag1 ; 
         $(".value-content-1").text(counter1);
     }
@@ -19,14 +20,15 @@ $(".subtract-1").on("click" , function(){
 
 
 var counter2 =  $(".value-content-2").text() ; 
+var min2 = $(".value-content-2").text()  ; 
 var hiddenTag2 = $(".hidden-tag-2").text() ; 
 
 $(".add-2").on("click" , function(){
     counter2 = +counter2+ +hiddenTag2 ; 
-    $(".value-content-2").text(counter2)
+    $(".value-content-2").text(counter2) ; 
 })
 $(".subtract-2").on("click" , function(){
-    if(counter2 > 0.5){
+    if(counter2 > min2){
         counter2 = +counter2- +hiddenTag2 ; 
         $(".value-content-2").text(counter2);
     }
