@@ -81,11 +81,7 @@ $(function(){
       $("#title-products").text(text) ;
     }
   })
-
-  if($(".custom-sub-item-all").hasClass("active-categ")){
-    $(".custom-common-products product").css({display: "block"}) ;
-  }
-
+  
   $(".custom-sub-item-all").on("click" , function(){
     $(".custom-common-products .product").css({display: "block"}) ;
   })

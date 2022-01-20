@@ -139,9 +139,6 @@
                     padding: 0;
                 }
             }
-            .nav-item + .nav-item{
-             
-            }
         }
     }
     .info{
@@ -161,6 +158,12 @@
                         -moz-border-radius: 10px;
                         -ms-border-radius: 10px;
                         -o-border-radius: 10px;
+                        a{
+                            img{
+                                min-height: 250px;
+                                max-height: 250px;
+                            }
+                        }
                     }
                 }
             }

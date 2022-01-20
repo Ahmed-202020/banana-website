@@ -1860,6 +1860,11 @@
   -o-border-radius: 10px;
 }
 
+.custom-categories .info .custom-common-products .products .product .card a img {
+  min-height: 250px;
+  max-height: 250px;
+}
+
 .custom-categories .info .custom-common-products .tabcontent {
   display: none;
 }
