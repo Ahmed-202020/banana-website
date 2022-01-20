@@ -1861,6 +1861,7 @@
 }
 
 .custom-categories .info .custom-common-products .products .product .card a img {
+  width: 100%;
   min-height: 250px;
   max-height: 250px;
 }
