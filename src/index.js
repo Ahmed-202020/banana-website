@@ -83,7 +83,7 @@ $(function(){
   })
   
   $(".custom-sub-item-all").on("click" , function(){
-    $(".custom-common-products .product").css({display: "block"}) ;
+    $(".custom-common-products .sub-products").css({display: "grid"}) ;
   })
   
   $(".common-products .btn").on("click" , function(){

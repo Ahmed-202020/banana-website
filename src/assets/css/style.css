@@ -1847,32 +1847,36 @@
 
 .custom-categories .info .custom-common-products .products {
   -ms-grid-rows: auto;
+  -ms-grid-columns: 1fr;
+      grid-template: auto/1fr;
+}
+
+.custom-categories .info .custom-common-products .products .sub-products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
   -ms-grid-columns: (1fr)[3];
       grid-template: auto/repeat(3, 1fr);
   gap: 15pt;
 }
 
-.custom-categories .info .custom-common-products .products .product .card {
+.custom-categories .info .custom-common-products .products .sub-products .product .card {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  min-height: 410px;
+  max-height: 410px;
 }
 
-.custom-categories .info .custom-common-products .products .product .card a img {
-  width: 100%;
-  min-height: 250px;
-  max-height: 250px;
+.custom-categories .info .custom-common-products .products .sub-products .product .card a {
+  min-height: 318px;
+  max-height: 318px;
 }
 
-.custom-categories .info .custom-common-products .tabcontent {
-  display: none;
-}
-
-.custom-categories .info .custom-common-products .default {
-  display: -ms-grid;
-  display: grid;
+.custom-categories .info .custom-common-products .products .sub-products .product .card a img {
+  height: 250px;
 }
 
 .custom-categories .info .details {
@@ -2065,6 +2069,9 @@
     padding-inline: 0;
     width: 100%;
     padding-block: 40px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 500px;
   }
   .custom-categories .show-case .navbar .navbar-nav .nav-item {
     width: 90%;
@@ -2115,6 +2122,9 @@
             align-items: center;
     padding-left: 0px;
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 500px;
     padding-block: 40px;
   }
   .custom-categories .show-case .navbar .navbar-nav .nav-item {
@@ -2132,10 +2142,10 @@
     padding-left: 0;
     padding-right: 25px;
   }
-  .custom-categories .info .custom-common-products .products {
-    -ms-grid-rows: (1fr)[9];
+  .custom-categories .info .custom-common-products .products .sub-products {
+    -ms-grid-rows: (1fr)[6];
     -ms-grid-columns: (1fr)[2];
-        grid-template: repeat(9, 1fr)/repeat(2, 1fr);
+        grid-template: repeat(6, 1fr)/repeat(2, 1fr);
   }
   .custom-categories .info .details .form-group .accor .title h5::after {
     left: 20px;
@@ -2158,10 +2168,10 @@
   .custom-categories .info .custom-common-products {
     padding-right: 0;
   }
-  .custom-categories .info .custom-common-products .products {
-    -ms-grid-rows: (1fr)[18];
+  .custom-categories .info .custom-common-products .products .sub-products {
+    -ms-grid-rows: (1fr)[12];
     -ms-grid-columns: 1fr;
-        grid-template: repeat(18, 1fr)/1fr;
+        grid-template: repeat(12, 1fr)/1fr;
   }
   .custom-categories .info .details .form-group .accor .title h5::after {
     left: 8px;
@@ -2179,9 +2189,15 @@
   .custom-categories .show-case .title {
     margin-right: 25px;
   }
+  .custom-categories .show-case .navbar {
+    margin-inline: 5px;
+  }
   .custom-categories .show-case .sub-nav {
-    margin-right: 15px;
-    width: 90%;
+    margin-right: 10px;
+    width: 94%;
+  }
+  .custom-categories .info {
+    padding-inline: 5px;
   }
 }
 
@@ -5492,7 +5508,7 @@ html[dir="ltr"] .custom-categories .info .details .form-group .accor .rate label
     margin-left: 25px;
   }
   html[dir="ltr"] .custom-categories .show-case .sub-nav {
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: 0;
   }
 }

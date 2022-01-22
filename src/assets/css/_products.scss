@@ -149,30 +149,30 @@
             grid-area: products ;
             padding-right: 25px;
             .products{
-                grid-template: auto /repeat(3, 1fr);
-                gap: 15pt;
-                .product{
-                    .card{
-                        border-radius: 10px;
-                        -webkit-border-radius: 10px;
-                        -moz-border-radius: 10px;
-                        -ms-border-radius: 10px;
-                        -o-border-radius: 10px;
-                        a{
-                            img{
-                                width: 100%;
-                                min-height: 250px;
-                                max-height: 250px;
+                grid-template: auto/1fr;
+                .sub-products{
+                    display: grid;
+                    grid-template: auto/repeat(3, 1fr);
+                    gap: 15pt;
+                    .product{
+                        .card{
+                            border-radius: 10px;
+                            -webkit-border-radius: 10px;
+                            -moz-border-radius: 10px;
+                            -ms-border-radius: 10px;
+                            -o-border-radius: 10px;
+                            min-height: 410px;
+                            max-height: 410px;
+                            a{
+                                min-height: 318px;
+                                max-height: 318px;
+                                img{
+                                   height: 250px;
+                                }
                             }
                         }
                     }
                 }
-            }
-            .tabcontent{
-                display: none;
-            }
-            .default{
-                display: grid;
             }
         }
         .details{
@@ -334,6 +334,9 @@
                     padding-inline: 0;
                     width: 100%;
                     padding-block: 40px;
+                    overflow-x: hidden; 
+                    overflow-y: auto;
+                    height: 500px;
                     .nav-item{
                         width: 90%;
                         text-align: center;
@@ -386,6 +389,9 @@
                     align-items: center;
                     padding-left: 0px;
                     width: 100%;
+                    overflow-x: hidden; 
+                    overflow-y: auto;
+                    height: 500px;
                     padding-block: 40px;
                     .nav-item{
                         width: 90%;
@@ -404,7 +410,9 @@
                 padding-left: 0;
                 padding-right: 25px;
                 .products{
-                    grid-template: repeat(9 , 1fr)/repeat(2, 1fr);
+                    .sub-products{
+                        grid-template: repeat(6 , 1fr)/repeat(2, 1fr);
+                    }
                 }
             }
             .details{
@@ -451,7 +459,9 @@
             .custom-common-products{
                 padding-right: 0;
                 .products{
-                    grid-template : repeat(18 , 1fr) / 1fr;
+                    .sub-products{
+                        grid-template : repeat(12 , 1fr) / 1fr;
+                    }
                 }
             }
             .details{
@@ -486,10 +496,16 @@
             .title{
                 margin-right: 25px ;
             }
-            .sub-nav{
-                margin-right: 15px;
-                width: 90%;
+            .navbar{
+                margin-inline: 5px;
             }
+            .sub-nav{
+                margin-right: 10px;
+                width: 94%;
+            }
+        }
+        .info{
+            padding-inline: 5px;
         }
     }
 }
