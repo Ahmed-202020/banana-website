@@ -189,64 +189,14 @@
                             الكل
                         </a>
                     </li>
-                    <li onclick="openSubMenu(event, 'fruits')"  class="nav-item custom-sort  custom-sub">
+                    <li  class="nav-item custom-sort  custom-sub-item" data-content = ".one">
                         <a  class="nav-link">
                             فواكه
                         </a>
                     </li>
-                    <li  onclick="openSubMenu(event, 'vegetables')" class="nav-item  custom-sort">
+                    <li class="nav-item  custom-sort  custom-sub-item" data-content = ".two">
                         <a  class="nav-link">
                             خضروات
-                        </a>
-                    </li>
-                    <li  onclick="openSubMenu(event, 'pepsi')" class="nav-item  custom-sort">
-                        <a  class="nav-link">
-                            بيبسي
-                        </a>
-                    </li>
-                    <li  onclick="openSubMenu(event, 'cola')" class="nav-item  custom-sort">
-                        <a  class="nav-link">
-                            كولا
-                        </a>
-                    </li>
-                    <li  onclick="openSubMenu(event, 'eastern-sweets')" class="nav-item  custom-sort">
-                        <a  class="nav-link">
-                            حلويات شرقية
-                        </a>
-                    </li>
-                    <li  onclick="openSubMenu(event, 'western-sweets')" class="nav-item  custom-sort">
-                        <a  class="nav-link">
-                            حلويات غربية
-                        </a>
-                    </li>
-                    <li  onclick="openSubMenu(event, 'eastern-bakeries')" class="nav-item  custom-sort">
-                        <a  class="nav-link">
-                            مخبوزات شرقية
-                        </a>
-                    </li>
-                    <li  onclick="openSubMenu(event, 'wastern-bakeries')" class="nav-item  custom-sort">
-                        <a  class="nav-link">
-                            مخبوزات غربية
-                        </a>
-                    </li>
-                    <li  onclick="openSubMenu(event, 'fat-free')" class="nav-item  custom-sort">
-                        <a  class="nav-link">
-                            خالي الدسم
-                        </a>
-                    </li>
-                    <li  onclick="openSubMenu(event, 'full-fat')" class="nav-item  custom-sort">
-                        <a  class="nav-link">
-                            كامل الدسم
-                        </a>
-                    </li>
-                    <li  onclick="openSubMenu(event, 'frozen-meates')" class="nav-item  custom-sort">
-                        <a  class="nav-link">
-                            لحوم مثلجة
-                        </a>
-                    </li>
-                    <li  onclick="openSubMenu(event, 'fresh-meats')" class="nav-item  custom-sort">
-                        <a  class="nav-link">
-                           لحوم بلدي
                         </a>
                     </li>
                 </ul>
@@ -319,7 +269,7 @@
                 </div>
                 <section class="common-products custom-common-products">
                     <div id="fruits-vegetables" class="products default">
-                        <div id="fruits" class="sub-products">
+                        <div class="sub-products one" >
                             <div  class="product">
                                 <div class="card">
                                     <a href="./product.html">
@@ -525,7 +475,7 @@
                                 </div>
                             </div>
                         </div>    
-                        <div id="vegetables" class="sub-products">
+                        <div class="sub-products two">
                             <div  class="product ">
                                 <div  class="card">
                                     <a href="./product.html">
@@ -733,7 +683,7 @@
                         </div>
                     </div>
                     <div id="drinks" class="products">
-                        <div id="pepsi" class="sub-products">
+                        <div class="sub-products one">
                             <div class="product ">
                                 <div class="card">
                                     <a href="./product.html">
@@ -939,7 +889,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="cola" class="sub-products">
+                        <div class="sub-products  two">
                             <div class="product">
                                 <div  class="card">
                                     <a href="./product.html">
@@ -1147,7 +1097,7 @@
                         </div>
                     </div>    
                     <div id="sweets" class="products">
-                        <div id="eastern-sweets"  class="sub-products">
+                        <div  class="sub-products one">
                             <div  class="product">
                                 <div class="card">
                                     <a href="./product.html">
@@ -1353,7 +1303,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="western-sweets"  class="sub-products">
+                        <div  class="sub-products  two">
                             <div  class="product">
                                 <div class="card">
                                     <a href="./product.html">
@@ -1561,7 +1511,7 @@
                         </div>
                     </div>
                     <div id="bakeries" class="products">
-                        <div id="eastern-bakeries" class="sub-products">
+                        <div  class="sub-products  one">
                             <div class="product">
                                 <div class="card">
                                     <a href="./product.html">
@@ -1767,7 +1717,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="wastern-bakeries" class="sub-products">
+                        <div  class="sub-products two">
                             <div  class="product">
                                 <div  class="card">
                                     <a href="./product.html">
@@ -1975,7 +1925,7 @@
                         </div>
                     </div>    
                     <div id="dairies" class="products">
-                        <div id="fat-free" class="sub-products">
+                        <div  class="sub-products one">
                             <div  class="product">
                                 <div class="card">
                                     <a href="./product.html">
@@ -2181,7 +2131,7 @@
                                 </div>
                             </div>
                         </div>    
-                        <div id="full-fat" class="sub-products">
+                        <div  class="sub-products two">
                             <div class="product ">
                                 <div  class="card">
                                     <a href="./product.html">
@@ -2389,7 +2339,7 @@
                         </div>    
                     </div>
                     <div id="meates" class="products">
-                        <div id="frozen-meates" class="sub-products">
+                        <div  class="sub-products one">
                             <div  class="product">
                                 <div class="card">
                                     <a href="./product.html">
@@ -2595,7 +2545,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="fresh-meats" class="sub-products">
+                        <div class="sub-products two">
                             <div class="product ">
                                 <div  class="card">
                                     <a href="./product.html">
@@ -2879,7 +2829,7 @@
             </div>
         </div>
     </div>
-    <div id = "register"  class="modal modal-register custom-modal-register register fade" aria-hidden="true" tabindex="-1">
+    <div id = "register" class="modal modal-register custom-modal-register register fade" aria-hidden="true" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="row">
@@ -2992,16 +2942,16 @@
             // Show the current tab 
             document.getElementById(menuName).style.display = "grid";
         }
-        let x , tabSubContent  ;
-        function openSubMenu(evt, menuSubName) {
-            // Get all elements with class="tabSubContent" and hide them
-            tabSubContent = document.getElementsByClassName("sub-products");
-            for (x = 0; x < tabSubContent.length; x++) {
-                tabSubContent[x].style.display = "none";
-            }
-            // Show the current tab 
-            document.getElementById(menuSubName).style.display = "grid";
-        }
+        // let x , tabSubContent  ;
+        // function openSubMenu(evt, menuSubName) {
+        //     // Get all elements with class="tabSubContent" and hide them
+        //     tabSubContent = document.getElementsByClassName("sub-products");
+        //     for (x = 0; x < tabSubContent.length; x++) {
+        //         tabSubContent[x].style.display = "none";
+        //     }
+        //     // Show the current tab 
+        //     document.getElementById(menuSubName).style.display = "grid";
+        // }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

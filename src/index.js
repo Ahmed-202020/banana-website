@@ -85,6 +85,11 @@ $(function(){
   $(".custom-sub-item-all").on("click" , function(){
     $(".custom-common-products .sub-products").css({display: "grid"}) ;
   })
+
+  $(".custom-sub-item").on("click" , function(){
+    $(".sub-products").hide() ; 
+    $($(this).data("content")).fadeIn() ; 
+  })
   
   $(".common-products .btn").on("click" , function(){
     Swal.fire(
