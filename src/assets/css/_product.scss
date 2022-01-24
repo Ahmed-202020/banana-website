@@ -2,7 +2,7 @@
     background-color: #fff !important;
 }
 .product-header{
-    .bar{
+    .bar-product{
         top: -105px;
         left: 202px;
         transform: rotateX(134deg);
@@ -328,7 +328,7 @@
 // responsive design products.html(rtl)
 @media (max-width: 1399.98px){
     .product-header{
-        .bar{
+        .bar-product{
             top: -78px;
             left: 228px;
         }
@@ -336,21 +336,21 @@
 }
 @media (max-width: 1280.98px){
     .product-header{
-        .bar{
+        .bar-product{
             top: -70px !important; 
         }
     }
 }
 @media (max-width: 1199.98px){
     .product-header{
-        .bar{
+        .bar-product{
             top: -58px !important; 
         }
     }
 }
 @media (min-width: 992px) and (max-width: 1025px){
     .product-header{
-        .bar{
+        .bar-product{
             top: -15px !important; 
         }
     }

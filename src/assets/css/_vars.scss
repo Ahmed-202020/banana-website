@@ -89,7 +89,13 @@ $min-size-font : "20pt" ;
         }
     }
 }
-
+.bar{
+    position: absolute;
+    width: 1319px;
+    top: -50px;
+    z-index: -1;
+    left: 206px;
+}
 .active-bar{
     border-radius: 5px;
     -webkit-border-radius: 5px;

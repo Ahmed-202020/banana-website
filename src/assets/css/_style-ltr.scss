@@ -1796,7 +1796,7 @@ html[dir = "ltr"]{
 
 html[dir = "ltr"]{
     .product-header{
-        .bar{
+        .bar-product{
             right: 202px;
             left: initial;
             transform: rotateX(134deg);
@@ -1835,12 +1835,12 @@ html[dir = "ltr"]{
     }
 }
 
-// responsive design products.html(ltr)
+// responsive design product.html(ltr)
 
 @media (max-width: 1399.98px){
     html[dir = "ltr"]{
         .product-header{
-            .bar{
+            .bar-product{
                 right: 228px;
                 left: initial;
             }
