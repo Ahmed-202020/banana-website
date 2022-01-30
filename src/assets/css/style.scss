@@ -527,7 +527,7 @@ html{
             grid-template: repeat(2 , 1fr) / repeat(3 , 1fr);
             justify-content: center;
             align-items: center;
-            gap: 8pt;
+            gap: 10pt 8pt;
             .category{
                 text-decoration: none;
                 .card{
@@ -540,6 +540,7 @@ html{
                     -o-border-radius:5px;
                     img{ 
                         width: 100%;
+                        max-height: 210px;
                     }
                     .card-body{
                         border-radius:1px;
@@ -597,10 +598,15 @@ html{
                 .card{
                     background-color: $white;
                     width: 100%;
+                    min-height: 410px;
+                    max-height: 410px;
                     a{
                         text-decoration: none;
+                        min-height: 318px;
+                        max-height: 318px;
                         img{
                             width: 100%;
+                            height: 250px;
                         }
                         .info{
                             display: flex;

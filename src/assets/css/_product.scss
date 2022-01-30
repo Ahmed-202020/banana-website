@@ -209,6 +209,13 @@
             justify-content: flex-start;
             align-items: flex-start;
             margin-bottom: 0;
+            .image{
+                width: 520px;
+                padding: 20px;
+                img{
+                    width: 100%;
+                }
+            }
             .title{
                 margin-top: 60px;
                 h5{
