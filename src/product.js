@@ -19,6 +19,14 @@ $(".card-payment input[type = 'radio']").on("click" , function(){
     $(".type-card").css({"display" : "block"}) ; 
     $(".type-card").css({"display" : "block"}) ; 
     $(".card-payment .form-group").css({"display" : "block"}) ; 
+});
+
+$(".wallet-payment input[type = 'radio']").on("click" , function(){
+    $(".ask").css({"display" : "none"}) ; 
+    $(".payed").css({"display" : "none"}) ; 
+    $(".type-card").css({"display" : "none"}) ; 
+    $(".type-card").css({"display" : "none"}) ; 
+    $(".card-payment .form-group").css({"display" : "none"}) ; 
 })
 
 $("select#target").on("change" , function(){
