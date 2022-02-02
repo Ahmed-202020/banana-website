@@ -3121,6 +3121,7 @@
 
 .orders.cart .show-case .current-orders {
   position: relative;
+  margin-bottom: 100px;
   padding-top: 45px;
 }
 
