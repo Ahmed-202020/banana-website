@@ -4,6 +4,32 @@ $(".quant").on("click" , function(){
 });
 
 
+$(".cash-payment input[type = 'radio']").on("click" , function(){
+    $(".type-card").css({"display" : "none"}) ; 
+    $(".type-card").css({"display" : "none"}) ; 
+    $(".card-payment .form-group").css({"display" : "none"}) ; 
+    $(".ask").css({"display" : "block"}) ; 
+    $(".payed").css({"display" : "block"}) ; 
+})
+
+
+$(".card-payment input[type = 'radio']").on("click" , function(){
+    $(".ask").css({"display" : "none"}) ; 
+    $(".payed").css({"display" : "none"}) ; 
+    $(".type-card").css({"display" : "block"}) ; 
+    $(".type-card").css({"display" : "block"}) ; 
+    $(".card-payment .form-group").css({"display" : "block"}) ; 
+})
+
+$("select#target").on("change" , function(){
+    var target = $('select#target option:checked').val();
+    if(target == "false"){
+        $(".payed").hide() ;
+    }else{
+        $(".payed").show() ;
+    }
+})
+
 var counter1 =  $(".value-content-1").text() ; 
 var min1 = $(".value-content-1").text()  ; 
 var hiddenTag1 = $(".hidden-tag-1").text() ; 

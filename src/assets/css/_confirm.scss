@@ -13,7 +13,6 @@ body{
     .show-case{
         .inform{
             .waiting-process{
-                // display: none;
                 .waiting{
                     flex-direction: column;
                     justify-content: center !important;
@@ -88,10 +87,12 @@ body{
             }
             .order-time{
                 padding: 15px 15px 1px;
+                    .form-control{
+                        box-shadow: none ; 
+                        border: none ; 
+                    }
             }
-            .current-orders{
-                margin-bottom: 100px;
-            }
+            
             .payments{
                 padding: 20px 25px 100px 25px;
                 .payment{
@@ -165,6 +166,7 @@ body{
                 }
                 .cash-payment{
                     .ask{
+                        display: none;
                         position: relative;
                         margin-bottom: 25px;
                         p{
@@ -201,6 +203,7 @@ body{
                         }
                     }
                     .payed{
+                        display: none;
                         span{
                             cursor: pointer;
                             color: $black-color;
@@ -222,6 +225,7 @@ body{
                 .card-payment{
                     margin-top: 35px !important;
                     .type-card{
+                        display: none;
                         margin-right: 25px;
                         margin-bottom: 35px;
                         img{
@@ -233,6 +237,7 @@ body{
                         }
                     }
                     .form-group{
+                        display: none;
                         .form-control{
                             width: 100%;
                             box-shadow: none;

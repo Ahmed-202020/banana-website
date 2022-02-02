@@ -3702,8 +3702,10 @@ body {
   padding: 15px 15px 1px;
 }
 
-.confirm .show-case .inform .current-orders {
-  margin-bottom: 100px;
+.confirm .show-case .inform .order-time .form-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
 }
 
 .confirm .show-case .inform .payments {
@@ -3797,6 +3799,7 @@ body {
 }
 
 .confirm .show-case .inform .payments .cash-payment .ask {
+  display: none;
   position: relative;
   margin-bottom: 25px;
 }
@@ -3838,6 +3841,10 @@ body {
   font-size: 15pt;
 }
 
+.confirm .show-case .inform .payments .cash-payment .payed {
+  display: none;
+}
+
 .confirm .show-case .inform .payments .cash-payment .payed span {
   cursor: pointer;
   color: #2a2a2a;
@@ -3861,6 +3868,7 @@ body {
 }
 
 .confirm .show-case .inform .payments .card-payment .type-card {
+  display: none;
   margin-right: 25px;
   margin-bottom: 35px;
 }
@@ -3872,6 +3880,10 @@ body {
 
 .confirm .show-case .inform .payments .card-payment .type-card img + img {
   margin-right: 15px;
+}
+
+.confirm .show-case .inform .payments .card-payment .form-group {
+  display: none;
 }
 
 .confirm .show-case .inform .payments .card-payment .form-group .form-control {
