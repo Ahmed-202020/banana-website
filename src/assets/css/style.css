@@ -3580,6 +3580,10 @@
   content: initial;
 }
 
+.delivered .show-case .inform .payments .cash-payment .payed {
+  display: initial !important;
+}
+
 .delivered .show-case .inform .payments .cash-payment .payed span {
   color: #2a2a2a;
   background-color: #fff;

@@ -19,6 +19,7 @@
             .payments{
                 .cash-payment{
                     .payed{
+                        display: initial !important;
                         span{
                             color: $black-color;
                             background-color: #fff;
