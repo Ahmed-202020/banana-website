@@ -9,7 +9,7 @@ $(".cash-payment input[type = 'radio']").on("click" , function(){
     $(".type-card").css({"display" : "none"}) ; 
     $(".card-payment .form-group").css({"display" : "none"}) ; 
     $(".ask").css({"display" : "block"}) ; 
-    $(".payed").css({"display" : "block"}) ; 
+    $(".payed").css({"display" : "flex"}) ; 
 })
 
 
@@ -30,13 +30,12 @@ $(".wallet-payment input[type = 'radio']").on("click" , function(){
 })
 
 $("select#target").on("change" , function(){
-    var target = $('select#target option:checked').val();
-    if(target == "false"){
+    if($('select#target option:checked').hasClass("false") ){
         $(".payed").hide() ;
     }else{
         $(".payed").show() ;
     }
-})
+}) ;    
 
 var counter1 =  $(".value-content-1").text() ; 
 var min1 = $(".value-content-1").text()  ; 
@@ -93,23 +92,24 @@ $(".another-address").on("click" , function(){
 
 $(".delete").on("click" , function(){
     $(this).parentsUntil(".addresses").fadeOut() ; 
-})
+});
+
 $("#send-req").on("click" , function(){
     $(".successfull-req").modal("show") ; 
 });
-  
-    $('input[type="radio"]').on('change', function() {
-        $('input[type="radio"]').not(this).prop('checked', false);
-    });        
-    $(".payment .payed span").on("click" , function(){
-        $(".payment .payed span").removeClass("active-pay") ;
-        $(this).addClass("active-pay") ; 
-    })
 
-    $(".payment .type-card img").on("click" , function(){
-        $(".payment .type-card img").removeClass("active-card") ;
-        $(this).addClass("active-card") ; 
-    }) ; 
+$('.payments .payment > label input[type="radio"]').on('change', function() {
+    $('input[type="radio"]').not(this).prop('checked', false);
+});        
+
+$('.cash-payment .payed > label input[type="radio"]').on('change', function() {
+    $('.cash-payment .payed > label input[type="radio"]').not(this).prop('checked', false);
+});        
+
+$(".payment .type-card img").on("click" , function(){
+    $(".payment .type-card img").removeClass("active-card") ;
+    $(this).addClass("active-card") ; 
+}) ; 
 
 $(".add-to-cart").on("click" , function(){
     Swal.fire(

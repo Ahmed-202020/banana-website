@@ -190,15 +190,33 @@
                             <div class="ask">
                                 <p>احضار صرف</p>
                                 <select name="" id="target" class="form-control">
-                                    <option  value="true">نعم</option>
-                                    <option  value="false">لا</option>
+                                    <option class="true">نعم</option>
+                                    <option  class="false">لا</option>
                                 </select>
                                 <i class="fas fa-sort-down arrow"></i>
                             </div>    
                             <div class="payed">
-                                <span class="active-pay">100 ر.س</span>
-                                <span>200 ر.س</span>
-                                <span>500 ر.س</span>
+                                <label  for="one" >
+                                    <input id="one" type="radio">
+                                    <span>
+                                        <div class="custom-radio"></div>
+                                        <p>100 ر.س</p>
+                                    </span>
+                                </label>
+                                <label  for="two">
+                                    <input id="two" type="radio">
+                                    <span>
+                                        <div class="custom-radio"></div>
+                                        <p>200 ر.س</p>
+                                    </span>
+                                </label>
+                                <label  for="three">
+                                    <input id="three" type="radio">
+                                    <span>
+                                        <div class="custom-radio"></div>
+                                        <p>500 ر.س</p>
+                                    </span>
+                                </label>
                             </div>
                         </div>
                         <div class="payment wallet-payment">
@@ -287,7 +305,7 @@
                 </div>
             </div>
             <a id="send-req"  href="#" class="btn confirm">
-               ارسال الطلب
+                ارسال الطلب
             </a>
         </section>    
         <footer class="footer custom-footer">

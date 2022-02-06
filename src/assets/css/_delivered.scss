@@ -20,9 +20,18 @@
                 .cash-payment{
                     .payed{
                         span{
+                            color: $black-color;
+                            background-color: #fff;
+                            font-size: 12pt;
+                            padding: 10px 15px;
+                            border-radius: 25px;
+                            -webkit-border-radius: 25px;
+                            -moz-border-radius: 25px;
+                            -ms-border-radius: 25px;
+                            -o-border-radius: 25px;
                             border: 1px solid $light-line;
-                            background-color: transparent !important;
-                            color: $light-line !important;
+                            background-color: $button-bg-products !important;
+                            color: $white;
                         }
                     }
                 }

@@ -39,11 +39,6 @@
   -o-border-radius: 5px;
 }
 
-.active-pay {
-  background-color: #f9c810 !important;
-  border: 1px solid #f9c810 !important;
-}
-
 .active-card {
   border: 0.5px solid #f9c810;
   border-radius: 10px;
@@ -3586,9 +3581,18 @@
 }
 
 .delivered .show-case .inform .payments .cash-payment .payed span {
+  color: #2a2a2a;
+  background-color: #fff;
+  font-size: 12pt;
+  padding: 10px 15px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
   border: 1px solid #f2eacb;
-  background-color: transparent !important;
-  color: #f2eacb !important;
+  background-color: #f9c810 !important;
+  color: #f7fffa;
 }
 
 html[dir="ltr"] .delivered .show-case .inform .current-orders .current-order .cost-order .type {
@@ -3844,15 +3848,25 @@ body {
 
 .confirm .show-case .inform .payments .cash-payment .payed {
   display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.confirm .show-case .inform .payments .cash-payment .payed span {
-  cursor: pointer;
-  color: #2a2a2a;
-  border: 1px solid #f2eacb;
+.confirm .show-case .inform .payments .cash-payment .payed label {
+  position: relative;
+}
+
+.confirm .show-case .inform .payments .cash-payment .payed label input[type="radio"] {
+  display: none;
+}
+
+.confirm .show-case .inform .payments .cash-payment .payed label .custom-radio {
+  position: absolute;
+  width: 80px;
+  height: 45px;
+  border: 1px solid #f2eacb !important;
   background-color: #fff;
-  font-size: 12pt;
-  padding: 10px 15px;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -3860,7 +3874,32 @@ body {
   -o-border-radius: 25px;
 }
 
-.confirm .show-case .inform .payments .cash-payment .payed span + span {
+.confirm .show-case .inform .payments .cash-payment .payed label p {
+  color: #2a2a2a;
+  font-size: 12pt;
+  z-index: 3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.confirm .show-case .inform .payments .cash-payment .payed label input[type="radio"]:checked + span::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 0;
+  z-index: 2;
+  width: 80px;
+  height: 45px;
+  border: 1px solid #f9c810 !important;
+  background-color: #f9c810 !important;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.confirm .show-case .inform .payments .cash-payment .payed label + label {
   margin-right: 15px;
 }
 
@@ -4248,8 +4287,11 @@ body {
   .confirm .show-case .inform .payments .cash-payment .ask p::after {
     width: 60%;
   }
-  .confirm .show-case .inform .payments .cash-payment .payed span + span {
-    margin-right: 3px;
+  .confirm .show-case .inform .payments .cash-payment .payed label .custom-radio {
+    width: 72px;
+  }
+  .confirm .show-case .inform .payments .cash-payment .payed label p {
+    font-size: 10pt;
   }
   .confirm .show-case .inform .payments .card-payment .form-group {
     display: -webkit-box;
@@ -4311,12 +4353,12 @@ body {
   .confirm .show-case .inform .payments .cash-payment .ask p::after {
     width: 50%;
   }
-  .confirm .show-case .inform .payments .cash-payment .payed span {
-    padding-inline: 4px !important;
-    font-size: 8pt;
+  .confirm .show-case .inform .payments .cash-payment .payed label .custom-radio {
+    width: 72px;
   }
-  .confirm .show-case .inform .payments .cash-payment .payed span + span {
-    margin-right: 0px;
+  .confirm .show-case .inform .payments .cash-payment .payed label p {
+    font-size: 8pt;
+    margin-left: 3px;
   }
   .confirm .show-case .inform .payments .card-payment .form-group {
     display: -webkit-box;
@@ -6025,8 +6067,10 @@ html[dir="ltr"] .confirm .show-case .inform .payments .payment + .payment::befor
 }
 
 html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .ask p::after {
-  left: 125px;
+  position: absolute;
+  content: "";
   right: initial;
+  left: 125px;
 }
 
 html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .ask i {
@@ -6034,13 +6078,13 @@ html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .ask i {
   left: initial;
 }
 
-html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .payed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .payed label input[type="radio"]:checked + span::before {
+  content: "";
+  right: initial;
+  left: 0;
 }
 
-html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .payed span + span {
+html[dir="ltr"] .confirm .show-case .inform .payments .cash-payment .payed label + label {
   margin-right: 0;
   margin-left: 15px;
 }

@@ -2251,8 +2251,10 @@ html[dir = "ltr"]{
                         .ask{
                             p{
                                 &::after{
-                                    left: 125px;
+                                    position: absolute;
+                                    content: "";
                                     right: initial;
+                                    left: 125px;
                                 }
                             }
                             i{
@@ -2261,8 +2263,14 @@ html[dir = "ltr"]{
                             }
                         }
                         .payed{
-                            display: flex;
-                            span+span{
+                            label{
+                                input[type="radio"]:checked + span::before{
+                                    content: "";
+                                    right: initial;
+                                    left: 0;
+                                }
+                            }
+                            label+label{
                                 margin-right: 0;
                                 margin-left: 15px;
                             }
