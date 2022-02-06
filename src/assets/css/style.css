@@ -4383,6 +4383,199 @@ body {
   }
 }
 
+.change-password {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: #fffcee;
+  border: 1px solid #f2eacb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.change-password .form-group {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.change-password .form-group label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.change-password .form-group label span {
+  width: 30%;
+  text-align: center;
+  color: #00963f;
+  font-weight: bold;
+}
+
+.change-password .form-group label .form-control {
+  width: 70%;
+  border: 1px solid #f2eacb;
+  caret-color: #f2eacb;
+  padding: 10px 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.change-password .form-group label .form-control::-webkit-input-placeholder {
+  color: #f2eacb;
+}
+
+.change-password .form-group label .form-control:-ms-input-placeholder {
+  color: #f2eacb;
+}
+
+.change-password .form-group label .form-control::-ms-input-placeholder {
+  color: #f2eacb;
+}
+
+.change-password .form-group label .form-control::placeholder {
+  color: #f2eacb;
+}
+
+.change-password .form-group label .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.change-password .form-group label:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.change-password .form-group .btn {
+  width: 200px;
+  padding: 2px 5px;
+  font-size: 15pt;
+  margin-right: 130px;
+  margin-top: 30px;
+  background-color: #00963f;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  color: #f7fffa;
+}
+
+.change-password .form-group .btn:hover {
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+}
+
+html[dir="ltr"] .change-password .form-group .btn {
+  width: 200px;
+  font-size: 15pt;
+  margin-right: 0;
+  margin-left: 130px;
+}
+
+.change-password.code .form-group label span {
+  text-align: left;
+  padding-left: 12px;
+}
+
+html[dir="ltr"] .change-password.code .form-group label span {
+  text-align: right;
+  padding-right: 12px;
+  padding-left: 0;
+}
+
+@media (min-width: 280px) and (max-width: 420px) {
+  .change-password .form-group label span {
+    width: 32%;
+    font-size: 8pt;
+    margin-left: 5px;
+  }
+  .change-password .form-group label .form-control {
+    width: 68%;
+    font-size: 8pt;
+    padding: 5px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .change-password .form-group label .form-control::-webkit-input-placeholder {
+    color: #f2eacb;
+  }
+  .change-password .form-group label .form-control:-ms-input-placeholder {
+    color: #f2eacb;
+  }
+  .change-password .form-group label .form-control::-ms-input-placeholder {
+    color: #f2eacb;
+  }
+  .change-password .form-group label .form-control::placeholder {
+    color: #f2eacb;
+  }
+  .change-password .form-group .btn {
+    width: 100px;
+    height: 25px;
+    font-size: 15pt;
+    padding: 5px;
+    font-size: 12pt;
+    line-height: 0;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 420px) {
+  html[dir="ltr"] .change-password .form-group label span {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  html[dir="ltr"] .change-password .form-group .btn {
+    width: 100px;
+    height: 25px;
+    font-size: 15pt;
+    padding: 5px;
+    font-size: 12pt;
+    line-height: 0;
+    margin-right: 0;
+    margin-left: 50px;
+  }
+}
+
 html[dir="ltr"] .header .navbar .navbar-brand img {
   left: 600px;
 }
