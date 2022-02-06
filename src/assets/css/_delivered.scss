@@ -18,6 +18,9 @@
             }
             .payments{
                 .cash-payment{
+                    .ask{
+                        display: block !important;
+                    }
                     .payed{
                         display: initial !important;
                         span{

@@ -3580,6 +3580,10 @@
   content: initial;
 }
 
+.delivered .show-case .inform .payments .cash-payment .ask {
+  display: block !important;
+}
+
 .delivered .show-case .inform .payments .cash-payment .payed {
   display: initial !important;
 }
