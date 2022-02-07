@@ -391,6 +391,24 @@ body{
                     -ms-border-radius: 5px;
                     -o-border-radius: 5px;
                 }
+                .button{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: left;
+                    padding-inline: 60px;
+                    top: 112px;
+                    .btn{
+                        box-shadow: none;
+                        background-color: $lighter-links;
+                        color: $white;
+                        &:hover{
+                            filter: brightness(90%);
+                            -webkit-filter: brightness(90%);
+                        }
+                    }
+                }
             }
         }
     }
@@ -629,6 +647,14 @@ body{
                     }
                 }
             }
+            .coupon{
+                .cop{
+                    padding: 100px 7px;
+                    .button{
+                        padding-inline: 20px;
+                    }
+                }
+            }
         }
     }
     .modal-addresses{
@@ -713,6 +739,23 @@ body{
                             .btn{
                                 width: 200px;
                             }
+                        }
+                    }
+                }
+                .coupon{
+                    .cop{
+                        padding: 100px 0px;
+                        .holder{
+                            right: 20px;
+                        }
+                        input{
+                            padding: 18px 50px 18px 0;
+                        }
+                        .button{
+                            padding-inline: 14px;
+                        }
+                        &::after{
+                            right: 48px;
                         }
                     }
                 }

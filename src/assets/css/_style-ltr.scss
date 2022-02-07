@@ -2331,6 +2331,15 @@ html[dir = "ltr"]{
                         left: 80px;
                         right: initial;
                     }
+                    .button{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: initial;
+                        width: 100%;
+                        text-align: right;
+                        top: 112px;
+                    }
                 }
             }
             .bill{
@@ -2503,6 +2512,25 @@ html[dir = "ltr"]{
                                         margin-left: 0;
                                     }
                                 }
+                            }
+                        }
+                    }
+                    .coupon{
+                        .cop{
+                            padding: 100px 0px;
+                            .holder{
+                                right: initial;
+                                left: 20px;
+                            }
+                            input{
+                                padding: 18px 0 18px 50px;
+                            }
+                            .button{
+                                padding-inline: 14px;
+                            }
+                            &::after{
+                                right: initial;
+                                left: 48px;
                             }
                         }
                     }
