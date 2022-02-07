@@ -4064,7 +4064,7 @@ body {
 .confirm .show-case .coupon .cop input {
   background-color: #fffcee;
   width: 100%;
-  padding: 18px 70px 18px 20px;
+  padding: 18px 70px 18px 105px;
   border: 1px solid #f2eacb;
   border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -6247,7 +6247,7 @@ html[dir="ltr"] .confirm .show-case .notes .info img {
 }
 
 html[dir="ltr"] .confirm .show-case .coupon .cop input {
-  padding: 18px 20px 18px 70px;
+  padding: 18px 105px 18px 70px;
 }
 
 html[dir="ltr"] .confirm .show-case .coupon .cop .holder {
