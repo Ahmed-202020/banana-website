@@ -4440,7 +4440,7 @@ body {
     right: 20px;
   }
   .confirm .show-case .inform .coupon .cop input {
-    padding: 18px 50px 18px 0;
+    padding: 18px 50px 18px 78px;
   }
   .confirm .show-case .inform .coupon .cop .button {
     padding-inline: 14px;
@@ -6368,7 +6368,7 @@ html[dir="ltr"] .modal-addresses::before {
     left: 20px;
   }
   html[dir="ltr"] .confirm .show-case .inform .coupon .cop input {
-    padding: 18px 0 18px 50px;
+    padding: 18px 78px 18px 50px;
   }
   html[dir="ltr"] .confirm .show-case .inform .coupon .cop .button {
     padding-inline: 14px;
