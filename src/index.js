@@ -91,6 +91,7 @@ $(function(){
     $($(this).data("content")).fadeIn() ; 
   })
   
+  
   $(".common-products .btn").on("click" , function(){
     Swal.fire(
       "تم" , 

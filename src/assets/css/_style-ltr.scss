@@ -150,6 +150,10 @@ html[dir = "ltr"]{
                         left: initial;
                     }
                 }
+                .desquent{
+                    right: -2px ;
+                    left: initial ;
+                }
             }
         }
     } 
@@ -1833,6 +1837,20 @@ html[dir = "ltr"]{
             }
         }
     }
+    .related-products{
+        .title{
+            &::after{
+                left: 0 ;
+                right: initial ;
+            }
+        }
+        .owl-item{
+            .desquent{
+                right: -1px;
+                left: initial;
+            }
+        }
+    }
 }
 
 // responsive design product.html(ltr)
@@ -1843,6 +1861,31 @@ html[dir = "ltr"]{
             .bar-product{
                 right: 228px;
                 left: initial;
+            }
+        }
+    }
+}
+@media (max-width: 1280.98px){
+    html[dir = "ltr"]{
+        .prod{
+            .content{
+                .show-case{
+                    .price{
+                        margin-left: 40px ;
+                        margin-right: 0 ;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575.98px){
+    html[dir = "ltr"]{
+        .related-products{
+            .owl-item{
+                .desquent{
+                    right: 20px ;
+                }
             }
         }
     }
@@ -1869,6 +1912,13 @@ html[dir = "ltr"]{
                 }
                 .data{
                     left: 33px;
+                    right: 0 ;
+                }
+            }
+        }
+        .related-products{
+            .owl-item{
+                .desquent{
                     right: 0 ;
                 }
             }

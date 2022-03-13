@@ -572,7 +572,6 @@ html{
             }
         }
     }    
-    // common-productsخد ال كله 
     .common-products{
         padding: 70px;
         .title::after{
@@ -596,6 +595,7 @@ html{
             align-items: center;
             gap: 8pt; 
             .product{
+                position: relative ;
                 text-decoration: none;
                 .card{
                     background-color: $white;
@@ -618,11 +618,22 @@ html{
                             .name-pro{
                                 color: $black-color;
                                 font-size: 20pt;
+                                margin-bottom: 30px ;
                             }
-                            .price{
-                                color: $color-button;
-                                font-size: 12pt;
-                                font-weight: bold;
+                            .prices{
+                                width: 100% ;
+                                padding-inline: 20px ;
+                                display: flex;
+                                justify-content: space-evenly;
+                                .price{
+                                    color: $color-button;
+                                    font-size: 12pt;
+                                    font-weight: bold;
+                                    text-decoration: line-through ;
+                                }
+                                .new-price{
+                                    text-decoration: none ;
+                                }
                             }
                         }
                     }
@@ -666,6 +677,23 @@ html{
                             }
                         }
                     }
+                }
+                .desquent{
+                    position: absolute ;
+                    top: -5px ;
+                    left: -2px ;
+                    background-color: $min-color  ;
+                    color: $white ;
+                    font-weight: bold ;
+                    width: 40px ;
+                    height: 40px ;
+                    line-height: 40px ;
+                    text-align: center ;
+                    border-radius: 50% ;
+                    -webkit-border-radius: 50% ;
+                    -moz-border-radius: 50% ;
+                    -ms-border-radius: 50% ;
+                    -o-border-radius: 50% ;
                 }
             }
         }

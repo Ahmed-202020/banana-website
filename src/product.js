@@ -119,4 +119,11 @@ $(".add-to-cart").on("click" , function(){
     ) ; 
 })
 
+$(".related-products .btn").on("click" , function(){
+    Swal.fire(
+        "تم" , 
+        'تم اضافة المنتج الى عربة الشراء',
+        'success'
+    ) ; 
+})
 
