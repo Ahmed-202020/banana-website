@@ -1,6 +1,6 @@
 $(function(){
     $('.owl-carousel').owlCarousel({
-        // loop: true,
+        loop: false,
         rtl:true,
         slideSpeed : 300,
         paginationSpeed : 400,
